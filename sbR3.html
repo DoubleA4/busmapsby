@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>R1/R2 | Suroboyo Bus</title>
+    <title>Tumpuk | Suroboyo Bus</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" type="image/png" href="https://cdn.discordapp.com/attachments/1069102130612412496/1073261913078779944/kuangkut.png"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -21,11 +21,7 @@
 </head>
 <body>
     <div class="fixed-bottom m-3">
-        <a href="/">
-            <div class="btn btn-primary btn-floating btn-circle d-flex">
-                <box-icon name='chevron-left' type='solid' color='#ffffff' class="mx-auto my-auto"></box-icon>
-            </div>
-        </a>
+        <a class="btn btn-primary btn-floating" href="/"><box-icon name='chevron-left' type='solid' color='#ffffff' ></box-icon></a>
     </div>
     <div id="map"></div>
     
@@ -44,7 +40,7 @@
             var mm = String(datenow.getMonth() + 1).padStart(2, '0');
             var yyyy = datenow.getFullYear();
             var datenows = yyyy +"-"+mm+"-"+dd;
-            const response = await fetch(`http://36.66.208.109/gbapi/gobis/init/us/1/1/1/${datenows} 00:00:01/${datenows} 00:00:01/${datenows} 00:00:01`);
+            const response = await fetch(`http://36.66.208.109/gbapi/gobis/init/tumpuk/1/1/1/${datenows} 00:00:01/${datenows} 00:00:01/${datenows} 00:00:01`);
             const data = await response.json();
 
             var routePoly = L.polyline(data.datarute, {color: 'red', opacity: 0.5}).addTo(map);
@@ -72,11 +68,11 @@
 
         var markers = [];
         async function getData() {
-            const response = await fetch('https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/sbybus/detailsbybus/1');
+            const response = await fetch('https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/sbybus/detailsbybus/3');
             const data = await response.json();
 
             const busIcon = L.icon({
-                iconUrl: 'images/buskuning.png',
+                iconUrl: 'images/sbt.png',
                 iconSize: [15, 31],
                 iconAnchor: [7.5, 15],
                 labelAnchor: [5, 10]
