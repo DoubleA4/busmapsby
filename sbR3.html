@@ -44,7 +44,8 @@
             var mm = String(datenow.getMonth() + 1).padStart(2, '0');
             var yyyy = datenow.getFullYear();
             var datenows = yyyy +"-"+mm+"-"+dd;
-            const response = await fetch(`http://36.66.208.109/gbapi/gobis/init/tumpuk/1/1/1/${datenows} 00:00:01/${datenows} 00:00:01/${datenows} 00:00:01`);
+            // const response = await fetch(`http://36.66.208.109/gbapi/gobis/init/tumpuk/1/1/1/${datenows} 00:00:01/${datenows} 00:00:01/${datenows} 00:00:01`);
+            const response = await fetch('https://gist.githubusercontent.com/DoubleA4/64618ff3486a1096b05fe37bab512dd9/raw/dea90e66b958f3c929153716c1b167850b8a44c9/R3.json');
             const data = await response.json();
 
             var routePoly = L.polyline(data.datarute, {color: 'red', opacity: 0.5}).addTo(map);
