@@ -79,8 +79,14 @@ async function setVehicle() {
 
 async function routeInit() {
   routedata = await getJson("./routedata.json");
-  document.documentElement.style.setProperty("--accent-color", routedata[route].color);
-  document.documentElement.style.setProperty("--accent-text", routedata[route].text);
+  document.documentElement.style.setProperty(
+    "--accent-color",
+    routedata[route].color
+  );
+  document.documentElement.style.setProperty(
+    "--accent-text",
+    routedata[route].text
+  );
   document.title = `${routedata[route].name} | ${routedata[route].title}`;
   document.getElementById("routename").innerHTML = routedata[route].title;
   document.getElementById("routehours").innerHTML = routedata[route].hours;
@@ -132,8 +138,17 @@ async function routeInit() {
           <div class='stop'>
             ${transitPopup}
           </div>
+          <a href='https://maps.google.com?saddr=Current+Location&daddr=${halte.lat},${halte.lon}'>
+            <div class='navigate'>
+              <p>Arah</p>
+            </div>
+          </a>
         </div>
-      `
+      `,
+      {
+        minWidth: 250,
+        maxWidth: 280,
+      }
     );
 
     shelterMarkers.addLayer(marker);

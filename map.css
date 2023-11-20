@@ -123,6 +123,19 @@ a {
   flex-direction: column;
   font-size: 1rem;
 }
+.navigate {
+  width: 100%;
+  height: 3rem;
+  margin-top: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--accent-color);
+  color: var(--accent-text);
+  font-size: larger;
+  font-weight: 700;
+  border-radius: var(--border-radius);
+}
 .leaflet-popup-content p {
   margin: 0 !important;
 }
@@ -130,5 +143,4 @@ a {
   fill: var(--accent-color);
   stroke: rgba(0, 0, 0, 0.8);
   stroke-width: 30;
-  /* filter: drop-shadow(3px 3px 3px rgb(0 0 0 / 0.8)); */
 }
