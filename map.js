@@ -140,7 +140,8 @@ async function routeInit() {
           </div>
           <a href='https://maps.google.com?saddr=Current+Location&daddr=${halte.lat},${halte.lon}'>
             <div class='navigate'>
-              <p>Arah</p>
+              <i class="fa fa-map-marker"></i>
+              <p>Navigasi</p>
             </div>
           </a>
         </div>
