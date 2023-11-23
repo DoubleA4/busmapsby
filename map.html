@@ -14,6 +14,8 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
     crossorigin=""></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
     <script src="https://raw.githack.com/bbecquet/Leaflet.RotatedMarker/master/leaflet.rotatedMarker.js"></script>
     <script src='map.js'></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,28 +25,38 @@
 <body>
     <div id="map"></div>
     <div id="ui">
-        <div id="routeinfo">
-            <div class="infodata routeinfo">
-                <div style="display: flex; align-items: center;">
-                    <i class="fa fa-clock-o" style="margin-right: 5px;"></i>
-                    <p id="routestatus" style="margin-right: 5px; font-weight: 700;">Operasional</p>
-                    <p id="routehours">05:30-21:00</p>
-                </div>
-                <div style="display: flex; align-items: center;">
-                    <i class="fa fa-bus" style="margin-right: 5px;"></i>
-                    <p id="routename" style="margin-right: 5px; font-weight: 700;"></p>
-                    <p>(<span id="buscount">0</span> Bus • <span id="haltecount">0</span> Halte)</p>
-                </div>
+        <div id="navcontainer">
+            <div class="navbutton" onclick="history.back()">
+                <i class="fa fa-arrow-left" style="font-size: 2rem; color: var(--accent-color);"></i>
+            </div>
+            <div class="navbutton" style="display: none;">
+                <i class="fa  fa-location-arrow" style="font-size: 2rem; color: var(--accent-color);"></i>
             </div>
         </div>
-        <div id="businfo">
-            <div class="infodata">
-                <div id="busdata">
+        <div id="infocontainer">
+            <div id="routeinfo">
+                <div class="infodata routeinfo">
+                    <div style="display: flex; align-items: center;">
+                        <i class="fa fa-clock-o" style="margin-right: 5px;"></i>
+                        <p id="routestatus" style="margin-right: 5px; font-weight: 700;">Operasional</p>
+                        <p id="routehours">05:30-21:00</p>
+                    </div>
+                    <div style="display: flex; align-items: center;">
+                        <i class="fa fa-bus" style="margin-right: 5px;"></i>
+                        <p id="routename" style="margin-right: 5px; font-weight: 700;"></p>
+                        <p>(<span id="buscount">0</span> Bus • <span id="haltecount">0</span> Halte)</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="busstops">
-            <div id="stoplist">
+            <div id="businfo">
+                <div class="infodata">
+                    <div id="busdata">
+                    </div>
+                </div>
+            </div>
+            <div id="busstops">
+                <div id="stoplist">
+                </div>
             </div>
         </div>
     </div>
@@ -58,6 +70,7 @@
         L.control.attribution({
             position: 'topright'
         }).addTo(map);
+        // L.control.locate().addTo(map);
     </script>
 </body>
 </html>

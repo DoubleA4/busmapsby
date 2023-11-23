@@ -88,7 +88,7 @@ async function routeInit() {
     routedata[route].text
   );
   document.title = `${routedata[route].name} | ${routedata[route].title}`;
-  document.getElementById("routename").innerHTML = routedata[route].title;
+  document.getElementById("routename").innerHTML = `${routedata[route].name} | ${routedata[route].title}`;
   document.getElementById("routehours").innerHTML = routedata[route].hours;
 
   // const response = await fetch(
