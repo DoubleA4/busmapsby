@@ -24,12 +24,14 @@ async function main() {
       console.log(error)
     );
     var bus;
-    if (res) {
+    if (!res) {
+      bus = [];
+    } else {
       bus = await res.json();
     }
     console.log(bus);
     var counter = document.createElement("p");
-    counter.innerHTML = `${bus.length || 0} Bus • ${halte.length || 0} Halte`;
+    counter.innerHTML = `${bus.length} Bus • ${halte.length || 0} Halte`;
     routedetail.appendChild(counter);
     routecontainer.appendChild(routedetail);
     a.appendChild(routecontainer);
