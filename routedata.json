@@ -3,10 +3,10 @@
     "code": "us",
     "name": "R1",
     "title": "Purabaya - Rajawali",
-    "color": "#e63128",
+    "color": "#e73d4a",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/sbybus/detailsbybus/1",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/sbybus/1",
     "datarute": [
       {
         "lat": "-7.3518100",
@@ -2070,2316 +2070,405 @@
       }
     ],
     "datahalte": [
-      {
-        "nama": "Halte Terminal Purabaya",
-        "description": "Jln Bungurasih Timur",
-        "lat": "-7.352056",
-        "lon": "112.724468",
-        "arah": 1,
-        "priority": 1,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/prby.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Dukuh Menanggal",
-        "description": "Jln A. Yani Depan Bank Mandiri",
-        "lat": "-7.3432777777777",
-        "lon": "112.728916666666",
-        "arah": 1,
-        "priority": 2,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/d.menanggal.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Siwalankerto",
-        "description": "Jln A. Yani Depan Diskominfo Prov. Jatim",
-        "lat": "-7.3365194444444",
-        "lon": "112.729155555555",
-        "arah": 1,
-        "priority": 3,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Taman Pelangi",
-        "description": "Jln A. Yani Depan Balitbang Pertanian",
-        "lat": "-7.3292222222222",
-        "lon": "112.730833333333",
-        "arah": 1,
-        "priority": 4,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte RS Bhayangkara",
-        "description": "Jln A. Yani Depan RS Bhayangkara",
-        "lat": "-7.32485",
-        "lon": "112.73181",
-        "arah": 1,
-        "priority": 5,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte UBHARA",
-        "description": "Jln A. Yani Depan UBHARA",
-        "lat": "-7.3214166666666",
-        "lon": "112.732527777777",
-        "arah": 1,
-        "priority": 6,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/ubhara.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte PUSVETMA",
-        "description": "Jln A. Yani Depan PUSVETMA",
-        "lat": "-7.3164277777777",
-        "lon": "112.733530555555",
-        "arah": 1,
-        "priority": 7,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Ketintang",
-        "description": "Jln A. Yani Depan Royal Plaza",
-        "lat": "-7.3094805555555",
-        "lon": "112.735025000000",
-        "arah": 1,
-        "priority": 8,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Terminal Intermoda Joyoboyo",
-        "description": "Terminal Intermoda Joyoboyo",
-        "lat": "-7.298961",
-        "lon": "112.736182",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["fd03", "fd06"],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/tij.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Museum BI",
-        "description": "Jln Raya Darmo Depan Museum BI",
-        "lat": "-7.2943777777777",
-        "lon": "112.738969444444",
-        "arah": 1,
-        "priority": 10,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Rumah Sakit Darmo",
-        "description": "Jln Raya Darmo Depan Rumah Sakit Darmo",
-        "lat": "-7.2870111111111",
-        "lon": "112.739388888888",
-        "arah": 1,
-        "priority": 11,
-        "status_transit": 1,
-        "transit": ["tsk2"],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/rs.darmo.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Gozco",
-        "description": "Bus Stop Gozco",
-        "lat": "-7.283880",
-        "lon": "112.739971",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["tsk2"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Pandegiling",
-        "description": "Jln Raya Darmo Depan Apotek Kimia Farma",
-        "lat": "-7.2778694444444",
-        "lon": "112.741044444444",
-        "arah": 1,
-        "priority": 12,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd02"],
-        "timetable": ""
-      },
-      {
-        "nama": "Urip Sumoharjo 1",
-        "description": "Halte Urip Sumoharjo",
-        "lat": "-7.274013",
-        "lon": "112.741936",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["fd02"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Basra",
-        "description": "Jln Basuki Rahmat Depan Hotel Bumi Surabaya",
-        "lat": "-7.2717633800063",
-        "lon": "112.741585737707",
-        "arah": 1,
-        "priority": 13,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd02"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Kaliasin",
-        "description": "Jln Basuki Rahmat Depan Ranch Market",
-        "lat": "-7.2647583333333",
-        "lon": "112.740944444444",
-        "arah": 1,
-        "priority": 14,
-        "status_transit": 1,
-        "transit": ["tsk2"],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/kaliasin.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Embong Malang",
-        "description": "Jln Embong Malang JPO UFO",
-        "lat": "-7.2604166666666",
-        "lon": "112.737416666666",
-        "arah": 1,
-        "priority": 15,
-        "status_transit": 1,
-        "transit": ["fd01"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Blauran",
-        "description": "Jln Bubutan Depan BG Junction",
-        "lat": "-7.2551743913269",
-        "lon": "112.734107966449",
-        "arah": 1,
-        "priority": 16,
-        "status_transit": 1,
-        "transit": ["fd07"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Pirngadi",
-        "description": "Jln Bubutan Depan GPIB Imanuel",
-        "lat": "-7.25237521",
-        "lon": "112.73509763",
-        "arah": 1,
-        "priority": 17,
-        "status_transit": 1,
-        "transit": ["fd07"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Pasar Turi",
-        "description": "Jln Bubutan Depan Commonwealth Bank",
-        "lat": "-7.2459555555555",
-        "lon": "112.736991666666",
-        "arah": 1,
-        "priority": 18,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/p.turi.jpg\" width=\"100%\" height=\"100%\" /><img src=\"http://www.suroboyobus.com/gobis/public/images/img/US/US%2013%20Unit/US%2013/p.turi.jpg\" alt=\"\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Masjid Kemayoran",
-        "description": "Jln Indrapura Depan Kantor DPRD Prov. Jatim",
-        "lat": "-7.2435138888888",
-        "lon": "112.735258333333",
-        "arah": 1,
-        "priority": 19,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Indrapura",
-        "description": "Jln Indrapura Depan Museum Kesehatan",
-        "lat": "-7.2408305555555",
-        "lon": "112.732138888888",
-        "arah": 1,
-        "priority": 20,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Rajawali",
-        "description": "Jln Rajawali Depan Persil No. 68",
-        "lat": "-7.2345527777777",
-        "lon": "112.732155555555",
-        "arah": 2,
-        "priority": 21,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/rjwl.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Jembatan Merah",
-        "description": "Jln Rajawali Depan Kantor PT Arina Multikarya",
-        "lat": "-7.2355111111111",
-        "lon": "112.735055555555",
-        "arah": 2,
-        "priority": 22,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Veteran",
-        "description": "Jln Veteran Depan Bank Mandiri Kc. Surabaya Veteran",
-        "lat": "-7.2391777777777",
-        "lon": "112.737483333333",
-        "arah": 2,
-        "priority": 23,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Tugu Pahlawan",
-        "description": "Jln Pahlawan Depan Bank Mandiri",
-        "lat": "-7.2441277777777",
-        "lon": "112.738483333333",
-        "arah": 2,
-        "priority": 24,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Alun-Alun Contong",
-        "description": "Jln Pahlawan Depan Taman Baliwerti",
-        "lat": "-7.252195",
-        "lon": "112.736797",
-        "arah": 2,
-        "priority": 25,
-        "status_transit": 1,
-        "transit": ["fd07"],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/alun2contong.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Siola",
-        "description": "Jln Tunjungan Persil (Sebelum Hotel Platinum)",
-        "lat": "-7.2572333333333",
-        "lon": "112.737736111111",
-        "arah": 2,
-        "priority": 26,
-        "status_transit": 1,
-        "transit": ["fd01"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Tunjungan",
-        "description": "Jln Tunjungan Depan Persil Toko Bata",
-        "lat": "-7.2598444444444",
-        "lon": "112.739263888888",
-        "arah": 2,
-        "priority": 27,
-        "status_transit": 1,
-        "transit": ["fd01"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Simpang Dukuh",
-        "description": "Jln Gubernur Suryo Depan Simpang Pemuda",
-        "lat": "-7.262990411950973",
-        "lon": "112.7418327874874",
-        "arah": 2,
-        "priority": 28,
-        "status_transit": 1,
-        "transit": ["tsk2"],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/s.dukuh.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Gubernur Suryo",
-        "description": "Jln Gubernur Suryo JPO Jl. Gubernur Suryo",
-        "lat": "-7.2640472222222",
-        "lon": "112.744666666666",
-        "arah": 2,
-        "priority": 29,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd02"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Pangsud",
-        "description": "Jln Panglima Sudirman Depan Lahan Parkiran Yamaha",
-        "lat": "-7.26634",
-        "lon": "112.74505",
-        "arah": 2,
-        "priority": 30,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd02"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Sono Kembang",
-        "description": "Jln Panglima Sudirman Depan Rabo Bank",
-        "lat": "-7.2696",
-        "lon": "112.74383",
-        "arah": 2,
-        "priority": 31,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd02"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Urip Sumoharjo 2",
-        "description": "Jln Urip Sumoharjo Depan Urip Sumoharjo",
-        "lat": "-7.274016",
-        "lon": "112.742108",
-        "arah": 2,
-        "priority": 32,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd02"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Pandegiling 2",
-        "description": "Pandegiling 2",
-        "lat": "-7.278021",
-        "lon": "112.741266",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd02"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Santa Maria",
-        "description": "Jln Raya Darmo Depan SMA Santa Maria",
-        "lat": "-7.283475",
-        "lon": "112.740276",
-        "arah": 2,
-        "priority": 33,
-        "status_transit": 1,
-        "transit": ["tsk2"],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/santa%20maria.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Darmo",
-        "description": "Jln Raya Darmo Depan Bank NTB",
-        "lat": "-7.2892055555555",
-        "lon": "112.739255555555",
-        "arah": 2,
-        "priority": 34,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Marmoyo",
-        "description": "Jln Raya Darmo JPO KBS",
-        "lat": "-7.2963027777777",
-        "lon": "112.739444444444",
-        "arah": 2,
-        "priority": 35,
-        "status_transit": 1,
-        "transit": ["fd03", "fd06"],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/marmoyo.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Joyoboyo 2",
-        "description": "Jln Wonokromo Tugu Perjuangan",
-        "lat": "-7.2988305555555",
-        "lon": "112.737875",
-        "arah": 2,
-        "priority": 36,
-        "status_transit": 1,
-        "transit": ["fd06"],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte RSAL",
-        "description": "Jln A. Yani Depan RSAL",
-        "lat": "-7.3081944444444",
-        "lon": "112.736027777777",
-        "arah": 2,
-        "priority": 37,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/rsal.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Margorejo",
-        "description": "Jln A. Yani Depan SDN Margorejo",
-        "lat": "-7.3134125",
-        "lon": "112.7349164",
-        "arah": 2,
-        "priority": 38,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Wonocolo",
-        "description": "Jln A. Yani Depan Gedung Jatim Expo",
-        "lat": "-7.31801",
-        "lon": "112.73398",
-        "arah": 2,
-        "priority": 39,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte UIN",
-        "description": "Jln A. Yani Depan UIN",
-        "lat": "-7.3217",
-        "lon": "112.733188888888",
-        "arah": 2,
-        "priority": 40,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/uin.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      },
-      {
-        "nama": "Halte Jemur Ngawinan",
-        "description": "Jln A. Yani Depan Muhammadiyah Business Center",
-        "lat": "-7.328657",
-        "lon": "112.731677",
-        "arah": 2,
-        "priority": 41,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Siwalankerto 2",
-        "description": "Jln A. Yani Depan Makam Siwalan",
-        "lat": "-7.3371055555555",
-        "lon": "112.729538888888",
-        "arah": 2,
-        "priority": 42,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "nama": "Halte Kerto Menanggal",
-        "description": "Jln A. Yani JPO SMK 3",
-        "lat": "-7.3433666666666",
-        "lon": "112.729377777777",
-        "arah": 2,
-        "priority": 43,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/k.menanggal.jpg\" width=\"100%\" height=\"100%\" /></p>"
-      }
+      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+      21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38,
+      39, 40, 41, 42, 43, 44, 45
     ]
   },
   "sbr7": {
     "code": "towbaru",
     "name": "R7",
     "title": "T.O.W - Unesa",
-    "color": "#0e3592",
+    "color": "#023471",
     "text": "white",
     "hours": "05:30 - 21:00",
     "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/sbybus/detailsbybus/7",
     "datarute": [
-      {
-        "lat": "-7.2989000",
-        "lon": "112.6754210"
-      },
-      {
-        "lat": "-7.2988400",
-        "lon": "112.6753810"
-      },
-      {
-        "lat": "-7.2987500",
-        "lon": "112.6753810"
-      },
-      {
-        "lat": "-7.2987100",
-        "lon": "112.6754110"
-      },
-      {
-        "lat": "-7.2981760",
-        "lon": "112.6754160"
-      },
-      {
-        "lat": "-7.2974160",
-        "lon": "112.6753950"
-      },
-      {
-        "lat": "-7.2963760",
-        "lon": "112.6754280"
-      },
-      {
-        "lat": "-7.2959070",
-        "lon": "112.6754740"
-      },
-      {
-        "lat": "-7.2954810",
-        "lon": "112.6754880"
-      },
-      {
-        "lat": "-7.2946860",
-        "lon": "112.6755040"
-      },
-      {
-        "lat": "-7.2942920",
-        "lon": "112.6755250"
-      },
-      {
-        "lat": "-7.2939020",
-        "lon": "112.6755230"
-      },
-      {
-        "lat": "-7.2936960",
-        "lon": "112.6755360"
-      },
-      {
-        "lat": "-7.2933640",
-        "lon": "112.6755860"
-      },
-      {
-        "lat": "-7.2928740",
-        "lon": "112.6757140"
-      },
-      {
-        "lat": "-7.2920510",
-        "lon": "112.6759320"
-      },
-      {
-        "lat": "-7.2917750",
-        "lon": "112.6760040"
-      },
-      {
-        "lat": "-7.2915300",
-        "lon": "112.6760830"
-      },
-      {
-        "lat": "-7.2913650",
-        "lon": "112.6761690"
-      },
-      {
-        "lat": "-7.2910980",
-        "lon": "112.6762690"
-      },
-      {
-        "lat": "-7.2907510",
-        "lon": "112.6763760"
-      },
-      {
-        "lat": "-7.2906170",
-        "lon": "112.6763640"
-      },
-      {
-        "lat": "-7.2905340",
-        "lon": "112.6762750"
-      },
-      {
-        "lat": "-7.2904080",
-        "lon": "112.6758670"
-      },
-      {
-        "lat": "-7.2903440",
-        "lon": "112.6757550"
-      },
-      {
-        "lat": "-7.2901200",
-        "lon": "112.6759210"
-      },
-      {
-        "lat": "-7.2893700",
-        "lon": "112.6766410"
-      },
-      {
-        "lat": "-7.2890150",
-        "lon": "112.6770490"
-      },
-      {
-        "lat": "-7.2888560",
-        "lon": "112.6772130"
-      },
-      {
-        "lat": "-7.2883560",
-        "lon": "112.6773960"
-      },
-      {
-        "lat": "-7.2877080",
-        "lon": "112.6773790"
-      },
-      {
-        "lat": "-7.2875510",
-        "lon": "112.6774220"
-      },
-      {
-        "lat": "-7.2874570",
-        "lon": "112.6774610"
-      },
-      {
-        "lat": "-7.2873340",
-        "lon": "112.6775630"
-      },
-      {
-        "lat": "-7.2872130",
-        "lon": "112.6777140"
-      },
-      {
-        "lat": "-7.2871800",
-        "lon": "112.6778540"
-      },
-      {
-        "lat": "-7.2871970",
-        "lon": "112.6780890"
-      },
-      {
-        "lat": "-7.2873090",
-        "lon": "112.6782890"
-      },
-      {
-        "lat": "-7.2873620",
-        "lon": "112.6783380"
-      },
-      {
-        "lat": "-7.2873800",
-        "lon": "112.6784010"
-      },
-      {
-        "lat": "-7.2873700",
-        "lon": "112.6784710"
-      },
-      {
-        "lat": "-7.2873000",
-        "lon": "112.6786610"
-      },
-      {
-        "lat": "-7.2872400",
-        "lon": "112.6787510"
-      },
-      {
-        "lat": "-7.2871040",
-        "lon": "112.6789190"
-      },
-      {
-        "lat": "-7.2852080",
-        "lon": "112.6807760"
-      },
-      {
-        "lat": "-7.2833050",
-        "lon": "112.6826330"
-      },
-      {
-        "lat": "-7.2815670",
-        "lon": "112.6843140"
-      },
-      {
-        "lat": "-7.2811480",
-        "lon": "112.6847170"
-      },
-      {
-        "lat": "-7.2807520",
-        "lon": "112.6851740"
-      },
-      {
-        "lat": "-7.2799440",
-        "lon": "112.6861070"
-      },
-      {
-        "lat": "-7.2791770",
-        "lon": "112.6870430"
-      },
-      {
-        "lat": "-7.2786840",
-        "lon": "112.6876340"
-      },
-      {
-        "lat": "-7.2783900",
-        "lon": "112.6879890"
-      },
-      {
-        "lat": "-7.2768990",
-        "lon": "112.6898010"
-      },
-      {
-        "lat": "-7.2763040",
-        "lon": "112.6893180"
-      },
-      {
-        "lat": "-7.2760170",
-        "lon": "112.6890780"
-      },
-      {
-        "lat": "-7.2758630",
-        "lon": "112.6889710"
-      },
-      {
-        "lat": "-7.2756980",
-        "lon": "112.6889010"
-      },
-      {
-        "lat": "-7.2750750",
-        "lon": "112.6889390"
-      },
-      {
-        "lat": "-7.2744340",
-        "lon": "112.6889920"
-      },
-      {
-        "lat": "-7.2731560",
-        "lon": "112.6891300"
-      },
-      {
-        "lat": "-7.2718870",
-        "lon": "112.6892720"
-      },
-      {
-        "lat": "-7.2712520",
-        "lon": "112.6893430"
-      },
-      {
-        "lat": "-7.2707750",
-        "lon": "112.6893920"
-      },
-      {
-        "lat": "-7.2706930",
-        "lon": "112.6894130"
-      },
-      {
-        "lat": "-7.2706170",
-        "lon": "112.6894070"
-      },
-      {
-        "lat": "-7.2704430",
-        "lon": "112.6895930"
-      },
-      {
-        "lat": "-7.2695870",
-        "lon": "112.6905930"
-      },
-      {
-        "lat": "-7.2692580",
-        "lon": "112.6910000"
-      },
-      {
-        "lat": "-7.2689160",
-        "lon": "112.6913930"
-      },
-      {
-        "lat": "-7.2687750",
-        "lon": "112.6915950"
-      },
-      {
-        "lat": "-7.2687530",
-        "lon": "112.6918090"
-      },
-      {
-        "lat": "-7.2688230",
-        "lon": "112.6925170"
-      },
-      {
-        "lat": "-7.2689110",
-        "lon": "112.6933920"
-      },
-      {
-        "lat": "-7.2668830",
-        "lon": "112.6935920"
-      },
-      {
-        "lat": "-7.2658600",
-        "lon": "112.6936830"
-      },
-      {
-        "lat": "-7.2651560",
-        "lon": "112.6937570"
-      },
-      {
-        "lat": "-7.2649140",
-        "lon": "112.6937600"
-      },
-      {
-        "lat": "-7.2648310",
-        "lon": "112.6937140"
-      },
-      {
-        "lat": "-7.2647960",
-        "lon": "112.6937730"
-      },
-      {
-        "lat": "-7.2641360",
-        "lon": "112.6943740"
-      },
-      {
-        "lat": "-7.2638620",
-        "lon": "112.6945170"
-      },
-      {
-        "lat": "-7.2635840",
-        "lon": "112.6945720"
-      },
-      {
-        "lat": "-7.2633040",
-        "lon": "112.6946760"
-      },
-      {
-        "lat": "-7.2626600",
-        "lon": "112.6949760"
-      },
-      {
-        "lat": "-7.2624720",
-        "lon": "112.6946420"
-      },
-      {
-        "lat": "-7.2623070",
-        "lon": "112.6943030"
-      },
-      {
-        "lat": "-7.2621520",
-        "lon": "112.6939270"
-      },
-      {
-        "lat": "-7.2619630",
-        "lon": "112.6935930"
-      },
-      {
-        "lat": "-7.2617970",
-        "lon": "112.6934680"
-      },
-      {
-        "lat": "-7.2613620",
-        "lon": "112.6932620"
-      },
-      {
-        "lat": "-7.2612090",
-        "lon": "112.6931130"
-      },
-      {
-        "lat": "-7.2610520",
-        "lon": "112.6928170"
-      },
-      {
-        "lat": "-7.2609370",
-        "lon": "112.6923940"
-      },
-      {
-        "lat": "-7.2607900",
-        "lon": "112.6918150"
-      },
-      {
-        "lat": "-7.2605620",
-        "lon": "112.6911090"
-      },
-      {
-        "lat": "-7.2604760",
-        "lon": "112.6905390"
-      },
-      {
-        "lat": "-7.2604000",
-        "lon": "112.6898960"
-      },
-      {
-        "lat": "-7.2603510",
-        "lon": "112.6896080"
-      },
-      {
-        "lat": "-7.2602790",
-        "lon": "112.6894410"
-      },
-      {
-        "lat": "-7.2600130",
-        "lon": "112.6890550"
-      },
-      {
-        "lat": "-7.2599380",
-        "lon": "112.6888830"
-      },
-      {
-        "lat": "-7.2597130",
-        "lon": "112.6880010"
-      },
-      {
-        "lat": "-7.2594930",
-        "lon": "112.6869980"
-      },
-      {
-        "lat": "-7.2593590",
-        "lon": "112.6859450"
-      },
-      {
-        "lat": "-7.2592710",
-        "lon": "112.6849020"
-      },
-      {
-        "lat": "-7.2590950",
-        "lon": "112.6838660"
-      },
-      {
-        "lat": "-7.2589540",
-        "lon": "112.6826680"
-      },
-      {
-        "lat": "-7.2589440",
-        "lon": "112.6821220"
-      },
-      {
-        "lat": "-7.2589210",
-        "lon": "112.6815770"
-      },
-      {
-        "lat": "-7.2586750",
-        "lon": "112.6806470"
-      },
-      {
-        "lat": "-7.2584990",
-        "lon": "112.6803620"
-      },
-      {
-        "lat": "-7.2584580",
-        "lon": "112.6803010"
-      },
-      {
-        "lat": "-7.2584150",
-        "lon": "112.6800380"
-      },
-      {
-        "lat": "-7.2583720",
-        "lon": "112.6798820"
-      },
-      {
-        "lat": "-7.2582710",
-        "lon": "112.6797940"
-      },
-      {
-        "lat": "-7.2580950",
-        "lon": "112.6797860"
-      },
-      {
-        "lat": "-7.2577600",
-        "lon": "112.6800900"
-      },
-      {
-        "lat": "-7.2576250",
-        "lon": "112.6802170"
-      },
-      {
-        "lat": "-7.2574770",
-        "lon": "112.6803260"
-      },
-      {
-        "lat": "-7.2572100",
-        "lon": "112.6804360"
-      },
-      {
-        "lat": "-7.2564000",
-        "lon": "112.6806890"
-      },
-      {
-        "lat": "-7.2552900",
-        "lon": "112.6810310"
-      },
-      {
-        "lat": "-7.2536660",
-        "lon": "112.6815350"
-      },
-      {
-        "lat": "-7.2532530",
-        "lon": "112.6816280"
-      },
-      {
-        "lat": "-7.2528370",
-        "lon": "112.6816960"
-      },
-      {
-        "lat": "-7.2524290",
-        "lon": "112.6817610"
-      },
-      {
-        "lat": "-7.2520300",
-        "lon": "112.6818440"
-      },
-      {
-        "lat": "-7.2510820",
-        "lon": "112.6819040"
-      },
-      {
-        "lat": "-7.2501540",
-        "lon": "112.6819280"
-      },
-      {
-        "lat": "-7.2482920",
-        "lon": "112.6819950"
-      },
-      {
-        "lat": "-7.2473620",
-        "lon": "112.6820280"
-      },
-      {
-        "lat": "-7.2464310",
-        "lon": "112.6820740"
-      },
-      {
-        "lat": "-7.2445700",
-        "lon": "112.6821050"
-      },
-      {
-        "lat": "-7.2427450",
-        "lon": "112.6821690"
-      },
-      {
-        "lat": "-7.2409210",
-        "lon": "112.6821720"
-      },
-      {
-        "lat": "-7.2390970",
-        "lon": "112.6822370"
-      },
-      {
-        "lat": "-7.2381830",
-        "lon": "112.6822660"
-      },
-      {
-        "lat": "-7.2372730",
-        "lon": "112.6823100"
-      },
-      {
-        "lat": "-7.2354800",
-        "lon": "112.6824070"
-      },
-      {
-        "lat": "-7.2336230",
-        "lon": "112.6824450"
-      },
-      {
-        "lat": "-7.2317930",
-        "lon": "112.6825020"
-      },
-      {
-        "lat": "-7.2299750",
-        "lon": "112.6825860"
-      },
-      {
-        "lat": "-7.2298230",
-        "lon": "112.6824750"
-      },
-      {
-        "lat": "-7.2297430",
-        "lon": "112.6823800"
-      },
-      {
-        "lat": "-7.2297180",
-        "lon": "112.6822340"
-      },
-      {
-        "lat": "-7.2296930",
-        "lon": "112.6820010"
-      },
-      {
-        "lat": "-7.2297530",
-        "lon": "112.6780590"
-      },
-      {
-        "lat": "-7.2297750",
-        "lon": "112.6769580"
-      },
-      {
-        "lat": "-7.2298050",
-        "lon": "112.6758410"
-      },
-      {
-        "lat": "-7.2298340",
-        "lon": "112.6736200"
-      },
-      {
-        "lat": "-7.2297870",
-        "lon": "112.6732100"
-      },
-      {
-        "lat": "-7.2296780",
-        "lon": "112.6728160"
-      },
-      {
-        "lat": "-7.2294050",
-        "lon": "112.6722450"
-      },
-      {
-        "lat": "-7.2290370",
-        "lon": "112.6715670"
-      },
-      {
-        "lat": "-7.2283080",
-        "lon": "112.6702200"
-      },
-      {
-        "lat": "-7.2275750",
-        "lon": "112.6688530"
-      },
-      {
-        "lat": "-7.2268540",
-        "lon": "112.6675800"
-      },
-      {
-        "lat": "-7.2267440",
-        "lon": "112.6674480"
-      },
-      {
-        "lat": "-7.2264050",
-        "lon": "112.6668320"
-      },
-      {
-        "lat": "-7.2260000",
-        "lon": "112.6661180"
-      },
-      {
-        "lat": "-7.2256670",
-        "lon": "112.6654910"
-      },
-      {
-        "lat": "-7.2253230",
-        "lon": "112.6648720"
-      },
-      {
-        "lat": "-7.2251040",
-        "lon": "112.6644520"
-      },
-      {
-        "lat": "-7.2248390",
-        "lon": "112.6640170"
-      },
-      {
-        "lat": "-7.2243380",
-        "lon": "112.6630210"
-      },
-      {
-        "lat": "-7.2242050",
-        "lon": "112.6628450"
-      },
-      {
-        "lat": "-7.2240280",
-        "lon": "112.6625320"
-      },
-      {
-        "lat": "-7.2238040",
-        "lon": "112.6621070"
-      },
-      {
-        "lat": "-7.2237970",
-        "lon": "112.6620210"
-      },
-      {
-        "lat": "-7.2236740",
-        "lon": "112.6617780"
-      },
-      {
-        "lat": "-7.2232120",
-        "lon": "112.6609330"
-      },
-      {
-        "lat": "-7.2230000",
-        "lon": "112.6605370"
-      },
-      {
-        "lat": "-7.2227740",
-        "lon": "112.6600750"
-      },
-      {
-        "lat": "-7.2221140",
-        "lon": "112.6588790"
-      },
-      {
-        "lat": "-7.2213220",
-        "lon": "112.6574360"
-      },
-      {
-        "lat": "-7.2209300",
-        "lon": "112.6567090"
-      },
-      {
-        "lat": "-7.2206780",
-        "lon": "112.6562800"
-      },
-      {
-        "lat": "-7.2204860",
-        "lon": "112.6560390"
-      },
-      {
-        "lat": "-7.2202500",
-        "lon": "112.6558110"
-      },
-      {
-        "lat": "-7.2200000",
-        "lon": "112.6556160"
-      },
-      {
-        "lat": "-7.2194540",
-        "lon": "112.6553480"
-      },
-      {
-        "lat": "-7.2186140",
-        "lon": "112.6550280"
-      },
-      {
-        "lat": "-7.2181790",
-        "lon": "112.6548550"
-      },
-      {
-        "lat": "-7.2182823",
-        "lon": "112.6546161"
-      },
-      {
-        "lat": "-7.2184693",
-        "lon": "112.6542379"
-      },
-      {
-        "lat": "-7.2186669",
-        "lon": "112.6538152"
-      },
-      {
-        "lat": "-7.2187580",
-        "lon": "112.6535991"
-      },
-      {
-        "lat": "-7.2187686",
-        "lon": "112.6534783"
-      },
-      {
-        "lat": "-7.2187459",
-        "lon": "112.6533178"
-      },
-      {
-        "lat": "-7.2186845",
-        "lon": "112.6531292"
-      },
-      {
-        "lat": "-7.2182752",
-        "lon": "112.6529316"
-      },
-      {
-        "lat": "-7.2180548",
-        "lon": "112.6528860"
-      },
-      {
-        "lat": "-7.2178543",
-        "lon": "112.6529245"
-      },
-      {
-        "lat": "-7.2177582",
-        "lon": "112.6529900"
-      },
-      {
-        "lat": "-7.2175590",
-        "lon": "112.6532259"
-      },
-      {
-        "lat": "-7.2172971",
-        "lon": "112.6539017"
-      },
-      {
-        "lat": "-7.2170351",
-        "lon": "112.6545830"
-      },
-      {
-        "lat": "-7.2174903",
-        "lon": "112.6547379"
-      },
-      {
-        "lat": "-7.2179389",
-        "lon": "112.6549050"
-      },
-      {
-        "lat": "-7.2188420",
-        "lon": "112.6552350"
-      },
-      {
-        "lat": "-7.2195390",
-        "lon": "112.6555020"
-      },
-      {
-        "lat": "-7.2200280",
-        "lon": "112.6557560"
-      },
-      {
-        "lat": "-7.2202250",
-        "lon": "112.6559250"
-      },
-      {
-        "lat": "-7.2204140",
-        "lon": "112.6561060"
-      },
-      {
-        "lat": "-7.2207710",
-        "lon": "112.6566140"
-      },
-      {
-        "lat": "-7.2210660",
-        "lon": "112.6571800"
-      },
-      {
-        "lat": "-7.2216650",
-        "lon": "112.6582620"
-      },
-      {
-        "lat": "-7.2222400",
-        "lon": "112.6593140"
-      },
-      {
-        "lat": "-7.2228030",
-        "lon": "112.6603770"
-      },
-      {
-        "lat": "-7.2228980",
-        "lon": "112.6606000"
-      },
-      {
-        "lat": "-7.2230720",
-        "lon": "112.6609060"
-      },
-      {
-        "lat": "-7.2233680",
-        "lon": "112.6614210"
-      },
-      {
-        "lat": "-7.2237400",
-        "lon": "112.6620630"
-      },
-      {
-        "lat": "-7.2237920",
-        "lon": "112.6621110"
-      },
-      {
-        "lat": "-7.2239660",
-        "lon": "112.6624430"
-      },
-      {
-        "lat": "-7.2241950",
-        "lon": "112.6628500"
-      },
-      {
-        "lat": "-7.2243280",
-        "lon": "112.6630280"
-      },
-      {
-        "lat": "-7.2245550",
-        "lon": "112.6634760"
-      },
-      {
-        "lat": "-7.2248300",
-        "lon": "112.6640220"
-      },
-      {
-        "lat": "-7.2250950",
-        "lon": "112.6644570"
-      },
-      {
-        "lat": "-7.2252410",
-        "lon": "112.6647460"
-      },
-      {
-        "lat": "-7.2256830",
-        "lon": "112.6655480"
-      },
-      {
-        "lat": "-7.2259720",
-        "lon": "112.6660950"
-      },
-      {
-        "lat": "-7.2262740",
-        "lon": "112.6666290"
-      },
-      {
-        "lat": "-7.2267350",
-        "lon": "112.6674550"
-      },
-      {
-        "lat": "-7.2267930",
-        "lon": "112.6676270"
-      },
-      {
-        "lat": "-7.2273940",
-        "lon": "112.6687560"
-      },
-      {
-        "lat": "-7.2279740",
-        "lon": "112.6698030"
-      },
-      {
-        "lat": "-7.2285340",
-        "lon": "112.6708490"
-      },
-      {
-        "lat": "-7.2291150",
-        "lon": "112.6718980"
-      },
-      {
-        "lat": "-7.2293930",
-        "lon": "112.6724230"
-      },
-      {
-        "lat": "-7.2296350",
-        "lon": "112.6729750"
-      },
-      {
-        "lat": "-7.2297340",
-        "lon": "112.6734740"
-      },
-      {
-        "lat": "-7.2297210",
-        "lon": "112.6758060"
-      },
-      {
-        "lat": "-7.2296820",
-        "lon": "112.6769700"
-      },
-      {
-        "lat": "-7.2296660",
-        "lon": "112.6781390"
-      },
-      {
-        "lat": "-7.2296590",
-        "lon": "112.6794680"
-      },
-      {
-        "lat": "-7.2296220",
-        "lon": "112.6804900"
-      },
-      {
-        "lat": "-7.2296010",
-        "lon": "112.6817340"
-      },
-      {
-        "lat": "-7.2296410",
-        "lon": "112.6825960"
-      },
-      {
-        "lat": "-7.2296370",
-        "lon": "112.6828370"
-      },
-      {
-        "lat": "-7.2299080",
-        "lon": "112.6829300"
-      },
-      {
-        "lat": "-7.2324870",
-        "lon": "112.6828400"
-      },
-      {
-        "lat": "-7.2352940",
-        "lon": "112.6827400"
-      },
-      {
-        "lat": "-7.2381010",
-        "lon": "112.6826830"
-      },
-      {
-        "lat": "-7.2409060",
-        "lon": "112.6825760"
-      },
-      {
-        "lat": "-7.2410960",
-        "lon": "112.6825680"
-      },
-      {
-        "lat": "-7.2412860",
-        "lon": "112.6825890"
-      },
-      {
-        "lat": "-7.2423110",
-        "lon": "112.6825350"
-      },
-      {
-        "lat": "-7.2430150",
-        "lon": "112.6824980"
-      },
-      {
-        "lat": "-7.2437150",
-        "lon": "112.6824700"
-      },
-      {
-        "lat": "-7.2465240",
-        "lon": "112.6823900"
-      },
-      {
-        "lat": "-7.2493330",
-        "lon": "112.6822930"
-      },
-      {
-        "lat": "-7.2507430",
-        "lon": "112.6822870"
-      },
-      {
-        "lat": "-7.2521410",
-        "lon": "112.6821810"
-      },
-      {
-        "lat": "-7.2532850",
-        "lon": "112.6819890"
-      },
-      {
-        "lat": "-7.2573690",
-        "lon": "112.6807360"
-      },
-      {
-        "lat": "-7.2575150",
-        "lon": "112.6807220"
-      },
-      {
-        "lat": "-7.2576620",
-        "lon": "112.6807540"
-      },
-      {
-        "lat": "-7.2578600",
-        "lon": "112.6808140"
-      },
-      {
-        "lat": "-7.2583340",
-        "lon": "112.6809680"
-      },
-      {
-        "lat": "-7.2585280",
-        "lon": "112.6810660"
-      },
-      {
-        "lat": "-7.2587120",
-        "lon": "112.6811910"
-      },
-      {
-        "lat": "-7.2588210",
-        "lon": "112.6817070"
-      },
-      {
-        "lat": "-7.2588360",
-        "lon": "112.6826850"
-      },
-      {
-        "lat": "-7.2589440",
-        "lon": "112.6835740"
-      },
-      {
-        "lat": "-7.2590880",
-        "lon": "112.6844190"
-      },
-      {
-        "lat": "-7.2591990",
-        "lon": "112.6853170"
-      },
-      {
-        "lat": "-7.2592700",
-        "lon": "112.6861980"
-      },
-      {
-        "lat": "-7.2592900",
-        "lon": "112.6864600"
-      },
-      {
-        "lat": "-7.2593620",
-        "lon": "112.6869290"
-      },
-      {
-        "lat": "-7.2596060",
-        "lon": "112.6879270"
-      },
-      {
-        "lat": "-7.2598410",
-        "lon": "112.6889310"
-      },
-      {
-        "lat": "-7.2599240",
-        "lon": "112.6891060"
-      },
-      {
-        "lat": "-7.2601680",
-        "lon": "112.6894560"
-      },
-      {
-        "lat": "-7.2602380",
-        "lon": "112.6896550"
-      },
-      {
-        "lat": "-7.2602830",
-        "lon": "112.6900600"
-      },
-      {
-        "lat": "-7.2603300",
-        "lon": "112.6905250"
-      },
-      {
-        "lat": "-7.2603840",
-        "lon": "112.6908860"
-      },
-      {
-        "lat": "-7.2604620",
-        "lon": "112.6912280"
-      },
-      {
-        "lat": "-7.2606920",
-        "lon": "112.6919000"
-      },
-      {
-        "lat": "-7.2607960",
-        "lon": "112.6922500"
-      },
-      {
-        "lat": "-7.2608800",
-        "lon": "112.6926110"
-      },
-      {
-        "lat": "-7.2609800",
-        "lon": "112.6929260"
-      },
-      {
-        "lat": "-7.2611640",
-        "lon": "112.6932180"
-      },
-      {
-        "lat": "-7.2614850",
-        "lon": "112.6934780"
-      },
-      {
-        "lat": "-7.2618510",
-        "lon": "112.6936840"
-      },
-      {
-        "lat": "-7.2619750",
-        "lon": "112.6938610"
-      },
-      {
-        "lat": "-7.2620680",
-        "lon": "112.6940620"
-      },
-      {
-        "lat": "-7.2622460",
-        "lon": "112.6944560"
-      },
-      {
-        "lat": "-7.2624190",
-        "lon": "112.6947980"
-      },
-      {
-        "lat": "-7.2626160",
-        "lon": "112.6951370"
-      },
-      {
-        "lat": "-7.2633310",
-        "lon": "112.6947330"
-      },
-      {
-        "lat": "-7.2639650",
-        "lon": "112.6945540"
-      },
-      {
-        "lat": "-7.2641720",
-        "lon": "112.6944420"
-      },
-      {
-        "lat": "-7.2648470",
-        "lon": "112.6938050"
-      },
-      {
-        "lat": "-7.2649650",
-        "lon": "112.6938400"
-      },
-      {
-        "lat": "-7.2651640",
-        "lon": "112.6938330"
-      },
-      {
-        "lat": "-7.2658710",
-        "lon": "112.6937580"
-      },
-      {
-        "lat": "-7.2668900",
-        "lon": "112.6936630"
-      },
-      {
-        "lat": "-7.2690524",
-        "lon": "112.6934462"
-      },
-      {
-        "lat": "-7.2689522",
-        "lon": "112.6925488"
-      },
-      {
-        "lat": "-7.2688991",
-        "lon": "112.6921000"
-      },
-      {
-        "lat": "-7.2688832",
-        "lon": "112.6918743"
-      },
-      {
-        "lat": "-7.2688899",
-        "lon": "112.6916473"
-      },
-      {
-        "lat": "-7.2690162",
-        "lon": "112.6914197"
-      },
-      {
-        "lat": "-7.2693232",
-        "lon": "112.6910787"
-      },
-      {
-        "lat": "-7.2697641",
-        "lon": "112.6905538"
-      },
-      {
-        "lat": "-7.2702124",
-        "lon": "112.6900208"
-      },
-      {
-        "lat": "-7.2704345",
-        "lon": "112.6897546"
-      },
-      {
-        "lat": "-7.2706227",
-        "lon": "112.6895293"
-      },
-      {
-        "lat": "-7.2706753",
-        "lon": "112.6895280"
-      },
-      {
-        "lat": "-7.2707069",
-        "lon": "112.6894851"
-      },
-      {
-        "lat": "-7.2709793",
-        "lon": "112.6894536"
-      },
-      {
-        "lat": "-7.2712906",
-        "lon": "112.6894229"
-      },
-      {
-        "lat": "-7.2719173",
-        "lon": "112.6893586"
-      },
-      {
-        "lat": "-7.2731581",
-        "lon": "112.6892508"
-      },
-      {
-        "lat": "-7.2756242",
-        "lon": "112.6889666"
-      },
-      {
-        "lat": "-7.2758122",
-        "lon": "112.6890585"
-      },
-      {
-        "lat": "-7.2759689",
-        "lon": "112.6891947"
-      },
-      {
-        "lat": "-7.2762889",
-        "lon": "112.6894684"
-      },
-      {
-        "lat": "-7.2769288",
-        "lon": "112.6900172"
-      },
-      {
-        "lat": "-7.2784690",
-        "lon": "112.6881690"
-      },
-      {
-        "lat": "-7.2791960",
-        "lon": "112.6872670"
-      },
-      {
-        "lat": "-7.2799330",
-        "lon": "112.6863860"
-      },
-      {
-        "lat": "-7.2806860",
-        "lon": "112.6854900"
-      },
-      {
-        "lat": "-7.2810760",
-        "lon": "112.6850590"
-      },
-      {
-        "lat": "-7.2813690",
-        "lon": "112.6847700"
-      },
-      {
-        "lat": "-7.2821280",
-        "lon": "112.6840550"
-      },
-      {
-        "lat": "-7.2825150",
-        "lon": "112.6836580"
-      },
-      {
-        "lat": "-7.2828770",
-        "lon": "112.6833170"
-      },
-      {
-        "lat": "-7.2834210",
-        "lon": "112.6827550"
-      },
-      {
-        "lat": "-7.2843670",
-        "lon": "112.6818470"
-      },
-      {
-        "lat": "-7.2846710",
-        "lon": "112.6815680"
-      },
-      {
-        "lat": "-7.2849600",
-        "lon": "112.6812710"
-      },
-      {
-        "lat": "-7.2850500",
-        "lon": "112.6811710"
-      },
-      {
-        "lat": "-7.2858710",
-        "lon": "112.6803990"
-      },
-      {
-        "lat": "-7.2864540",
-        "lon": "112.6797970"
-      },
-      {
-        "lat": "-7.2866100",
-        "lon": "112.6796510"
-      },
-      {
-        "lat": "-7.2875100",
-        "lon": "112.6787610"
-      },
-      {
-        "lat": "-7.2876000",
-        "lon": "112.6787010"
-      },
-      {
-        "lat": "-7.2879990",
-        "lon": "112.6784610"
-      },
-      {
-        "lat": "-7.2881500",
-        "lon": "112.6783610"
-      },
-      {
-        "lat": "-7.2883240",
-        "lon": "112.6782320"
-      },
-      {
-        "lat": "-7.2884230",
-        "lon": "112.6781070"
-      },
-      {
-        "lat": "-7.2885100",
-        "lon": "112.6780310"
-      },
-      {
-        "lat": "-7.2886000",
-        "lon": "112.6779110"
-      },
-      {
-        "lat": "-7.2886240",
-        "lon": "112.6777920"
-      },
-      {
-        "lat": "-7.2888210",
-        "lon": "112.6775320"
-      },
-      {
-        "lat": "-7.2889150",
-        "lon": "112.6774330"
-      },
-      {
-        "lat": "-7.2890640",
-        "lon": "112.6773410"
-      },
-      {
-        "lat": "-7.2899070",
-        "lon": "112.6769290"
-      },
-      {
-        "lat": "-7.2906000",
-        "lon": "112.6765910"
-      },
-      {
-        "lat": "-7.2910260",
-        "lon": "112.6764530"
-      },
-      {
-        "lat": "-7.2923570",
-        "lon": "112.6761040"
-      },
-      {
-        "lat": "-7.2926320",
-        "lon": "112.6760210"
-      },
-      {
-        "lat": "-7.2928880",
-        "lon": "112.6759570"
-      },
-      {
-        "lat": "-7.2934250",
-        "lon": "112.6758280"
-      },
-      {
-        "lat": "-7.2936200",
-        "lon": "112.6757960"
-      },
-      {
-        "lat": "-7.2939680",
-        "lon": "112.6757620"
-      },
-      {
-        "lat": "-7.2947340",
-        "lon": "112.6757470"
-      },
-      {
-        "lat": "-7.2955030",
-        "lon": "112.6757410"
-      },
-      {
-        "lat": "-7.2969820",
-        "lon": "112.6756190"
-      },
-      {
-        "lat": "-7.2987000",
-        "lon": "112.6756210"
-      },
-      {
-        "lat": "-7.2987500",
-        "lon": "112.6756610"
-      },
-      {
-        "lat": "-7.2988500",
-        "lon": "112.6756610"
-      },
-      {
-        "lat": "-7.2988900",
-        "lon": "112.6756310"
-      },
-      {
-        "lat": "-7.2995417",
-        "lon": "112.6756882"
-      },
-      {
-        "lat": "-7.2998742",
-        "lon": "112.6756963"
-      },
-      {
-        "lat": "-7.3000529",
-        "lon": "112.6756934"
-      },
-      {
-        "lat": "-7.3001086",
-        "lon": "112.6756711"
-      },
-      {
-        "lat": "-7.3001298",
-        "lon": "112.6755957"
-      },
-      {
-        "lat": "-7.3000962",
-        "lon": "112.6755045"
-      },
-      {
-        "lat": "-7.3000386",
-        "lon": "112.6754884"
-      },
-      {
-        "lat": "-7.2998748",
-        "lon": "112.6754736"
-      },
-      {
-        "lat": "-7.2995293",
-        "lon": "112.6754431"
-      },
-      {
-        "lat": "-7.2989000",
-        "lon": "112.6754210"
-      }
+      { "lat": "-7.2989000", "lon": "112.6754210" },
+      { "lat": "-7.2988400", "lon": "112.6753810" },
+      { "lat": "-7.2987500", "lon": "112.6753810" },
+      { "lat": "-7.2987100", "lon": "112.6754110" },
+      { "lat": "-7.2981760", "lon": "112.6754160" },
+      { "lat": "-7.2974160", "lon": "112.6753950" },
+      { "lat": "-7.2963760", "lon": "112.6754280" },
+      { "lat": "-7.2959070", "lon": "112.6754740" },
+      { "lat": "-7.2954810", "lon": "112.6754880" },
+      { "lat": "-7.2946860", "lon": "112.6755040" },
+      { "lat": "-7.2942920", "lon": "112.6755250" },
+      { "lat": "-7.2939020", "lon": "112.6755230" },
+      { "lat": "-7.2936960", "lon": "112.6755360" },
+      { "lat": "-7.2933640", "lon": "112.6755860" },
+      { "lat": "-7.2928740", "lon": "112.6757140" },
+      { "lat": "-7.2920510", "lon": "112.6759320" },
+      { "lat": "-7.2917750", "lon": "112.6760040" },
+      { "lat": "-7.2915300", "lon": "112.6760830" },
+      { "lat": "-7.2913650", "lon": "112.6761690" },
+      { "lat": "-7.2910980", "lon": "112.6762690" },
+      { "lat": "-7.2907510", "lon": "112.6763760" },
+      { "lat": "-7.2906170", "lon": "112.6763640" },
+      { "lat": "-7.2905340", "lon": "112.6762750" },
+      { "lat": "-7.2904080", "lon": "112.6758670" },
+      { "lat": "-7.2903440", "lon": "112.6757550" },
+      { "lat": "-7.2901200", "lon": "112.6759210" },
+      { "lat": "-7.2893700", "lon": "112.6766410" },
+      { "lat": "-7.2890150", "lon": "112.6770490" },
+      { "lat": "-7.2888560", "lon": "112.6772130" },
+      { "lat": "-7.2883560", "lon": "112.6773960" },
+      { "lat": "-7.2877080", "lon": "112.6773790" },
+      { "lat": "-7.2875510", "lon": "112.6774220" },
+      { "lat": "-7.2874570", "lon": "112.6774610" },
+      { "lat": "-7.2873340", "lon": "112.6775630" },
+      { "lat": "-7.2872130", "lon": "112.6777140" },
+      { "lat": "-7.2871800", "lon": "112.6778540" },
+      { "lat": "-7.2871970", "lon": "112.6780890" },
+      { "lat": "-7.2873090", "lon": "112.6782890" },
+      { "lat": "-7.2873620", "lon": "112.6783380" },
+      { "lat": "-7.2873800", "lon": "112.6784010" },
+      { "lat": "-7.2873700", "lon": "112.6784710" },
+      { "lat": "-7.2873000", "lon": "112.6786610" },
+      { "lat": "-7.2872400", "lon": "112.6787510" },
+      { "lat": "-7.2871040", "lon": "112.6789190" },
+      { "lat": "-7.2852080", "lon": "112.6807760" },
+      { "lat": "-7.2833050", "lon": "112.6826330" },
+      { "lat": "-7.2815670", "lon": "112.6843140" },
+      { "lat": "-7.2811480", "lon": "112.6847170" },
+      { "lat": "-7.2807520", "lon": "112.6851740" },
+      { "lat": "-7.2799440", "lon": "112.6861070" },
+      { "lat": "-7.2791770", "lon": "112.6870430" },
+      { "lat": "-7.2786840", "lon": "112.6876340" },
+      { "lat": "-7.2783900", "lon": "112.6879890" },
+      { "lat": "-7.2768990", "lon": "112.6898010" },
+      { "lat": "-7.2763040", "lon": "112.6893180" },
+      { "lat": "-7.2760170", "lon": "112.6890780" },
+      { "lat": "-7.2758630", "lon": "112.6889710" },
+      { "lat": "-7.2756980", "lon": "112.6889010" },
+      { "lat": "-7.2750750", "lon": "112.6889390" },
+      { "lat": "-7.2744340", "lon": "112.6889920" },
+      { "lat": "-7.2731560", "lon": "112.6891300" },
+      { "lat": "-7.2718870", "lon": "112.6892720" },
+      { "lat": "-7.2712520", "lon": "112.6893430" },
+      { "lat": "-7.2707750", "lon": "112.6893920" },
+      { "lat": "-7.2706930", "lon": "112.6894130" },
+      { "lat": "-7.2706170", "lon": "112.6894070" },
+      { "lat": "-7.2704430", "lon": "112.6895930" },
+      { "lat": "-7.2695870", "lon": "112.6905930" },
+      { "lat": "-7.2692580", "lon": "112.6910000" },
+      { "lat": "-7.2689160", "lon": "112.6913930" },
+      { "lat": "-7.2687750", "lon": "112.6915950" },
+      { "lat": "-7.2687530", "lon": "112.6918090" },
+      { "lat": "-7.2688230", "lon": "112.6925170" },
+      { "lat": "-7.2689110", "lon": "112.6933920" },
+      { "lat": "-7.2668830", "lon": "112.6935920" },
+      { "lat": "-7.2658600", "lon": "112.6936830" },
+      { "lat": "-7.2651560", "lon": "112.6937570" },
+      { "lat": "-7.2649140", "lon": "112.6937600" },
+      { "lat": "-7.2648310", "lon": "112.6937140" },
+      { "lat": "-7.2647960", "lon": "112.6937730" },
+      { "lat": "-7.2641360", "lon": "112.6943740" },
+      { "lat": "-7.2638620", "lon": "112.6945170" },
+      { "lat": "-7.2635840", "lon": "112.6945720" },
+      { "lat": "-7.2633040", "lon": "112.6946760" },
+      { "lat": "-7.2626600", "lon": "112.6949760" },
+      { "lat": "-7.2624720", "lon": "112.6946420" },
+      { "lat": "-7.2623070", "lon": "112.6943030" },
+      { "lat": "-7.2621520", "lon": "112.6939270" },
+      { "lat": "-7.2619630", "lon": "112.6935930" },
+      { "lat": "-7.2617970", "lon": "112.6934680" },
+      { "lat": "-7.2613620", "lon": "112.6932620" },
+      { "lat": "-7.2612090", "lon": "112.6931130" },
+      { "lat": "-7.2610520", "lon": "112.6928170" },
+      { "lat": "-7.2609370", "lon": "112.6923940" },
+      { "lat": "-7.2607900", "lon": "112.6918150" },
+      { "lat": "-7.2605620", "lon": "112.6911090" },
+      { "lat": "-7.2604760", "lon": "112.6905390" },
+      { "lat": "-7.2604000", "lon": "112.6898960" },
+      { "lat": "-7.2603510", "lon": "112.6896080" },
+      { "lat": "-7.2602790", "lon": "112.6894410" },
+      { "lat": "-7.2600130", "lon": "112.6890550" },
+      { "lat": "-7.2599380", "lon": "112.6888830" },
+      { "lat": "-7.2597130", "lon": "112.6880010" },
+      { "lat": "-7.2594930", "lon": "112.6869980" },
+      { "lat": "-7.2593590", "lon": "112.6859450" },
+      { "lat": "-7.2592710", "lon": "112.6849020" },
+      { "lat": "-7.2590950", "lon": "112.6838660" },
+      { "lat": "-7.2589540", "lon": "112.6826680" },
+      { "lat": "-7.2589440", "lon": "112.6821220" },
+      { "lat": "-7.2589210", "lon": "112.6815770" },
+      { "lat": "-7.2586750", "lon": "112.6806470" },
+      { "lat": "-7.2584990", "lon": "112.6803620" },
+      { "lat": "-7.2584580", "lon": "112.6803010" },
+      { "lat": "-7.2584150", "lon": "112.6800380" },
+      { "lat": "-7.2583720", "lon": "112.6798820" },
+      { "lat": "-7.2582710", "lon": "112.6797940" },
+      { "lat": "-7.2580950", "lon": "112.6797860" },
+      { "lat": "-7.2577600", "lon": "112.6800900" },
+      { "lat": "-7.2576250", "lon": "112.6802170" },
+      { "lat": "-7.2574770", "lon": "112.6803260" },
+      { "lat": "-7.2572100", "lon": "112.6804360" },
+      { "lat": "-7.2564000", "lon": "112.6806890" },
+      { "lat": "-7.2552900", "lon": "112.6810310" },
+      { "lat": "-7.2536660", "lon": "112.6815350" },
+      { "lat": "-7.2532530", "lon": "112.6816280" },
+      { "lat": "-7.2528370", "lon": "112.6816960" },
+      { "lat": "-7.2524290", "lon": "112.6817610" },
+      { "lat": "-7.2520300", "lon": "112.6818440" },
+      { "lat": "-7.2510820", "lon": "112.6819040" },
+      { "lat": "-7.2501540", "lon": "112.6819280" },
+      { "lat": "-7.2482920", "lon": "112.6819950" },
+      { "lat": "-7.2473620", "lon": "112.6820280" },
+      { "lat": "-7.2464310", "lon": "112.6820740" },
+      { "lat": "-7.2445700", "lon": "112.6821050" },
+      { "lat": "-7.2427450", "lon": "112.6821690" },
+      { "lat": "-7.2409210", "lon": "112.6821720" },
+      { "lat": "-7.2390970", "lon": "112.6822370" },
+      { "lat": "-7.2381830", "lon": "112.6822660" },
+      { "lat": "-7.2372730", "lon": "112.6823100" },
+      { "lat": "-7.2354800", "lon": "112.6824070" },
+      { "lat": "-7.2336230", "lon": "112.6824450" },
+      { "lat": "-7.2317930", "lon": "112.6825020" },
+      { "lat": "-7.2299750", "lon": "112.6825860" },
+      { "lat": "-7.2298230", "lon": "112.6824750" },
+      { "lat": "-7.2297430", "lon": "112.6823800" },
+      { "lat": "-7.2297180", "lon": "112.6822340" },
+      { "lat": "-7.2296930", "lon": "112.6820010" },
+      { "lat": "-7.2297530", "lon": "112.6780590" },
+      { "lat": "-7.2297750", "lon": "112.6769580" },
+      { "lat": "-7.2298050", "lon": "112.6758410" },
+      { "lat": "-7.2298340", "lon": "112.6736200" },
+      { "lat": "-7.2297870", "lon": "112.6732100" },
+      { "lat": "-7.2296780", "lon": "112.6728160" },
+      { "lat": "-7.2294050", "lon": "112.6722450" },
+      { "lat": "-7.2290370", "lon": "112.6715670" },
+      { "lat": "-7.2283080", "lon": "112.6702200" },
+      { "lat": "-7.2275750", "lon": "112.6688530" },
+      { "lat": "-7.2268540", "lon": "112.6675800" },
+      { "lat": "-7.2267440", "lon": "112.6674480" },
+      { "lat": "-7.2264050", "lon": "112.6668320" },
+      { "lat": "-7.2260000", "lon": "112.6661180" },
+      { "lat": "-7.2256670", "lon": "112.6654910" },
+      { "lat": "-7.2253230", "lon": "112.6648720" },
+      { "lat": "-7.2251040", "lon": "112.6644520" },
+      { "lat": "-7.2248390", "lon": "112.6640170" },
+      { "lat": "-7.2243380", "lon": "112.6630210" },
+      { "lat": "-7.2242050", "lon": "112.6628450" },
+      { "lat": "-7.2240280", "lon": "112.6625320" },
+      { "lat": "-7.2238040", "lon": "112.6621070" },
+      { "lat": "-7.2237970", "lon": "112.6620210" },
+      { "lat": "-7.2236740", "lon": "112.6617780" },
+      { "lat": "-7.2232120", "lon": "112.6609330" },
+      { "lat": "-7.2230000", "lon": "112.6605370" },
+      { "lat": "-7.2227740", "lon": "112.6600750" },
+      { "lat": "-7.2221140", "lon": "112.6588790" },
+      { "lat": "-7.2213220", "lon": "112.6574360" },
+      { "lat": "-7.2209300", "lon": "112.6567090" },
+      { "lat": "-7.2206780", "lon": "112.6562800" },
+      { "lat": "-7.2204860", "lon": "112.6560390" },
+      { "lat": "-7.2202500", "lon": "112.6558110" },
+      { "lat": "-7.2200000", "lon": "112.6556160" },
+      { "lat": "-7.2194540", "lon": "112.6553480" },
+      { "lat": "-7.2186140", "lon": "112.6550280" },
+      { "lat": "-7.2181790", "lon": "112.6548550" },
+      { "lat": "-7.2182823", "lon": "112.6546161" },
+      { "lat": "-7.2184693", "lon": "112.6542379" },
+      { "lat": "-7.2186669", "lon": "112.6538152" },
+      { "lat": "-7.2187580", "lon": "112.6535991" },
+      { "lat": "-7.2187686", "lon": "112.6534783" },
+      { "lat": "-7.2187459", "lon": "112.6533178" },
+      { "lat": "-7.2186845", "lon": "112.6531292" },
+      { "lat": "-7.2182752", "lon": "112.6529316" },
+      { "lat": "-7.2180548", "lon": "112.6528860" },
+      { "lat": "-7.2178543", "lon": "112.6529245" },
+      { "lat": "-7.2177582", "lon": "112.6529900" },
+      { "lat": "-7.2175590", "lon": "112.6532259" },
+      { "lat": "-7.2172971", "lon": "112.6539017" },
+      { "lat": "-7.2170351", "lon": "112.6545830" },
+      { "lat": "-7.2174903", "lon": "112.6547379" },
+      { "lat": "-7.2179389", "lon": "112.6549050" },
+      { "lat": "-7.2188420", "lon": "112.6552350" },
+      { "lat": "-7.2195390", "lon": "112.6555020" },
+      { "lat": "-7.2200280", "lon": "112.6557560" },
+      { "lat": "-7.2202250", "lon": "112.6559250" },
+      { "lat": "-7.2204140", "lon": "112.6561060" },
+      { "lat": "-7.2207710", "lon": "112.6566140" },
+      { "lat": "-7.2210660", "lon": "112.6571800" },
+      { "lat": "-7.2216650", "lon": "112.6582620" },
+      { "lat": "-7.2222400", "lon": "112.6593140" },
+      { "lat": "-7.2228030", "lon": "112.6603770" },
+      { "lat": "-7.2228980", "lon": "112.6606000" },
+      { "lat": "-7.2230720", "lon": "112.6609060" },
+      { "lat": "-7.2233680", "lon": "112.6614210" },
+      { "lat": "-7.2237400", "lon": "112.6620630" },
+      { "lat": "-7.2237920", "lon": "112.6621110" },
+      { "lat": "-7.2239660", "lon": "112.6624430" },
+      { "lat": "-7.2241950", "lon": "112.6628500" },
+      { "lat": "-7.2243280", "lon": "112.6630280" },
+      { "lat": "-7.2245550", "lon": "112.6634760" },
+      { "lat": "-7.2248300", "lon": "112.6640220" },
+      { "lat": "-7.2250950", "lon": "112.6644570" },
+      { "lat": "-7.2252410", "lon": "112.6647460" },
+      { "lat": "-7.2256830", "lon": "112.6655480" },
+      { "lat": "-7.2259720", "lon": "112.6660950" },
+      { "lat": "-7.2262740", "lon": "112.6666290" },
+      { "lat": "-7.2267350", "lon": "112.6674550" },
+      { "lat": "-7.2267930", "lon": "112.6676270" },
+      { "lat": "-7.2273940", "lon": "112.6687560" },
+      { "lat": "-7.2279740", "lon": "112.6698030" },
+      { "lat": "-7.2285340", "lon": "112.6708490" },
+      { "lat": "-7.2291150", "lon": "112.6718980" },
+      { "lat": "-7.2293930", "lon": "112.6724230" },
+      { "lat": "-7.2296350", "lon": "112.6729750" },
+      { "lat": "-7.2297340", "lon": "112.6734740" },
+      { "lat": "-7.2297210", "lon": "112.6758060" },
+      { "lat": "-7.2296820", "lon": "112.6769700" },
+      { "lat": "-7.2296660", "lon": "112.6781390" },
+      { "lat": "-7.2296590", "lon": "112.6794680" },
+      { "lat": "-7.2296220", "lon": "112.6804900" },
+      { "lat": "-7.2296010", "lon": "112.6817340" },
+      { "lat": "-7.2296410", "lon": "112.6825960" },
+      { "lat": "-7.2296370", "lon": "112.6828370" },
+      { "lat": "-7.2299080", "lon": "112.6829300" },
+      { "lat": "-7.2324870", "lon": "112.6828400" },
+      { "lat": "-7.2352940", "lon": "112.6827400" },
+      { "lat": "-7.2381010", "lon": "112.6826830" },
+      { "lat": "-7.2409060", "lon": "112.6825760" },
+      { "lat": "-7.2410960", "lon": "112.6825680" },
+      { "lat": "-7.2412860", "lon": "112.6825890" },
+      { "lat": "-7.2423110", "lon": "112.6825350" },
+      { "lat": "-7.2430150", "lon": "112.6824980" },
+      { "lat": "-7.2437150", "lon": "112.6824700" },
+      { "lat": "-7.2465240", "lon": "112.6823900" },
+      { "lat": "-7.2493330", "lon": "112.6822930" },
+      { "lat": "-7.2507430", "lon": "112.6822870" },
+      { "lat": "-7.2521410", "lon": "112.6821810" },
+      { "lat": "-7.2532850", "lon": "112.6819890" },
+      { "lat": "-7.2573690", "lon": "112.6807360" },
+      { "lat": "-7.2575150", "lon": "112.6807220" },
+      { "lat": "-7.2576620", "lon": "112.6807540" },
+      { "lat": "-7.2578600", "lon": "112.6808140" },
+      { "lat": "-7.2583340", "lon": "112.6809680" },
+      { "lat": "-7.2585280", "lon": "112.6810660" },
+      { "lat": "-7.2587120", "lon": "112.6811910" },
+      { "lat": "-7.2588210", "lon": "112.6817070" },
+      { "lat": "-7.2588360", "lon": "112.6826850" },
+      { "lat": "-7.2589440", "lon": "112.6835740" },
+      { "lat": "-7.2590880", "lon": "112.6844190" },
+      { "lat": "-7.2591990", "lon": "112.6853170" },
+      { "lat": "-7.2592700", "lon": "112.6861980" },
+      { "lat": "-7.2592900", "lon": "112.6864600" },
+      { "lat": "-7.2593620", "lon": "112.6869290" },
+      { "lat": "-7.2596060", "lon": "112.6879270" },
+      { "lat": "-7.2598410", "lon": "112.6889310" },
+      { "lat": "-7.2599240", "lon": "112.6891060" },
+      { "lat": "-7.2601680", "lon": "112.6894560" },
+      { "lat": "-7.2602380", "lon": "112.6896550" },
+      { "lat": "-7.2602830", "lon": "112.6900600" },
+      { "lat": "-7.2603300", "lon": "112.6905250" },
+      { "lat": "-7.2603840", "lon": "112.6908860" },
+      { "lat": "-7.2604620", "lon": "112.6912280" },
+      { "lat": "-7.2606920", "lon": "112.6919000" },
+      { "lat": "-7.2607960", "lon": "112.6922500" },
+      { "lat": "-7.2608800", "lon": "112.6926110" },
+      { "lat": "-7.2609800", "lon": "112.6929260" },
+      { "lat": "-7.2611640", "lon": "112.6932180" },
+      { "lat": "-7.2614850", "lon": "112.6934780" },
+      { "lat": "-7.2618510", "lon": "112.6936840" },
+      { "lat": "-7.2619750", "lon": "112.6938610" },
+      { "lat": "-7.2620680", "lon": "112.6940620" },
+      { "lat": "-7.2622460", "lon": "112.6944560" },
+      { "lat": "-7.2624190", "lon": "112.6947980" },
+      { "lat": "-7.2626160", "lon": "112.6951370" },
+      { "lat": "-7.2633310", "lon": "112.6947330" },
+      { "lat": "-7.2639650", "lon": "112.6945540" },
+      { "lat": "-7.2641720", "lon": "112.6944420" },
+      { "lat": "-7.2648470", "lon": "112.6938050" },
+      { "lat": "-7.2649650", "lon": "112.6938400" },
+      { "lat": "-7.2651640", "lon": "112.6938330" },
+      { "lat": "-7.2658710", "lon": "112.6937580" },
+      { "lat": "-7.2668900", "lon": "112.6936630" },
+      { "lat": "-7.2690524", "lon": "112.6934462" },
+      { "lat": "-7.2689522", "lon": "112.6925488" },
+      { "lat": "-7.2688991", "lon": "112.6921000" },
+      { "lat": "-7.2688832", "lon": "112.6918743" },
+      { "lat": "-7.2688899", "lon": "112.6916473" },
+      { "lat": "-7.2690162", "lon": "112.6914197" },
+      { "lat": "-7.2693232", "lon": "112.6910787" },
+      { "lat": "-7.2697641", "lon": "112.6905538" },
+      { "lat": "-7.2702124", "lon": "112.6900208" },
+      { "lat": "-7.2704345", "lon": "112.6897546" },
+      { "lat": "-7.2706227", "lon": "112.6895293" },
+      { "lat": "-7.2706753", "lon": "112.6895280" },
+      { "lat": "-7.2707069", "lon": "112.6894851" },
+      { "lat": "-7.2709793", "lon": "112.6894536" },
+      { "lat": "-7.2712906", "lon": "112.6894229" },
+      { "lat": "-7.2719173", "lon": "112.6893586" },
+      { "lat": "-7.2731581", "lon": "112.6892508" },
+      { "lat": "-7.2756242", "lon": "112.6889666" },
+      { "lat": "-7.2758122", "lon": "112.6890585" },
+      { "lat": "-7.2759689", "lon": "112.6891947" },
+      { "lat": "-7.2762889", "lon": "112.6894684" },
+      { "lat": "-7.2769288", "lon": "112.6900172" },
+      { "lat": "-7.2784690", "lon": "112.6881690" },
+      { "lat": "-7.2791960", "lon": "112.6872670" },
+      { "lat": "-7.2799330", "lon": "112.6863860" },
+      { "lat": "-7.2806860", "lon": "112.6854900" },
+      { "lat": "-7.2810760", "lon": "112.6850590" },
+      { "lat": "-7.2813690", "lon": "112.6847700" },
+      { "lat": "-7.2821280", "lon": "112.6840550" },
+      { "lat": "-7.2825150", "lon": "112.6836580" },
+      { "lat": "-7.2828770", "lon": "112.6833170" },
+      { "lat": "-7.2834210", "lon": "112.6827550" },
+      { "lat": "-7.2843670", "lon": "112.6818470" },
+      { "lat": "-7.2846710", "lon": "112.6815680" },
+      { "lat": "-7.2849600", "lon": "112.6812710" },
+      { "lat": "-7.2850500", "lon": "112.6811710" },
+      { "lat": "-7.2858710", "lon": "112.6803990" },
+      { "lat": "-7.2864540", "lon": "112.6797970" },
+      { "lat": "-7.2866100", "lon": "112.6796510" },
+      { "lat": "-7.2875100", "lon": "112.6787610" },
+      { "lat": "-7.2876000", "lon": "112.6787010" },
+      { "lat": "-7.2879990", "lon": "112.6784610" },
+      { "lat": "-7.2881500", "lon": "112.6783610" },
+      { "lat": "-7.2883240", "lon": "112.6782320" },
+      { "lat": "-7.2884230", "lon": "112.6781070" },
+      { "lat": "-7.2885100", "lon": "112.6780310" },
+      { "lat": "-7.2886000", "lon": "112.6779110" },
+      { "lat": "-7.2886240", "lon": "112.6777920" },
+      { "lat": "-7.2888210", "lon": "112.6775320" },
+      { "lat": "-7.2889150", "lon": "112.6774330" },
+      { "lat": "-7.2890640", "lon": "112.6773410" },
+      { "lat": "-7.2899070", "lon": "112.6769290" },
+      { "lat": "-7.2906000", "lon": "112.6765910" },
+      { "lat": "-7.2910260", "lon": "112.6764530" },
+      { "lat": "-7.2923570", "lon": "112.6761040" },
+      { "lat": "-7.2926320", "lon": "112.6760210" },
+      { "lat": "-7.2928880", "lon": "112.6759570" },
+      { "lat": "-7.2934250", "lon": "112.6758280" },
+      { "lat": "-7.2936200", "lon": "112.6757960" },
+      { "lat": "-7.2939680", "lon": "112.6757620" },
+      { "lat": "-7.2947340", "lon": "112.6757470" },
+      { "lat": "-7.2955030", "lon": "112.6757410" },
+      { "lat": "-7.2969820", "lon": "112.6756190" },
+      { "lat": "-7.2987000", "lon": "112.6756210" },
+      { "lat": "-7.2987500", "lon": "112.6756610" },
+      { "lat": "-7.2988500", "lon": "112.6756610" },
+      { "lat": "-7.2988900", "lon": "112.6756310" },
+      { "lat": "-7.2995417", "lon": "112.6756882" },
+      { "lat": "-7.2998742", "lon": "112.6756963" },
+      { "lat": "-7.3000529", "lon": "112.6756934" },
+      { "lat": "-7.3001086", "lon": "112.6756711" },
+      { "lat": "-7.3001298", "lon": "112.6755957" },
+      { "lat": "-7.3000962", "lon": "112.6755045" },
+      { "lat": "-7.3000386", "lon": "112.6754884" },
+      { "lat": "-7.2998748", "lon": "112.6754736" },
+      { "lat": "-7.2995293", "lon": "112.6754431" },
+      { "lat": "-7.2989000", "lon": "112.6754210" }
     ],
     "datahalte": [
-      {
-        "uniqid": "5bac8a28f295f",
-        "nama": "Halte UNESA",
-        "description": "93 m dari bundaran unesa citraland",
-        "lat": "-7.298239",
-        "lon": "112.675317",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd05", "fd06"],
-        "timetable": "<p style=\"text-align: center;\"><strong>Timetable Keberangkatan</strong></p>\r\n<table id=\"tableDataBrowse\" class=\"table table-sm\">\r\n<tbody>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>05:30</td>\r\n<td>05:45</td>\r\n<td>06:00</td>\r\n<td>06:15</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>06:31</td>\r\n<td>06:47</td>\r\n<td style=\"background-color: #ff0000;\">07:03</td>\r\n<td>07:19</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>07:35</td>\r\n<td>07:51</td>\r\n<td>08:07</td>\r\n<td>08:23</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>08:39</td>\r\n<td style=\"background-color: #ff0000;\">08:55</td>\r\n<td>09:11</td>\r\n<td>09:27</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>09:43</td>\r\n<td>09:59</td>\r\n<td>10:15</td>\r\n<td>10:31</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td style=\"background-color: #ff0000;\">10:47</td>\r\n<td>11:03</td>\r\n<td>11:19</td>\r\n<td>11:35</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>11:51</td>\r\n<td>12:07</td>\r\n<td>12:23</td>\r\n<td style=\"background-color: #ff0000;\">12:39</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>12:55</td>\r\n<td>13:11</td>\r\n<td>13:27</td>\r\n<td>13:45</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>14:01</td>\r\n<td>14:17</td>\r\n<td style=\"background-color: #ff0000;\">14:33</td>\r\n<td>14:49</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>15:05</td>\r\n<td>15:21</td>\r\n<td>15:37</td>\r\n<td>15:53</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>16:09</td>\r\n<td style=\"background-color: #ff0000;\">16:25</td>\r\n<td>16:41</td>\r\n<td>16:57</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>17:13</td>\r\n<td>17:29</td>\r\n<td>17:45</td>\r\n<td>18:01</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td style=\"background-color: #ff0000;\">18:17</td>\r\n<td>18:33</td>\r\n<td>18:49</td>\r\n<td>19:05</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>19:21</td>\r\n<td>19:37</td>\r\n<td>19:53</td>\r\n<td style=\"background-color: #ff0000;\">*20:09</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>*20:25</td>\r\n<td>*20:41</td>\r\n<td>*20:57</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p style=\"text-align: center;\">*) Berakhir di halte TOW</p>\r\n<p style=\"text-align: center;\"><strong>&nbsp;&nbsp;<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/b9/Solid_red.png\" alt=\"\" width=\"10\" height=\"10\" />&nbsp; Unit Dalam Masa Maintenance</strong></p>"
-      },
-      {
-        "uniqid": "62f4fb5ff0925",
-        "nama": "Graha Family A",
-        "description": "Graha Family A",
-        "lat": "-7.292493",
-        "lon": "112.675751",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd05", "fd06"],
-        "timetable": ""
-      },
-      {
-        "uniqid": "5bac8c593647f",
-        "nama": "Halte PTC A",
-        "description": "Depan Supermall PTC",
-        "lat": "-7.288417",
-        "lon": "112.677194",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd05", "fd06"],
-        "timetable": ""
-      },
-      {
-        "uniqid": "5bac950e054e3",
-        "nama": "Halte Jono Soewojo 1",
-        "description": "Seberang Tutto Bono Lenmarc",
-        "lat": "-7.284583",
-        "lon": "112.681444",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "63ec77ad14b0e",
-        "nama": "Halte Darmo Permai III A",
-        "description": "FEEDER",
-        "lat": "-7.276436",
-        "lon": "112.689356",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321cf3bdce1b",
-        "nama": "Halte Samsat Tandes 1",
-        "description": "Halte Samsat Tandes 1",
-        "lat": "-7.259763",
-        "lon": "112.687872",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321cf60eeee",
-        "nama": "Halte Sentong Asri A",
-        "description": "Halte Sentong Asri A",
-        "lat": "-7.256509",
-        "lon": "112.680571",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321cf60cccc",
-        "nama": "Halte Margomulyo Indah A",
-        "description": "Halte Margomulyo Indah A",
-        "lat": "-7.247762",
-        "lon": "112.681972",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321cf60gggg",
-        "nama": "Halte Margomulyo 1",
-        "description": "Halte Margomulyo 1",
-        "lat": "-7.236620",
-        "lon": "112.682287",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321cf60635e6",
-        "nama": "Halte PKB Tandes A",
-        "description": "Halte PKB Tandes A",
-        "lat": "-7.23316",
-        "lon": "112.68241",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321cf60aaaa",
-        "nama": "Halte Simpang Margomulyo A",
-        "description": "Halte Simpang Margomulyo A",
-        "lat": "-7.230758",
-        "lon": "112.682493",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "5b0b97800aedb",
-        "nama": "T.O.W",
-        "description": "Terminal Oso Wilangon",
-        "lat": "-7.218318",
-        "lon": "112.653038",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": "<p style=\"text-align: center;\"><strong>Timetable Keberangkatan</strong></p>\r\n<table id=\"tableDataBrowse\" class=\"table table-sm\">\r\n<tbody>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>05:30</td>\r\n<td>05:46</td>\r\n<td>06:02</td>\r\n<td style=\"background-color: #ff0000;\">06:18</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>06:34</td>\r\n<td>06:50</td>\r\n<td>07:06</td>\r\n<td>07:22</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>07:38</td>\r\n<td>07:54</td>\r\n<td style=\"background-color: #ff0000;\">08:10</td>\r\n<td>08:26</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>08:42</td>\r\n<td>08:58</td>\r\n<td>09:14</td>\r\n<td>09:30</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>09:46</td>\r\n<td style=\"background-color: #ff0000;\">10:02</td>\r\n<td>10:18</td>\r\n<td>10:34</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>10:50</td>\r\n<td>11:06</td>\r\n<td>11:22</td>\r\n<td>11:38</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td style=\"background-color: #ff0000;\">11:54</td>\r\n<td>12:10</td>\r\n<td>12:26</td>\r\n<td>12:42</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>13:00</td>\r\n<td>13:16</td>\r\n<td>13:32</td>\r\n<td style=\"background-color: #ff0000;\">13:48</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>14:04</td>\r\n<td>14:20</td>\r\n<td>14:36</td>\r\n<td>14:52</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>15:08</td>\r\n<td>15:24</td>\r\n<td style=\"background-color: #ff0000;\">15:40</td>\r\n<td>15:56</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>16:12</td>\r\n<td>16:28</td>\r\n<td>16:44</td>\r\n<td>17:00</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>17:16</td>\r\n<td style=\"background-color: #ff0000;\">17:32</td>\r\n<td>17:48</td>\r\n<td>18:04</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>18:20</td>\r\n<td>18:36</td>\r\n<td>18:52</td>\r\n<td>19:08</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td style=\"background-color: #ff0000;\">19:24</td>\r\n<td>19:40</td>\r\n<td>19:56</td>\r\n<td>*20:12</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center;\">\r\n<td>*20:28</td>\r\n<td>*20:44</td>\r\n<td>*21:00</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p style=\"text-align: center;\">*) Berakhir di halte UNESA</p>\r\n<p style=\"text-align: center;\"><strong>&nbsp;&nbsp;<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/b9/Solid_red.png\" alt=\"\" width=\"10\" height=\"10\" />&nbsp; Unit Dalam Masa Maintenance</strong></p>"
-      },
-      {
-        "uniqid": "6321cf60bbbb",
-        "nama": "Halte Simpang Margomulyo B",
-        "description": "Halte Simpang Margomulyo B",
-        "lat": "-7.230302",
-        "lon": "112.683094",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321d020dd369",
-        "nama": "Halte PKB Tandes B",
-        "description": "Halte PKB Tandes B",
-        "lat": "-7.23361",
-        "lon": "112.68284",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321cf60hhhh",
-        "nama": "Halte Margomulyo 2",
-        "description": "Halte Halte Margomulyo 2",
-        "lat": "-7.237122",
-        "lon": "112.682855",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321cf60dddd",
-        "nama": "Halte Margomulyo Indah B",
-        "description": "Halte Margomulyo Indah B",
-        "lat": "-7.248428",
-        "lon": "112.682487",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321cf60ffff",
-        "nama": "Halte Sentong Asri B",
-        "description": "Halte Sentong Asri B",
-        "lat": "-7.255860",
-        "lon": "112.681224",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321d04994b66",
-        "nama": "Halte Samsat Tandes 2",
-        "description": "Halte Samsat Tandes 2",
-        "lat": "-7.259505",
-        "lon": "112.687768",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": [],
-        "timetable": ""
-      },
-      {
-        "uniqid": "6321cf04e03dc",
-        "nama": "Pasar Modern Darmo Permai 1",
-        "description": "Pasar Modern Darmo Permai",
-        "lat": "-7.276258",
-        "lon": "112.689498",
-        "arah": 1,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["fd05"],
-        "timetable": ""
-      },
-      {
-        "uniqid": "5bac9d515ee85",
-        "nama": "Halte Jono Soewojo 2",
-        "description": "Depan Ruko Bukit Darmo",
-        "lat": "-7.28486",
-        "lon": "112.68137",
-        "arah": 2,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["tsk2"],
-        "timetable": ""
-      },
-      {
-        "uniqid": "62f4fbccb20bc",
-        "nama": "Graha Family Barat",
-        "description": "PTC B",
-        "lat": "-7.288823",
-        "lon": "112.677623",
-        "arah": 2,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd05", "fd06"],
-        "timetable": ""
-      },
-      {
-        "uniqid": "5bac9d6c25bb5",
-        "nama": "Graha Family B",
-        "description": "Ruko Plaza Graha Famili",
-        "lat": "-7.292703",
-        "lon": "112.676001",
-        "arah": 2,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd05", "fd06"],
-        "timetable": ""
-      },
-      {
-        "uniqid": "62f4fc61b37de",
-        "nama": "Halte Bundaran UNESA",
-        "description": "Halte Bundaran UNESA",
-        "lat": "-7.298147",
-        "lon": "112.675686",
-        "arah": 2,
-        "priority": 0,
-        "status_transit": 1,
-        "transit": ["tsk2", "fd05", "fd06"],
-        "timetable": ""
-      }
+      57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 46, 47, 48, 49, 50, 51,
+      52, 53, 54, 55, 56
     ]
   },
-  "tsk2": {
+  "tmk2": {
     "code": "tmn1",
     "name": "K2L",
     "title": "UNESA - Kejawan Putih Tambak",
@@ -7041,7 +5130,7 @@
       }
     ]
   },
-  "tsk3": {
+  "tmk3": {
     "code": "tmn2",
     "name": "K3L",
     "title": "Gunung Anyar - Kenpark (MERR)",
