@@ -126,7 +126,9 @@ async function routeInit() {
       fillOpacity: 1,
     };
 
-    const transit = haltedata[halte].transit.filter((e) => e !== route);
+    const haltenow = haltedata.filter((e) => e.uniqid == halte)[0];
+
+    const transit = haltenow.transit.filter((e) => e !== route);
 
     var transitPopup = ``;
     if (transit.length > 0) {
@@ -137,13 +139,13 @@ async function routeInit() {
     }
 
     var marker = L.circleMarker(
-      [haltedata[halte].lat, haltedata[halte].lon],
+      [haltenow.lat, haltenow.lon],
       markerOption
     ).bindPopup(
       `
         <div class='haltePopup'>
-          <p style='font-weight: 700;'>${haltedata[halte].nama}</p>
-          <p>${haltedata[halte].description}</p>
+          <p style='font-weight: 700;'>${haltenow.nama}</p>
+          <p>${haltenow.description}</p>
           <p style='font-weight: 700;'>Koneksi:</p>
           <div class='stop'>
             ${transitPopup}
@@ -211,7 +213,7 @@ async function routeInit() {
 
     var text = document.createElement("p");
     text.style = "margin-right: 0.25rem;";
-    text.innerHTML = haltedata[halte].nama;
+    text.innerHTML = haltenow.nama;
     text.onclick = function () {
       map.addLayer(shelterMarkers);
       map.closePopup();
@@ -239,4 +241,4 @@ async function routeInit() {
 }
 routeInit();
 
-setInterval(setVehicle, 5000);
+setInterval(setVehicle, 3000);
