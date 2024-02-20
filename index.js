@@ -1,7 +1,6 @@
 async function main() {
   const res = await fetch("./routedata.json");
   const data = await res.json();
-  console.log(data);
 
   for (route in data) {
     var routelist = document.getElementById("routelist");
@@ -29,7 +28,6 @@ async function main() {
     } else {
       bus = await res.json();
     }
-    console.log(bus);
     var counter = document.createElement("p");
     counter.innerHTML = `${bus.length} Bus • ${halte.length || 0} Halte`;
     routedetail.appendChild(counter);

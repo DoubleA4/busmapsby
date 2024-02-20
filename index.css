@@ -28,7 +28,7 @@ a {
 }
 .routecontainer {
   height: 4rem;
-  width: 100%;
+  width: 99%;
   border: 0.2rem solid var(--shadow-color);
   border-radius: 15px;
   display: flex;

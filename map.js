@@ -54,7 +54,7 @@ async function setVehicle() {
       busPill.className = "busPill";
       busPill.onclick = function () {
         map.closePopup();
-        map.flyTo(markers[vehicle.info]._latlng, 17);
+        map.setView(markers[vehicle.info]._latlng, 17);
         markers[vehicle.info].openPopup();
       };
       var faBus = document.createElement("i");
@@ -79,6 +79,9 @@ async function setVehicle() {
 
 async function routeInit() {
   routedata = await getJson("./routedata.json");
+  const gethalte = await getJson("./halte.json");
+  const haltedata = gethalte.halte;
+
   document.documentElement.style.setProperty(
     "--accent-color",
     routedata[route].color
@@ -88,7 +91,9 @@ async function routeInit() {
     routedata[route].text
   );
   document.title = `${routedata[route].name} | ${routedata[route].title}`;
-  document.getElementById("routename").innerHTML = `${routedata[route].name} | ${routedata[route].title}`;
+  document.getElementById(
+    "routename"
+  ).innerHTML = `${routedata[route].name} | ${routedata[route].title}`;
   document.getElementById("routehours").innerHTML = routedata[route].hours;
 
   // const response = await fetch(
@@ -105,14 +110,14 @@ async function routeInit() {
   }).addTo(map);
   map.fitBounds(routePoly.getBounds());
 
-  const datahalte = routedata[route].datahalte;
-  document.getElementById("haltecount").innerHTML = datahalte.length;
+  const listhalte = routedata[route].datahalte;
+  document.getElementById("haltecount").innerHTML = listhalte.length;
 
   var stoplist = document.getElementById("stoplist");
 
   var shelterMarkers = new L.FeatureGroup();
 
-  datahalte.forEach((halte, i) => {
+  listhalte.forEach((halte, i) => {
     const markerOption = {
       radius: 5,
       color: "#000000",
@@ -121,19 +126,26 @@ async function routeInit() {
       fillOpacity: 1,
     };
 
+    const haltenow = haltedata.filter((e) => e.uniqid == halte)[0];
+
+    const transit = haltenow.transit.filter((e) => e !== route);
+
     var transitPopup = ``;
-    if (halte.transit.length > 0) {
-      halte.transit.forEach((routename) => {
+    if (transit.length > 0) {
+      transit.forEach((routename) => {
         const pill = `<a href='./map.html?route=${routename}'><div style='color: ${routedata[routename].text}; background-color: ${routedata[routename].color}' class='transit'>${routedata[routename].name}</div></a>`;
         transitPopup = transitPopup + pill;
       });
     }
 
-    var marker = L.circleMarker([halte.lat, halte.lon], markerOption).bindPopup(
+    var marker = L.circleMarker(
+      [haltenow.lat, haltenow.lon],
+      markerOption
+    ).bindPopup(
       `
         <div class='haltePopup'>
-          <p style='font-weight: 700;'>${halte.nama}</p>
-          <p>${halte.description}</p>
+          <p style='font-weight: 700;'>${haltenow.nama}</p>
+          <p>${haltenow.description}</p>
           <p style='font-weight: 700;'>Koneksi:</p>
           <div class='stop'>
             ${transitPopup}
@@ -169,7 +181,7 @@ async function routeInit() {
     var rectpos = "0";
     if (i === 0) {
       rectpos = "15";
-    } else if (i === datahalte.length - 1) {
+    } else if (i === listhalte.length - 1) {
       rectpos = "-15";
     }
 
@@ -201,16 +213,17 @@ async function routeInit() {
 
     var text = document.createElement("p");
     text.style = "margin-right: 0.25rem;";
-    text.innerHTML = halte.nama;
+    text.innerHTML = haltenow.nama;
     text.onclick = function () {
+      map.addLayer(shelterMarkers);
       map.closePopup();
-      map.flyTo([halte.lat, halte.lon], 17);
+      map.setView(marker._latlng, 17);
       marker.openPopup();
     };
     stop.appendChild(text);
 
-    if (halte.transit.length > 0) {
-      halte.transit.forEach((routename) => {
+    if (transit.length > 0) {
+      transit.forEach((routename) => {
         var button = document.createElement("a");
         button.setAttribute("href", `./map.html?route=${routename}`);
         var transit = document.createElement("div");
@@ -228,4 +241,4 @@ async function routeInit() {
 }
 routeInit();
 
-setInterval(setVehicle, 5000);
+setInterval(setVehicle, 3000);
