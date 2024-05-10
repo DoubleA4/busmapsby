@@ -117,6 +117,7 @@ a {
   border: 0.1rem solid var(--shadow-color);
   border-radius: 20px;
   margin: 3px;
+  white-space: nowrap;
 }
 .pillBus {
   color: var(--accent-color);
