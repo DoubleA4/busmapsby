@@ -14,6 +14,8 @@ const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const route = urlParams.get("route");
 
+const markerZoom = 15;
+
 var routedata;
 
 var markers = {};
@@ -46,7 +48,7 @@ async function setVehicle() {
       })
         .addTo(map)
         .bindPopup(
-          `${vehicle.keterangan}<br><b>Kecepatan :</b> ${vehicle.speed}`
+          `<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`
         );
       // L.DomUtil.addClass(markers[counter]._icon, "vehicleMarker");
 
@@ -71,7 +73,7 @@ async function setVehicle() {
         .setRotationAngle(vehicle.direction)
         .setLatLng([vehicle.lat, vehicle.lng])
         .bindPopup(
-          `${vehicle.keterangan}<br><b>Kecepatan :</b> ${vehicle.speed}`
+          `<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`
         );
     });
   }
@@ -107,6 +109,7 @@ async function routeInit() {
   var routePoly = L.polyline(routedata[route].datarute, {
     color: routedata[route].color,
     opacity: 1,
+    weight: 5,
   }).addTo(map);
   map.fitBounds(routePoly.getBounds());
 
@@ -150,7 +153,7 @@ async function routeInit() {
           <div class='stop'>
             ${transitPopup}
           </div>
-          <a href='https://maps.google.com?saddr=Current+Location&daddr=${halte.lat},${halte.lon}'>
+          <a href='https://maps.google.com?saddr=Current+Location&daddr=${haltenow.lat},${haltenow.lon}'>
             <div class='navigate'>
               <i class="fa fa-map-marker"></i>
               <p>Navigasi</p>
@@ -166,12 +169,12 @@ async function routeInit() {
 
     shelterMarkers.addLayer(marker);
 
-    if (map.getZoom() > 15) {
+    if (map.getZoom() > markerZoom) {
       map.addLayer(shelterMarkers);
     }
 
     map.on("zoomend", function () {
-      if (map.getZoom() < 15) {
+      if (map.getZoom() < markerZoom) {
         map.removeLayer(shelterMarkers);
       } else {
         map.addLayer(shelterMarkers);
@@ -239,6 +242,65 @@ async function routeInit() {
   });
   setVehicle();
 }
+
+async function allroute() {
+  routedata = await getJson("./routedata.json");
+  const gethalte = await getJson("./halte.json");
+  const haltedata = gethalte.halte;
+
+  Object.keys(routedata).forEach((key) => {
+    L.polyline(routedata[key].datarute, {
+      color: routedata[key].color,
+      opacity: 1,
+      weight: 5,
+    }).addTo(map);
+  });
+
+  haltedata.forEach((halte) => {
+    const markerOption = {
+      radius: 5,
+      color: "#000000",
+      weight: 2,
+      fillColor: "#FFFFFF",
+      fillOpacity: 1,
+    };
+
+    var transitPopup = ``;
+    if (halte.transit.length > 0) {
+      halte.transit.forEach((routename) => {
+        const pill = `<a href='./map.html?route=${routename}'><div style='color: ${routedata[routename].text}; background-color: ${routedata[routename].color}' class='transit'>${routedata[routename].name}</div></a>`;
+        transitPopup = transitPopup + pill;
+      });
+    }
+
+    L.circleMarker([halte.lat, halte.lon], markerOption)
+      .bindPopup(
+        `
+        <div class='haltePopup'>
+          <p style='font-weight: 700;'>${halte.nama}</p>
+          <p>${halte.description}</p>
+          <p style='font-weight: 700;'>Koneksi:</p>
+          <div class='stop'>
+            ${transitPopup}
+          </div>
+          <a href='https://maps.google.com?saddr=Current+Location&daddr=${halte.lat},${halte.lon}'>
+            <div class='navigate'>
+              <i class="fa fa-map-marker"></i>
+              <p>Navigasi</p>
+            </div>
+          </a>
+        </div>
+      `,
+        {
+          minWidth: 250,
+          maxWidth: 280,
+        }
+      )
+      .addTo(map);
+  });
+}
+
+// allroute();
 routeInit();
 
 setInterval(setVehicle, 3000);
