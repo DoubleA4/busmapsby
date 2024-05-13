@@ -18,19 +18,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js" charset="utf-8"></script>
     <script src="https://raw.githack.com/bbecquet/Leaflet.RotatedMarker/master/leaflet.rotatedMarker.js"></script>
-    <script src='map.js'></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src='map.js'></script>
     <div id="map"></div>
     <div id="ui">
         <div id="navcontainer">
             <div class="navbutton" onclick="history.back()">
                 <i class="fa fa-arrow-left" style="font-size: 2rem; color: var(--accent-color);"></i>
             </div>
-            <div class="navbutton" style="display: none;">
+            <div class="navbutton" onclick="getLocation()">
                 <i class="fa  fa-location-arrow" style="font-size: 2rem; color: var(--accent-color);"></i>
             </div>
         </div>

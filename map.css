@@ -58,6 +58,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 #infocontainer {
   background-color: var(--accent-color);
@@ -168,4 +169,8 @@ a {
   fill: var(--accent-color);
   stroke: rgba(0, 0, 0, 0.8);
   stroke-width: 30;
+}
+
+.leaflet-layer.dark-mode {
+  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
 }
