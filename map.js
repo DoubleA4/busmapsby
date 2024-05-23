@@ -18,6 +18,19 @@ const markerZoom = 15;
 var routedata;
 var markers = {};
 
+var uishrink = false;
+function shrinkUI() {
+  if (!uishrink) {
+    document.getElementById("map").style.height = "100%";
+    document.getElementById("ui").style.transform = "translateY(170px)";
+    uishrink = true;
+  } else {
+    document.getElementById("ui").style.transform = "";
+    document.getElementById("map").style.height = "75%";
+    uishrink = false;
+  }
+}
+
 function getLocation() {
   if (!markers.gps) {
     if (navigator.geolocation) {
@@ -448,5 +461,4 @@ async function allroute() {
 
 // allroute();
 routeInit();
-
 setInterval(setVehicle, 5000);
