@@ -7726,7 +7726,7 @@
     "color": "#426cb9",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/sbybus/detailfeeder/107",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/107",
     "datarute": [
       { "lat": "-7.2992340", "lon": "112.7613980" },
       { "lat": "-7.2990490", "lon": "112.7596500" },
@@ -7897,7 +7897,7 @@
     "color": "#253e8f",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/sbybus/detailfeeder/120",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/120",
     "datarute": [
       { "lat": "-7.2989000", "lon": "112.6754210" },
       { "lat": "-7.2988400", "lon": "112.6753810" },
