@@ -169,8 +169,8 @@ a {
 }
 .vehicleMarker {
   fill: var(--accent-color);
-  stroke: rgba(0, 0, 0, 0.8);
-  stroke-width: 30;
+  stroke: rgb(255, 255, 255);
+  stroke-width: 80;
 }
 
 .leaflet-layer.dark-mode {
