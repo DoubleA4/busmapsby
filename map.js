@@ -22,7 +22,7 @@ var uishrink = false;
 function shrinkUI() {
   if (!uishrink) {
     document.getElementById("map").style.height = "100%";
-    document.getElementById("ui").style.transform = "translateY(170px)";
+    document.getElementById("ui").style.transform = "translateY(175px)";
     uishrink = true;
   } else {
     document.getElementById("ui").style.transform = "";
