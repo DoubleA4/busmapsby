@@ -1,20 +1,31 @@
 :root {
   --accent-color: #e63128;
   --accent-text: #fff;
-  --shadow-color: #d4d4d4;
+  --text-color: black;
+  --background-color: white;
+  --card-color: white;
 }
-body {
-  padding: 0;
-  margin: 0;
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #e63128;
+    --accent-text: #fff;
+    --text-color: white;
+    --background-color: #121212;
+    --card-color: #1d1d1d;
+  }
 }
 html,
 body {
+  background-color: var(--background-color);
+  padding: 0;
+  margin: 0;
   height: 100%;
   width: 100%;
   font-family: "Noto Sans", sans-serif;
   font-size: small;
 }
 p {
+  color: var(--text-color);
   margin: 0;
 }
 a {
@@ -62,11 +73,12 @@ a:active {
 }
 .routecontainer {
   height: 4rem;
-  width: 99%;
-  border: 0.2rem solid var(--shadow-color);
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 15px;
   display: flex;
   overflow: hidden;
+  background-color: var(--card-color);
 }
 .routecode {
   height: 100%;
@@ -92,4 +104,8 @@ a:active {
 
 footer {
   text-align: center;
+}
+
+.fa-github {
+  color: var(--text-color);
 }

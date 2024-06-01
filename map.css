@@ -3,6 +3,27 @@
   --accent-text: #fff;
   --shadow-color: #d4d4d4;
   --border-radius: 20px;
+  --background-color: white;
+  --text-color: black;
+  --card-color: white;
+  --button-color: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #e63128;
+    --accent-text: #fff;
+    --shadow-color: #191a1c;
+    --border-radius: 20px;
+    --background-color: #202124;
+    --text-color: white;
+    --card-color: #212121;
+    --button-color: #2a2b2e;
+  }
+
+  .leaflet-layer {
+    filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
+  }
 }
 
 body {
@@ -53,10 +74,10 @@ a {
 .navbutton {
   height: 50px;
   width: 50px;
-  background-color: white;
+  background-color: var(--button-color);
   border-radius: 50%;
   border: 0.1rem solid var(--shadow-color);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,7 +111,8 @@ a {
 #busstops {
   width: 100%;
   flex-grow: 1;
-  background-color: white;
+  background-color: var(--background-color);
+  color: var(--text-color);
   border-bottom: 0.2rem solid var(--shadow-color);
 }
 .infodata {
@@ -110,7 +132,12 @@ a {
 #busdata::-webkit-scrollbar {
   display: none;
 }
+.bus-pill-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 .busPill {
+  background-color: var(--button-color);
   display: flex;
   align-items: center;
   padding-top: 0.5rem;
@@ -171,8 +198,4 @@ a {
   fill: var(--accent-color);
   stroke: rgb(255, 255, 255);
   stroke-width: 80;
-}
-
-.leaflet-layer.dark-mode {
-  filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
 }
