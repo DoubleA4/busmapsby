@@ -2,6 +2,22 @@ async function main() {
   const res = await fetch("./routedata.json");
   const data = await res.json();
 
+  async function counterFill(routeCode) {
+    const halte = data[routeCode].datahalte;
+    const res = await fetch(data[routeCode].urltrack).catch((error) =>
+      console.log(error)
+    );
+    var bus;
+    if (!res) {
+      bus = [];
+    } else {
+      bus = await res.json();
+    }
+    var counter = `${bus.length || 0} Bus • ${halte.length || 0} Halte`;
+    var container = document.getElementById(`counter-${routeCode}`);
+    container.innerHTML = counter;
+  }
+
   for (route in data) {
     var routelist = document.getElementById("routelist");
     var a = document.createElement("a");
@@ -18,22 +34,13 @@ async function main() {
     var dest = document.createElement("p");
     dest.innerHTML = data[route].title;
     routedetail.appendChild(dest);
-    const halte = data[route].datahalte;
-    const res = await fetch(data[route].urltrack).catch((error) =>
-      console.log(error)
-    );
-    var bus;
-    if (!res) {
-      bus = [];
-    } else {
-      bus = await res.json();
-    }
-    var counter = document.createElement("p");
-    counter.innerHTML = `${bus.length} Bus • ${halte.length || 0} Halte`;
+    var counter = document.createElement("div");
+    counter.id = `counter-${route}`;
     routedetail.appendChild(counter);
     routecontainer.appendChild(routedetail);
     a.appendChild(routecontainer);
     routelist.appendChild(a);
+    counterFill(route);
   }
 }
 main();
