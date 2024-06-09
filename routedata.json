@@ -1,6 +1,7 @@
 {
   "sbr1": {
     "code": "us",
+    "source": "http://36.66.208.109/gbapi/gobis/initsb/1/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "R1",
     "title": "Purabaya - Perak",
     "color": "#e63128",
@@ -756,6 +757,7 @@
   },
   "tmk2": {
     "code": "tmn1",
+    "source": "http://36.66.208.109/gbapi/gobis/inittmn/10/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "K2L",
     "title": "UNESA - Kejawan Putih Tambak",
     "color": "#2488a1",
@@ -2678,6 +2680,7 @@
   },
   "tmk3": {
     "code": "tmn2",
+    "source": "http://36.66.208.109/gbapi/gobis/inittmn/11/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "K3L",
     "title": "Purabaya - Kenpark (MERR)",
     "color": "#453a9f",
@@ -3625,6 +3628,7 @@
   },
   "fd01": {
     "code": "fd1",
+    "source": "http://36.66.208.109/gbapi/gobis/initww/101/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD1",
     "title": "Term. Benowo-Tunjungan",
     "color": "#8c95cc",
@@ -4076,6 +4080,7 @@
   },
   "fd02": {
     "code": "fd2",
+    "source": "http://36.66.208.109/gbapi/gobis/initww/102/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD2",
     "title": "Mayjend Sungkono-Balai Kota",
     "color": "#901c16",
@@ -4432,6 +4437,7 @@
   },
   "fd03": {
     "code": "fd8",
+    "source": "http://36.66.208.109/gbapi/gobis/initww/108/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD3",
     "title": "TIJ - Gunung Anyar",
     "color": "#89e0f9",
@@ -6696,6 +6702,7 @@
   },
   "fd05": {
     "code": "fd5",
+    "source": "http://36.66.208.109/gbapi/gobis/initww/105/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD5",
     "title": "Mayjend Sungkono-Puspa Raya",
     "color": "#678438",
@@ -7010,6 +7017,7 @@
       "63ec862c60596",
       "6501476c7a432",
       "650146bea9aef",
+      "63ec8713dc13c",
       "6501476c7a432",
       "63ec8789c314e",
       "63ec88289c935",
@@ -7070,6 +7078,7 @@
   },
   "fd06": {
     "code": "fd6",
+    "source": "http://36.66.208.109/gbapi/gobis/initww/106/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD6",
     "title": "TIJ - Lakarsantri",
     "color": "#ea7d27",
@@ -7748,6 +7757,7 @@
   },
   "fd07": {
     "code": "fd7",
+    "source": "http://36.66.208.109/gbapi/gobis/initww/107/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD7",
     "title": "Term. Bratang - Stasiun Psr. Turi",
     "color": "#426cb9",
@@ -7919,6 +7929,7 @@
   },
   "fd08": {
     "code": "fd20",
+    "source": "http://36.66.208.109/gbapi/gobis/initww/120/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD8",
     "title": "T.O.W - UNESA",
     "color": "#253e8f",
