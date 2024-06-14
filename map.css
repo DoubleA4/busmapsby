@@ -24,6 +24,10 @@
   .leaflet-layer {
     filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
   }
+  .leaflet-control-attribution {
+    background-color: rgba(33, 33, 33, 0.8) !important;
+    color: var(--text-color) !important;
+  }
 }
 
 body {

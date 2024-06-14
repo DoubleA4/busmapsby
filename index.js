@@ -36,6 +36,7 @@ async function main() {
     routedetail.appendChild(dest);
     var counter = document.createElement("div");
     counter.id = `counter-${route}`;
+    counter.innerHTML = "0 Bus • 0 Halte";
     routedetail.appendChild(counter);
     routecontainer.appendChild(routedetail);
     a.appendChild(routecontainer);
