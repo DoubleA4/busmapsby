@@ -1,5 +1,5 @@
 :root {
-  --accent-color: #e63128;
+  --accent-color: #ff8811;
   --accent-text: #fff;
   --shadow-color: #d4d4d4;
   --border-radius: 20px;
@@ -11,7 +11,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent-color: #e63128;
+    --accent-color: #ff8811;
     --accent-text: #fff;
     --shadow-color: #191a1c;
     --border-radius: 20px;
@@ -48,7 +48,7 @@ a {
   text-decoration: none;
 }
 #map {
-  height: 75%;
+  height: 100%;
   width: 100%;
   position: relative;
   z-index: 1;
