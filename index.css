@@ -1,5 +1,5 @@
 :root {
-  --accent-color: #e63128;
+  --accent-color: #ff8811;
   --accent-text: #fff;
   --text-color: black;
   --background-color: white;
@@ -7,7 +7,7 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent-color: #e63128;
+    --accent-color: #ff8811;
     --accent-text: #fff;
     --text-color: white;
     --background-color: #121212;

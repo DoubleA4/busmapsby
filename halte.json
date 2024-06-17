@@ -3628,7 +3628,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["tmk2", "tmk3"]
     },
     {
       "uniqid": 204,
@@ -3643,7 +3643,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["tmk2", "tmk3"]
     },
     {
       "uniqid": 205,

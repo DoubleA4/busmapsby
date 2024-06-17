@@ -3,7 +3,9 @@ async function main() {
   const data = await res.json();
 
   async function counterFill(routeCode) {
-    const halte = data[routeCode].datahalte;
+    const halte = data[routeCode].datahalte.filter(
+      (item, index) => data[routeCode].datahalte.indexOf(item) === index
+    );
     const res = await fetch(data[routeCode].urltrack).catch((error) =>
       console.log(error)
     );
