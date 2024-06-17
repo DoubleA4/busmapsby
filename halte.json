@@ -13,7 +13,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2013%20Unit/US%2013/prby.jpg\" width=\"100%\" height=\"100%\" /></p>",
-      "transit": []
+      "transit": ["sbr1", "tmk3"]
     },
     {
       "uniqid": "1",
