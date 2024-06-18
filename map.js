@@ -324,10 +324,10 @@ async function routeInitNew(route) {
       text.style = "margin-right: 0.25rem;";
       text.innerHTML = haltenow.nama;
       text.onclick = function () {
-        map.addLayer(shelterMarkers);
+        map.addLayer(halteMarkersGroup);
         map.closePopup();
-        map.setView(marker._latlng, 17);
-        marker.openPopup();
+        map.setView(markers.halte[haltenow.uniqid]._latlng, 17);
+        markers.halte[haltenow.uniqid].openPopup();
       };
       stop.appendChild(text);
 
