@@ -21,6 +21,9 @@ async function main() {
   }
 
   for (route in data) {
+    if (route === "sbrt") {
+      continue;
+    }
     var routelist = document.getElementById("routelist");
     var a = document.createElement("a");
     a.setAttribute("href", `./map.html?route=${route}`);
