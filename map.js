@@ -362,6 +362,9 @@ getData().then(() => {
     document.getElementById("ui").style.height = "auto";
     Object.keys(routedata)
       .forEach((key) => {
+        if (key === "sbrt") {
+          return;
+        }
         routeInitNew(key);
         setVehicleMarker(key);
       })
