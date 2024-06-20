@@ -362,12 +362,22 @@ getData().then(() => {
     document.getElementById("ui").style.height = "auto";
     Object.keys(routedata)
       .forEach((key) => {
+        if (key === "sbrt") {
+          return;
+        }
         routeInitNew(key);
         setVehicleMarker(key);
       })
       .then(() => {
         map.fitBounds(routeLinesGroup.getBounds());
       });
+  } else if (routeParams === "sbr1") {
+    routeInitNew("sbrt");
+    routeInitNew(routeParams).then(() => {
+      map.fitBounds(routeLinesGroup.getBounds());
+    });
+    setVehicleMarker("sbrt");
+    setVehicleMarker(routeParams);
   } else {
     routeInitNew(routeParams).then(() => {
       map.fitBounds(routeLinesGroup.getBounds());
