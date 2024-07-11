@@ -166,6 +166,7 @@ async function setVehicleMarker(vecRoute) {
         };
         var faBus = document.createElement("i");
         faBus.className = "fa fa-bus pillBus";
+        faBus.style.color = routedata[vecRoute].color;
         busPill.appendChild(faBus);
         var busName = document.createElement("p");
         busName.innerHTML = vehicle.info;

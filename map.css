@@ -154,7 +154,7 @@ a {
   white-space: nowrap;
 }
 .pillBus {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
   margin-right: 8px;
 }
 #stoplist {
