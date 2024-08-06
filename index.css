@@ -56,6 +56,8 @@ a:active {
   color: inherit;
 }
 #page-container {
+  max-width: 99.75rem;
+  margin: 0 auto;
   position: relative;
   min-height: 100%;
 }

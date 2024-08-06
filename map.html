@@ -59,11 +59,12 @@
                     </div>
                 </div>
             </div>
-            <div id="busstops">
-                <div id="stoplist">
-                </div>
+            <div id="stoplist">
             </div>
         </div>
+    </div>
+    <div id="desktop-location" class="navbutton" onclick="getLocation()">
+        <i class="fa  fa-location-arrow" style="font-size: 2rem; color: var(--accent-color);"></i>
     </div>
     <script>
         var map = L.map("map", { zoomControl: false, attributionControl: false }).setView([-7.3026644, 112.7243344], 13);

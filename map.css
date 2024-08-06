@@ -24,9 +24,33 @@
   .leaflet-layer {
     filter: invert(100%) hue-rotate(180deg) brightness(95%) contrast(90%);
   }
+
   .leaflet-control-attribution {
     background-color: rgba(33, 33, 33, 0.8) !important;
     color: var(--text-color) !important;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #navcontainer {
+    display: none !important;
+  }
+
+  #ui {
+    max-width: 33rem !important;
+    height: 100% !important;
+    flex-direction: row !important;
+  }
+
+  #infocontainer {
+    border-top-left-radius: 0 !important;
+    max-width: 33rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #desktop-location {
+    display: none;
   }
 }
 
@@ -34,6 +58,7 @@ body {
   padding: 0;
   margin: 0;
 }
+
 html,
 body {
   height: 100%;
@@ -41,12 +66,15 @@ body {
   font-family: "Noto Sans", sans-serif;
   font-size: small;
 }
+
 p {
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 #map {
   height: 100%;
   width: 100%;
@@ -55,6 +83,7 @@ a {
   font-family: "Noto Sans", sans-serif;
   transition: height 0.5s;
 }
+
 #ui {
   width: 100%;
   height: 350px;
@@ -69,12 +98,14 @@ a {
   border-top-right-radius: var(--border-radius);
   border-top-left-radius: var(--border-radius); */
 }
+
 #navcontainer {
   height: 50px;
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
 }
+
 .navbutton {
   height: 50px;
   width: 50px;
@@ -87,23 +118,31 @@ a {
   justify-content: center;
   cursor: pointer;
 }
+
 #infocontainer {
   background-color: var(--accent-color);
   border-top-right-radius: var(--border-radius);
   border-top-left-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  flex: 1;
 }
+
 #routeinfo {
   width: 100%;
   height: 4rem;
   /* background-color: red; */
   color: var(--accent-text);
 }
+
 .routeinfo {
   height: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 #businfo {
   width: 100%;
   height: 4rem;
@@ -112,19 +151,14 @@ a {
   border-top-left-radius: var(--border-radius);
   border-bottom: 0.2rem solid var(--shadow-color);
 }
-#busstops {
-  width: 100%;
-  flex-grow: 1;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  border-bottom: 0.2rem solid var(--shadow-color);
-}
+
 .infodata {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+
 #busdata {
   height: 3rem;
   display: flex;
@@ -133,13 +167,16 @@ a {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
 #busdata::-webkit-scrollbar {
   display: none;
 }
+
 .bus-pill-container {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+
 .busPill {
   background-color: var(--button-color);
   display: flex;
@@ -153,34 +190,41 @@ a {
   margin: 3px;
   white-space: nowrap;
 }
+
 .pillBus {
   /* color: var(--accent-color); */
   margin-right: 8px;
 }
+
 #stoplist {
-  height: 175px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
-  overflow-y: scroll;
+  overflow: scroll;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  flex: 1 1 auto;
 }
+
 .stop {
   display: flex;
   align-items: center;
   font-weight: 700;
 }
+
 .transit {
   margin-right: 0.25rem;
   padding: 0.3rem 0.6rem;
   border-radius: 10px;
 }
+
 .haltePopup {
   display: flex;
   flex-direction: column;
   font-size: 1rem;
   gap: 0.5rem;
 }
+
 .navigate {
   width: 100%;
   height: 3rem;
@@ -195,11 +239,21 @@ a {
   font-weight: 700;
   border-radius: var(--border-radius);
 }
+
 .leaflet-popup-content p {
   margin: 0 !important;
 }
+
 .vehicleMarker {
   fill: var(--accent-color);
   stroke: rgb(255, 255, 255);
   stroke-width: 80;
+}
+
+#desktop-location {
+  margin: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
 }
