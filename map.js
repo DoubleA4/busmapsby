@@ -10,6 +10,8 @@ async function getJson(URL) {
   return data;
 }
 
+var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const routeParams = urlParams.get("route");
@@ -361,11 +363,11 @@ getData().then(() => {
   if (routeParams === "all") {
     document.getElementById("infocontainer").style.display = "none";
     document.getElementById("ui").style.height = "auto";
+    if (vw >= 800) {
+      document.getElementById("ui").style.width = "auto";
+    }
     Object.keys(routedata)
-      .forEach((key) => {
-        if (key === "sbrt") {
-          return;
-        }
+      .slice().reverse().forEach((key) => {
         routeInitNew(key);
         setVehicleMarker(key);
       })
