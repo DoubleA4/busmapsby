@@ -4921,21 +4921,6 @@
       "transit": []
     },
     {
-      "uniqid": "658e2911ed35e",
-      "nama": "Terminal Dukuh Kupang",
-      "description": "FEEDER",
-      "lat": "-7.28135",
-      "lon": "112.71174",
-      "arah": 1,
-      "priority": 0,
-      "sounddekat": "dekat-halte.wav",
-      "soundhalte": "8_Halte_Terminal Dukuh Kupang.wav",
-      "soundstop": "kendaraanstop.mp3",
-      "status_transit": 1,
-      "timetable": "",
-      "transit": []
-    },
-    {
       "uniqid": "658e29564f833",
       "nama": "Halte Puskesmas Dukuh Kupang A",
       "description": "FEEDER",
