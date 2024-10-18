@@ -7,7 +7,7 @@
     "color": "#e63128",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/sbybus/1",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/sbybus/1/VE5QSkxNTmEvS0dUemZTRk1wOWh5UT09",
     "datarute": [
       { "lat": "-7.3518682", "lon": "112.7231123" },
       { "lat": "-7.3518300", "lon": "112.7232100" },
@@ -762,8 +762,8 @@
     "title": "UNESA - Kejawan Putih Tambak",
     "color": "#2488a1",
     "text": "white",
-    "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/temanbus/10",
+    "hours": "05:30 - 22:00",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/temanbus/10/UWVlUkVzaGhnY2NQZDdPcERQT2FTZz09",
     "datarute": [
       { "lat": "-7.27644", "lon": "112.80216" },
       { "lat": "-7.27643", "lon": "112.80216" },
@@ -2686,7 +2686,7 @@
     "color": "#453a9f",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/temanbus/11",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/temanbus/11/SkFTa21BSVl3OG1KaWxtZjNhcjhNdz09",
     "datarute": [
       { "lat": "-7.33972", "lon": "112.78461" },
       { "lat": "-7.33963", "lon": "112.78455" },
@@ -3966,7 +3966,7 @@
     "color": "#8c95cc",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/101",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/101/bHFCUXV2cFNBYXU2ZVVINCs3a2k5QT09",
     "datarute": [
       { "lat": "-7.2356690", "lon": "112.6084940" },
       { "lat": "-7.2352700", "lon": "112.6102130" },
@@ -4418,7 +4418,7 @@
     "color": "#901c16",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/102",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/102/Q2wxSGF5UEdMazRNRm15QlJDQWk4UT09",
     "datarute": [
       { "lat": "-7.2906360", "lon": "112.7148330" },
       { "lat": "-7.2908100", "lon": "112.7153240" },
@@ -4775,7 +4775,7 @@
     "color": "#89e0f9",
     "text": "black",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/108",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/108/SG1WYkRTZFdDL2h0SXZsMmxzOGExZz09",
     "datarute": [
       { "lat": "-7.2984720", "lon": "112.7366450" },
       { "lat": "-7.2984100", "lon": "112.7374600" },
@@ -7040,7 +7040,7 @@
     "color": "#678438",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/105",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/105/UE5xM2g0aEtqNXR1NTEvK0cwbGpjUT09",
     "datarute": [
       { "lat": "-7.2753190", "lon": "112.6451920" },
       { "lat": "-7.2767440", "lon": "112.6454760" },
@@ -7416,7 +7416,7 @@
     "color": "#ea7d27",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/106",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/106/TEtyZEZiK0RPZnJ6VnJIRHpZZko2Zz09",
     "datarute": [
       { "lat": "-7.2985680", "lon": "112.7364181" },
       { "lat": "-7.2986237", "lon": "112.7353121" },
@@ -8188,7 +8188,7 @@
     "color": "#426cb9",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/107",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/107/K0gyTnliNDhNcHU2SitoQ2JSSy8rQT09",
     "datarute": [
       { "lat": "-7.2992340", "lon": "112.7613980" },
       { "lat": "-7.2990490", "lon": "112.7596500" },
@@ -8360,7 +8360,7 @@
     "color": "#253e8f",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/120",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/feeder/120/akkzR0xxaWl6WktqZzNjaFdGS2grdz09",
     "datarute": [
       { "lat": "-7.2989000", "lon": "112.6754210" },
       { "lat": "-7.2988400", "lon": "112.6753810" },
@@ -8775,7 +8775,7 @@
     "color": "#ffbb31",
     "text": "white",
     "hours": "05:30 - 21:00",
-    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/sbybus/3",
+    "urltrack": "https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/sbybus/3/TWhVVEs0MzRiS0lMVGZzbi9EUEcwZz09",
     "datarute": [
       { "lat": "-7.3518100", "lon": "112.7231100" },
       { "lat": "-7.3518300", "lon": "112.7232100" },
