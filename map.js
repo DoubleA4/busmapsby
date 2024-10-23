@@ -376,6 +376,7 @@ async function getData() {
 getData().then(async () => {
   // allroute();
   if (routeParams === "all") {
+    const trackData = await getJson("https://busmapapi.fly.dev/all");
     document.getElementById("infocontainer").style.display = "none";
     document.getElementById("ui").style.height = "auto";
     if (vw >= 800) {
@@ -386,7 +387,7 @@ getData().then(async () => {
       .reverse()
       .forEach((key) => {
         routeInitNew(key);
-        setVehicleMarker(key);
+        setVehicleMarker(key, trackData[routedata[key].code]);
       })
       .then(() => {
         map.fitBounds(routeLinesGroup.getBounds());
