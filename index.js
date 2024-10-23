@@ -1,14 +1,31 @@
+async function getJson(URL) {
+  var res = await fetch(URL);
+  data = await res.json();
+  return data;
+}
+
 async function main() {
   const res = await fetch("./routedata.json");
   const data = await res.json();
+  const trackData = await getJson("https://busmapapi.fly.dev/all");
 
   async function counterFill(routeCode) {
     const halte = data[routeCode].datahalte.filter(
       (item, index) => data[routeCode].datahalte.indexOf(item) === index
     );
-    const res = await fetch(data[routeCode].urltrack).catch((error) =>
-      console.log(error)
-    );
+    let id_koridor = data[routeCode].code;
+    let reqAddr;
+    if (id_koridor < 10) {
+      reqAddr = "sbybus";
+    } else if (id_koridor < 100) {
+      reqAddr = "temanbus";
+    } else {
+      reqAddr = "feeder";
+    }
+
+    const res = await fetch(
+      `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${trackData[id_koridor]}`
+    ).catch((error) => console.log(error));
     var bus;
     if (!res) {
       bus = [];
