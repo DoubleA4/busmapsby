@@ -1,6 +1,6 @@
 {
   "sbr1": {
-    "code": "us",
+    "code": "1",
     "source": "http://36.66.208.109/gbapi/gobis/initsb/1/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "R1",
     "title": "Purabaya - Perak",
@@ -756,7 +756,7 @@
     ]
   },
   "tmk2": {
-    "code": "tmn1",
+    "code": "10",
     "source": "http://36.66.208.109/gbapi/gobis/inittmn/10/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "K2L",
     "title": "UNESA - Kejawan Putih Tambak",
@@ -2679,7 +2679,7 @@
     ]
   },
   "tmk3": {
-    "code": "tmn2",
+    "code": "11",
     "source": "http://36.66.208.109/gbapi/gobis/inittmn/11/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "K3L",
     "title": "Purabaya - Kenpark (MERR)",
@@ -3959,7 +3959,7 @@
     ]
   },
   "fd01": {
-    "code": "fd1",
+    "code": "101",
     "source": "http://36.66.208.109/gbapi/gobis/initww/101/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD1",
     "title": "Term. Benowo-Tunjungan",
@@ -4411,7 +4411,7 @@
     ]
   },
   "fd02": {
-    "code": "fd2",
+    "code": "102",
     "source": "http://36.66.208.109/gbapi/gobis/initww/102/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD2",
     "title": "Mayjend Sungkono-Balai Kota",
@@ -4768,7 +4768,7 @@
     ]
   },
   "fd03": {
-    "code": "fd8",
+    "code": "108",
     "source": "http://36.66.208.109/gbapi/gobis/initww/108/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD3",
     "title": "TIJ - Gunung Anyar",
@@ -7033,7 +7033,7 @@
     ]
   },
   "fd05": {
-    "code": "fd5",
+    "code": "105",
     "source": "http://36.66.208.109/gbapi/gobis/initww/105/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD5",
     "title": "Mayjend Sungkono-Puspa Raya",
@@ -7409,7 +7409,7 @@
     ]
   },
   "fd06": {
-    "code": "fd6",
+    "code": "106",
     "source": "http://36.66.208.109/gbapi/gobis/initww/106/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD6",
     "title": "TIJ - Lakarsantri",
@@ -8181,7 +8181,7 @@
     ]
   },
   "fd07": {
-    "code": "fd7",
+    "code": "107",
     "source": "http://36.66.208.109/gbapi/gobis/initww/107/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD7",
     "title": "Term. Bratang - Stasiun Psr. Turi",
@@ -8353,7 +8353,7 @@
     "datahalte": []
   },
   "fd08": {
-    "code": "fd20",
+    "code": "120",
     "source": "http://36.66.208.109/gbapi/gobis/initww/120/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD8",
     "title": "T.O.W - UNESA",
@@ -8768,7 +8768,7 @@
     ]
   },
   "fd09": {
-    "code": "fd22",
+    "code": "122",
     "source": "http://36.66.208.109/gbapi/gobis/initww/120/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "FD9",
     "title": "Term. Menanggal-Term. Manukan",
@@ -9226,7 +9226,7 @@
     "datahalte": []
   },
   "sbrt": {
-    "code": "tumpuk",
+    "code": "3",
     "source": "http://36.66.208.109/gbapi/gobis/initsb/1/1/1/1/2024-06-08%2000:00:01/2024-06-08%2000:00:01/2024-05-09%2000:00:01",
     "name": "RT",
     "title": "Tumpuk",
