@@ -138,8 +138,14 @@ async function setVehicleMarker(vecRoute, URL) {
     reqAddr = "feeder";
   }
 
+  const options = {
+    method: "GET",
+    headers: { Authorization: `Bearer ${URL.split("/")[1]}` },
+  };
+
   const response = await fetch(
-    `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${URL}`
+    `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${id_koridor}`,
+    options
   );
   const data = await response.json();
 
