@@ -23,8 +23,16 @@ async function main() {
       reqAddr = "feeder";
     }
 
+    const options = {
+      method: "GET",
+      headers: {
+        Authorization: `Bearer ${trackData[id_koridor].split("/")[1]}`,
+      },
+    };
+
     const res = await fetch(
-      `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${trackData[id_koridor]}`
+      `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${id_koridor}`,
+      options
     ).catch((error) => console.log(error));
     var bus;
     if (!res) {
