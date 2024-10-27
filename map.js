@@ -10,7 +10,10 @@ async function getJson(URL) {
   return data;
 }
 
-var vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+var vw = Math.max(
+  document.documentElement.clientWidth || 0,
+  window.innerWidth || 0
+);
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -124,8 +127,26 @@ function showError(error) {
   }
 }
 
-async function setVehicleMarker(vecRoute) {
-  const response = await fetch(routedata[vecRoute].urltrack);
+async function setVehicleMarker(vecRoute, URL) {
+  let id_koridor = routedata[vecRoute].code;
+  let reqAddr;
+  if (id_koridor < 10) {
+    reqAddr = "sbybus";
+  } else if (id_koridor < 100) {
+    reqAddr = "temanbus";
+  } else {
+    reqAddr = "feeder";
+  }
+
+  const options = {
+    method: "GET",
+    headers: { Authorization: `Bearer ${URL.split("/")[1]}` },
+  };
+
+  const response = await fetch(
+    `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${id_koridor}`,
+    options
+  );
   const data = await response.json();
 
   const svgArrow = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 572.71 763.69" class="vehicleMarker"><path d="M277.04 2.58a19.13 19.13 0 0 0-8.35 9.91L1.18 737.78a19.09 19.09 0 0 0 28.09 22.76l257.13-162 257 162.18a19.09 19.09 0 0 0 28.12-22.74l-267-725.5a19.08 19.08 0 0 0-24.51-11.3 17.76 17.76 0 0 0-3 1.39Z" fill-rule="evenodd" fill="${routedata[vecRoute].color}"/></svg>`;
@@ -188,7 +209,7 @@ async function setVehicleMarker(vecRoute) {
     });
   }
   setTimeout(() => {
-    setVehicleMarker(vecRoute);
+    setVehicleMarker(vecRoute, URL);
   }, 5000);
 }
 
@@ -358,34 +379,42 @@ async function getData() {
   haltedata = gethalte.halte;
 }
 
-getData().then(() => {
+getData().then(async () => {
   // allroute();
   if (routeParams === "all") {
+    const trackData = await getJson("https://busmapapi.fly.dev/all");
     document.getElementById("infocontainer").style.display = "none";
     document.getElementById("ui").style.height = "auto";
     if (vw >= 800) {
       document.getElementById("ui").style.width = "auto";
     }
     Object.keys(routedata)
-      .slice().reverse().forEach((key) => {
+      .slice()
+      .reverse()
+      .forEach((key) => {
         routeInitNew(key);
-        setVehicleMarker(key);
+        setVehicleMarker(key, trackData[routedata[key].code]);
       })
       .then(() => {
         map.fitBounds(routeLinesGroup.getBounds());
       });
   } else if (routeParams === "sbr1") {
+    const trackSBRT = await getJson("https://busmapapi.fly.dev/3");
+    const trackURL = await getJson("https://busmapapi.fly.dev/1");
     routeInitNew("sbrt");
     routeInitNew(routeParams).then(() => {
       map.fitBounds(routeLinesGroup.getBounds());
     });
-    setVehicleMarker("sbrt");
-    setVehicleMarker(routeParams);
+    setVehicleMarker("sbrt", trackSBRT.url);
+    setVehicleMarker(routeParams, trackURL.url);
   } else {
+    const trackURL = await getJson(
+      `https://busmapapi.fly.dev/${routedata[routeParams].code}`
+    );
     routeInitNew(routeParams).then(() => {
       map.fitBounds(routeLinesGroup.getBounds());
     });
-    setVehicleMarker(routeParams);
+    setVehicleMarker(routeParams, trackURL.url);
   }
 });
 
