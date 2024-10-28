@@ -238,7 +238,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd01"]
+      "transit": ["fd01", "fd09"]
     },
     {
       "uniqid": "63ec644600c51",
@@ -568,7 +568,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd01"]
+      "transit": ["fd01", "fd09"]
     },
     {
       "uniqid": "63ec6baf2353a",
@@ -793,7 +793,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd01"]
+      "transit": ["fd01", "fd09"]
     },
     {
       "uniqid": "66f5fdb9647cf",
@@ -808,7 +808,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd01"]
+      "transit": ["fd01", "fd09"]
     },
     {
       "uniqid": "66f5fe9dc4c92",
@@ -958,7 +958,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["tmk2", "fd02", "fd05"]
+      "transit": ["tmk2", "fd02", "fd05", "fd09"]
     },
     {
       "uniqid": "5bac9656779ff",
@@ -973,7 +973,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["tmk2", "fd02", "fd05"]
+      "transit": ["tmk2", "fd02", "fd05", "fd09"]
     },
     {
       "uniqid": "5bac976199cbe",
@@ -1033,7 +1033,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["tmk2", "fd02", "fd05"]
+      "transit": ["tmk2", "fd02", "fd05", "fd09"]
     },
     {
       "uniqid": "62ba75272d9d8",
@@ -2368,7 +2368,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd09"]
     },
     {
       "uniqid": 46,
@@ -2428,7 +2428,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd10"]
     },
     {
       "uniqid": 50,
@@ -2443,7 +2443,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd09"]
     },
     {
       "uniqid": 51,
@@ -2458,7 +2458,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd09"]
     },
     {
       "uniqid": 52,
@@ -2548,7 +2548,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd09"]
     },
     {
       "uniqid": 60,
@@ -2743,10 +2743,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd09"]
     },
     {
-      "uniqid": 76,
+      "uniqid": "76a",
       "nama": "Halte Pemuda RRI",
       "description": null,
       "lat": "-7.265185",
@@ -2803,7 +2803,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd09"]
     },
     {
       "uniqid": 80,
@@ -2833,7 +2833,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2", "fd05"]
+      "transit": ["tmk2", "fd10"]
     },
     {
       "uniqid": 83,
@@ -2893,7 +2893,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd09"]
     },
     {
       "uniqid": 88,
@@ -2908,7 +2908,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd10"]
     },
     {
       "uniqid": 89,
@@ -3073,7 +3073,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1"]
+      "transit": ["sbr1", "fd09"]
     },
     {
       "uniqid": "5ade955b0d24e",
@@ -3163,7 +3163,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "fd04"]
+      "transit": ["sbr1", "fd04", "fd09"]
     },
     {
       "uniqid": "5ade9ae91ca69",
@@ -3253,7 +3253,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "fd03", "fd04", "fd06"]
+      "transit": ["sbr1", "fd03", "fd04", "fd06", "fd09"]
     },
     {
       "uniqid": "5adea1162bbc3",
@@ -3268,7 +3268,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "fd03", "fd04", "fd06"]
+      "transit": ["sbr1", "fd03", "fd04", "fd06", "fd09"]
     },
     {
       "uniqid": "5adea15b3d940",
@@ -4303,7 +4303,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd05"]
+      "transit": ["fd05", "fd09"]
     },
     {
       "uniqid": "658e25302fc9a",
@@ -4318,7 +4318,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd05"]
+      "transit": ["fd05", "fd09"]
     },
     {
       "uniqid": "658e26343fd15",
@@ -5263,7 +5263,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd07"]
+      "transit": ["fd07", "fd10"]
     },
     {
       "uniqid": "m7",
@@ -5803,7 +5803,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": null,
-      "transit": ["sbr1", "fd03", "fd04", "fd06"]
+      "transit": ["sbr1", "fd03", "fd04", "fd06", "fd09"]
     },
     {
       "uniqid": "5ade9c63ae46a",
@@ -6418,7 +6418,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd03", "fd04", "fd06"]
+      "transit": ["fd03", "fd04", "fd06", "fd09"]
     },
     {
       "uniqid": "63ec81d3b8991",
@@ -6433,7 +6433,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd03", "fd04", "fd06"]
+      "transit": ["fd03", "fd04", "fd06", "fd09"]
     },
     {
       "uniqid": "a",
@@ -9511,7 +9511,7 @@
       "transit": ["fd08"]
     },
     {
-      "uniqid": "31",
+      "uniqid": "31a",
       "nama": "Halte Satelit Indah A",
       "description": "",
       "lat": "-7.2658",
@@ -9523,10 +9523,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "44",
+      "uniqid": "44a",
       "nama": "Halte Satelit Indah B",
       "description": "",
       "lat": "-7.26572",
@@ -9538,7 +9538,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
       "uniqid": "66d7c5816d4e8",
@@ -9658,7 +9658,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd04"]
+      "transit": ["fd04", "fd10"]
     },
     {
       "uniqid": "66d7c77901e56",
@@ -9688,7 +9688,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd04"]
+      "transit": ["fd04", "fd10"]
     },
     {
       "uniqid": "66d7c7c4a7764",
@@ -10273,7 +10273,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd04"]
+      "transit": ["fd04", "fd10"]
     },
     {
       "uniqid": "66d7d906dbbe1",
@@ -10303,7 +10303,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd04"]
+      "transit": ["fd04", "fd10"]
     },
     {
       "uniqid": "66d7d924767c7",
@@ -10333,7 +10333,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd04"]
+      "transit": ["fd04", "fd10"]
     },
     {
       "uniqid": "66d7d9455c2d9",
@@ -10363,7 +10363,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd04"]
+      "transit": ["fd04", "fd10"]
     },
     {
       "uniqid": "66d7d96cc7481",
@@ -10393,7 +10393,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["fd04"]
+      "transit": ["fd04", "fd10"]
     },
     {
       "uniqid": "66d7d98e378bf",
@@ -10513,7 +10513,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
       "uniqid": "670752d32d940",
@@ -10528,10 +10528,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "<p style=\"text-align: center;\"><strong>Timetable Keberangkatan</strong></p>\r\n<table id=\"tableDataBrowse\" class=\"table table-sm\">\r\n<tbody>\r\n<tr style=\"line-height: 5px; height: 37px;\">\r\n<td style=\"height: 37px; text-align: center;\">05:30</td>\r\n<td style=\"height: 37px; text-align: center;\">06:00</td>\r\n<td style=\"text-align: center;\">06:30</td>\r\n<td style=\"text-align: center;\">07:00</td>\r\n<td style=\"text-align: center;\">07:30</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 37px;\">\r\n<td>08:00</td>\r\n<td>08:30</td>\r\n<td>09:00</td>\r\n<td>09:30</td>\r\n<td>10:00</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 37px;\">\r\n<td>10:30</td>\r\n<td>11:00</td>\r\n<td>11:30</td>\r\n<td>12:00</td>\r\n<td>12:30</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 37px;\">\r\n<td>13:00</td>\r\n<td>13:30</td>\r\n<td>14:00</td>\r\n<td style=\"height: 37px; text-align: center;\">14:30</td>\r\n<td style=\"height: 37px; text-align: center;\">15:00</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 37px;\">\r\n<td>15:30</td>\r\n<td>16:00</td>\r\n<td style=\"height: 37px; text-align: center;\">16:30</td>\r\n<td style=\"height: 37px; text-align: center;\">17:00</td>\r\n<td style=\"height: 37px; text-align: center;\">17:30</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 37px;\">\r\n<td>18:00</td>\r\n<td>18:30</td>\r\n<td style=\"height: 37px; text-align: center;\">19:00</td>\r\n<td style=\"height: 37px; text-align: center;\">19:30</td>\r\n<td style=\"height: 37px; text-align: center;\">*20:00</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 39.757px;\">\r\n<td style=\"height: 39.757px; text-align: center;\">**20:30</td>\r\n<td style=\"text-align: center;\">**21:00</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>*) Berakhir di Terminal Manukan</p>\r\n<p>**) Halte Park and Ride Mayjend Sungkono</p>\r\n<div style=\"color: red; text-align: center;\"><strong>? <span style=\"color: black;\">Unit Dalam Masa Maintenance</span></strong></div>",
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "1",
+      "uniqid": "1a",
       "nama": "Halte Simpang Menanggal",
       "description": "",
       "lat": "-7.34258",
@@ -10543,7 +10543,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
       "uniqid": "43",
@@ -10558,10 +10558,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "2",
+      "uniqid": "2a",
       "nama": "Halte SWK Dukuh Menanggal",
       "description": "",
       "lat": "-7.34354",
@@ -10573,10 +10573,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "3",
+      "uniqid": "3a",
       "nama": "Halte Kantor Dinas Perhubungan Jawa Timur",
       "description": "",
       "lat": "-7.34059",
@@ -10588,10 +10588,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "4",
+      "uniqid": "4a",
       "nama": "Halte GPT Kristus Menanggal",
       "description": "",
       "lat": "-7.33937",
@@ -10603,7 +10603,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
       "uniqid": "76",
@@ -10618,10 +10618,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "5",
+      "uniqid": "5a",
       "nama": "Halte Kantor DPW PKB Jatim",
       "description": "",
       "lat": "-7.33848",
@@ -10633,10 +10633,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "77",
+      "uniqid": "77a",
       "nama": "Halte Darmo Indah Timur B",
       "description": "",
       "lat": "-7.26399",
@@ -10648,10 +10648,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "6",
+      "uniqid": "6a",
       "nama": "Halte Gayungsari Timur",
       "description": "",
       "lat": "-7.3379",
@@ -10663,10 +10663,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "78",
+      "uniqid": "78a",
       "nama": "Halte Satelit Utara B",
       "description": "",
       "lat": "-7.2643",
@@ -10678,10 +10678,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "7",
+      "uniqid": "7a",
       "nama": "Halte Gayungsari Barat",
       "description": "",
       "lat": "-7.33756",
@@ -10693,10 +10693,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "8",
+      "uniqid": "8a",
       "nama": "Halte SMPN 22",
       "description": "",
       "lat": "-7.33719",
@@ -10708,10 +10708,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "45",
+      "uniqid": "45a",
       "nama": "Halte Kejaksaan Negeri Surabaya B",
       "description": "",
       "lat": "-7.26901",
@@ -10723,10 +10723,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "9",
+      "uniqid": "9a",
       "nama": "Halte Masjid Al Akbar Surabaya",
       "description": "",
       "lat": "-7.33511",
@@ -10738,10 +10738,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "46",
+      "uniqid": "46a",
       "nama": "Halte Sukomanunggal Jaya B",
       "description": "",
       "lat": "-7.2725",
@@ -10753,10 +10753,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "10",
+      "uniqid": "10a",
       "nama": "Halte Pagesangan Indah A",
       "description": "",
       "lat": "-7.33295",
@@ -10768,10 +10768,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "11",
+      "uniqid": "11a",
       "nama": "Halte Pasar Pagesangan A",
       "description": "",
       "lat": "-7.33289",
@@ -10783,7 +10783,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
       "uniqid": "6707616044860",
@@ -10798,10 +10798,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "12",
+      "uniqid": "12a",
       "nama": "Halte Kebonsari Tengah A",
       "description": "",
       "lat": "-7.33073",
@@ -10813,10 +10813,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "47",
+      "uniqid": "47a",
       "nama": "Halte Darmo Permai Timur B",
       "description": "",
       "lat": "-7.28363",
@@ -10828,10 +10828,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "13",
+      "uniqid": "13a",
       "nama": "Halte SD Darul Ulum A",
       "description": "",
       "lat": "-7.32832",
@@ -10843,10 +10843,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "14",
+      "uniqid": "14a",
       "nama": "Halte Jambangan Kebon Agung Asri A",
       "description": "",
       "lat": "-7.32375",
@@ -10858,10 +10858,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "15",
+      "uniqid": "15a",
       "nama": "Halte Jambangan Indah A",
       "description": "",
       "lat": "-7.31905",
@@ -10873,10 +10873,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "16",
+      "uniqid": "16a",
       "nama": "Halte Universitas Merdeka A",
       "description": "",
       "lat": "-7.31926",
@@ -10888,10 +10888,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "17",
+      "uniqid": "17a",
       "nama": "Halte Puri Kencana A",
       "description": "",
       "lat": "-7.32012",
@@ -10903,10 +10903,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "18",
+      "uniqid": "18a",
       "nama": "Halte SMP Baitussalam A",
       "description": "",
       "lat": "-7.31708",
@@ -10918,10 +10918,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "79",
+      "uniqid": "79a",
       "nama": "Halte Simpang Adityawarman B",
       "description": "",
       "lat": "-7.29513",
@@ -10933,10 +10933,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "19",
+      "uniqid": "19a",
       "nama": "Halte Sekolah Al Falah Ketintang A",
       "description": "",
       "lat": "-7.31306",
@@ -10948,10 +10948,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "80",
+      "uniqid": "80a",
       "nama": "Halte Ciliwung B",
       "description": "",
       "lat": "-7.29305",
@@ -10963,10 +10963,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "20",
+      "uniqid": "20a",
       "nama": "Halte SDN Ketintang 1 A",
       "description": "",
       "lat": "-7.30923",
@@ -10978,10 +10978,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "21",
+      "uniqid": "21a",
       "nama": "Halte Ketintang Tengah A",
       "description": "",
       "lat": "-7.30882",
@@ -10993,10 +10993,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "22",
+      "uniqid": "22a",
       "nama": "Halte Telkom University A",
       "description": "",
       "lat": "-7.30988",
@@ -11008,10 +11008,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "51",
+      "uniqid": "51a",
       "nama": "Halte SMPN 32",
       "description": "",
       "lat": "-7.30749",
@@ -11023,10 +11023,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "23",
+      "uniqid": "23a",
       "nama": "Halte Jetis Kulon A",
       "description": "",
       "lat": "-7.30986",
@@ -11038,10 +11038,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "52",
+      "uniqid": "52a",
       "nama": "Halte Jetis Kulon B",
       "description": "",
       "lat": "-7.30801",
@@ -11053,10 +11053,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "53",
+      "uniqid": "53a",
       "nama": "Halte Ketintang Timur PTT",
       "description": "",
       "lat": "-7.30975",
@@ -11068,10 +11068,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "54",
+      "uniqid": "54a",
       "nama": "Halte Telkom University B",
       "description": "",
       "lat": "-7.30994",
@@ -11083,10 +11083,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "55",
+      "uniqid": "55a",
       "nama": "Halte Ketintang Tengah B",
       "description": "",
       "lat": "-7.30892",
@@ -11098,10 +11098,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "56",
+      "uniqid": "56a",
       "nama": "Halte SDN Ketintang 1 B",
       "description": "",
       "lat": "-7.30939",
@@ -11113,10 +11113,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "57",
+      "uniqid": "57a",
       "nama": "Halte Sekolah Al Falah Ketintang B",
       "description": "",
       "lat": "-7.31318",
@@ -11128,10 +11128,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "71",
+      "uniqid": "71a",
       "nama": "Halte Ciliwung A",
       "description": "",
       "lat": "-7.29308",
@@ -11143,10 +11143,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "58",
+      "uniqid": "58a",
       "nama": "Halte SMP Baitussalam B",
       "description": "",
       "lat": "-7.31707",
@@ -11158,10 +11158,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "72",
+      "uniqid": "72a",
       "nama": "Halte Simpang Adityawarman A",
       "description": "",
       "lat": "-7.29527",
@@ -11173,10 +11173,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "59",
+      "uniqid": "59a",
       "nama": "Halte Puri Kencana B",
       "description": "",
       "lat": "-7.32025",
@@ -11188,10 +11188,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "60",
+      "uniqid": "60a",
       "nama": "Halte Universitas Merdeka B",
       "description": "",
       "lat": "-7.31937",
@@ -11203,7 +11203,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
       "uniqid": "1054",
@@ -11218,10 +11218,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd09"]
     },
     {
-      "uniqid": "61",
+      "uniqid": "61a",
       "nama": "Halte Jambangan Indah B",
       "description": "",
       "lat": "-7.31916",
@@ -11233,10 +11233,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "62",
+      "uniqid": "62a",
       "nama": "Halte Jambangan Kebon Agung Asri B",
       "description": "",
       "lat": "-7.32385",
@@ -11248,10 +11248,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "63",
+      "uniqid": "63a",
       "nama": "Halte SD Darul Ulum B",
       "description": "",
       "lat": "-7.3284",
@@ -11263,10 +11263,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "64",
+      "uniqid": "64a",
       "nama": "Halte Kebonsari Tengah B",
       "description": "",
       "lat": "-7.33063",
@@ -11278,10 +11278,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "28",
+      "uniqid": "28a",
       "nama": "Halte Darmo Permai Timur A",
       "description": "",
       "lat": "-7.28349",
@@ -11293,10 +11293,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "65",
+      "uniqid": "65a",
       "nama": "Halte Pasar Pagesangan B",
       "description": "",
       "lat": "-7.33281",
@@ -11308,10 +11308,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "66",
+      "uniqid": "66a",
       "nama": "Halte Pagesangan Indah B",
       "description": "",
       "lat": "-7.33287",
@@ -11323,7 +11323,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
       "uniqid": "67075f5ec0634",
@@ -11338,10 +11338,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "67",
+      "uniqid": "67a",
       "nama": "Halte Pasar Rakyat Jambangan",
       "description": "",
       "lat": "-7.33505",
@@ -11353,10 +11353,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "29",
+      "uniqid": "29a",
       "nama": "Halte Sukomanunggal Jaya A",
       "description": "",
       "lat": "-7.27303",
@@ -11368,10 +11368,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "68",
+      "uniqid": "68a",
       "nama": "Halte SWK Gayungan",
       "description": "",
       "lat": "-7.33759",
@@ -11383,10 +11383,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "30",
+      "uniqid": "30a",
       "nama": "Halte Kejaksaan Negeri Surabaya A",
       "description": "",
       "lat": "-7.26923",
@@ -11398,10 +11398,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "69",
+      "uniqid": "69a",
       "nama": "Halte SDN Menanggal 601",
       "description": "",
       "lat": "-7.3395",
@@ -11413,10 +11413,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "70",
+      "uniqid": "70a",
       "nama": "Halte SMAN 15",
       "description": "",
       "lat": "-7.34068",
@@ -11428,10 +11428,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "73",
+      "uniqid": "73a",
       "nama": "Halte Satelit Utara A",
       "description": "",
       "lat": "-7.26454",
@@ -11443,10 +11443,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "74",
+      "uniqid": "74a",
       "nama": "Halte Darmo Indah Timur A",
       "description": "",
       "lat": "-7.26407",
@@ -11458,10 +11458,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "75",
+      "uniqid": "75a",
       "nama": "Halte Kantor Imigrasi Tanjung Perak A",
       "description": "",
       "lat": "-7.26166",
@@ -11473,7 +11473,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
       "uniqid": "67075fe527204",
@@ -11488,10 +11488,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "32",
+      "uniqid": "32a",
       "nama": "Halte SMKN 13 A",
       "description": "",
       "lat": "-7.26309",
@@ -11503,10 +11503,10 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
-      "uniqid": "33",
+      "uniqid": "33a",
       "nama": "Halte SMPN 47 A",
       "description": "",
       "lat": "-7.26331",
@@ -11518,7 +11518,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd09"]
     },
     {
       "uniqid": "67076013998fd",
@@ -11533,7 +11533,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "<p style=\"text-align: center;\"><strong>Timetable Keberangkatan</strong></p>\r\n<table id=\"tableDataBrowse\" class=\"table table-sm\">\r\n<tbody>\r\n<tr style=\"line-height: 5px; height: 37px;\">\r\n<td style=\"height: 37px; text-align: center;\">05:30</td>\r\n<td style=\"height: 37px; text-align: center;\">06:00</td>\r\n<td style=\"text-align: center;\">06:30</td>\r\n<td style=\"text-align: center;\">07:00</td>\r\n<td style=\"text-align: center;\">07:30</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 37px;\">\r\n<td>08:00</td>\r\n<td>08:30</td>\r\n<td>09:00</td>\r\n<td>09:30</td>\r\n<td>10:00</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 37px;\">\r\n<td>10:30</td>\r\n<td>11:00</td>\r\n<td>11:30</td>\r\n<td>12:00</td>\r\n<td>12:30</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 37px;\">\r\n<td>13:00</td>\r\n<td>13:30</td>\r\n<td>14:00</td>\r\n<td style=\"height: 37px; text-align: center;\">14:30</td>\r\n<td style=\"height: 37px; text-align: center;\">15:00</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 37px;\">\r\n<td>15:30</td>\r\n<td>16:00</td>\r\n<td style=\"height: 37px; text-align: center;\">16:30</td>\r\n<td style=\"height: 37px; text-align: center;\">17:00</td>\r\n<td style=\"height: 37px; text-align: center;\">17:30</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 37px;\">\r\n<td>18:00</td>\r\n<td>18:30</td>\r\n<td style=\"height: 37px; text-align: center;\">19:00</td>\r\n<td style=\"height: 37px; text-align: center;\">19:30</td>\r\n<td style=\"height: 37px; text-align: center;\">*20:00</td>\r\n</tr>\r\n<tr style=\"line-height: 5px; text-align: center; height: 39.757px;\">\r\n<td style=\"height: 39.757px; text-align: center;\">**20:30</td>\r\n<td style=\"text-align: center;\">**21:00</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n<td style=\"text-align: center;\">&nbsp;</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>*) Berakhir di Terminal Manukan</p>\r\n<p>**) Halte Park and Ride Mayjend Sungkono B</p>\r\n<div style=\"color: red; text-align: center;\"><strong>■ <span style=\"color: black;\">Unit Dalam Masa Maintenance</span></strong></div>",
-      "transit": []
+      "transit": ["fd09"]
     },
     {
       "uniqid": "10a1",
@@ -11548,7 +11548,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "<p style=\"text-align: center;\"><strong>Timetable Keberangkatan</strong></p>\r\n<table id=\"tableDataBrowse\" class=\"table table-sm\">\r\n<tbody>\r\n<tr>\r\n<td style=\"text-align: center;\">05:30</td>\r\n<td style=\"text-align: center;\">05:55</td>\r\n<td style=\"text-align: center;\">06:20</td>\r\n<td style=\"text-align: center;\">06:45</td>\r\n<td style=\"text-align: center;\">07:10</td>\r\n</tr>\r\n<tr>\r\n<td style=\"text-align: center;\">07:35</td>\r\n<td style=\"text-align: center;\">08:00</td>\r\n<td style=\"text-align: center;\">08:25</td>\r\n<td style=\"text-align: center;\">08:50</td>\r\n<td style=\"text-align: center;\">09:15</td>\r\n</tr>\r\n<tr>\r\n<td style=\"text-align: center;\">09:40</td>\r\n<td style=\"text-align: center;\">10:05</td>\r\n<td style=\"text-align: center;\">10:30</td>\r\n<td style=\"text-align: center;\">10:55</td>\r\n<td style=\"text-align: center;\">11:20</td>\r\n</tr>\r\n<tr>\r\n<td style=\"text-align: center;\">11:45</td>\r\n<td style=\"text-align: center;\">12:10</td>\r\n<td style=\"text-align: center;\">12:35</td>\r\n<td style=\"text-align: center;\">13:00</td>\r\n<td style=\"text-align: center;\">13:25</td>\r\n</tr>\r\n<tr>\r\n<td style=\"text-align: center;\">13:50</td>\r\n<td style=\"text-align: center;\">14:15</td>\r\n<td style=\"text-align: center;\">14:40</td>\r\n<td style=\"background-color: #ff0000; text-align: center;\">15:05</td>\r\n<td style=\"text-align: center;\">15:30</td>\r\n</tr>\r\n<tr>\r\n<td style=\"text-align: center;\">15:55</td>\r\n<td style=\"text-align: center;\">16:20</td>\r\n<td style=\"text-align: center;\">16:45</td>\r\n<td style=\"text-align: center;\">17:10</td>\r\n<td style=\"text-align: center;\">17:35</td>\r\n</tr>\r\n<tr>\r\n<td style=\"text-align: center;\">18:00</td>\r\n<td style=\"text-align: center;\">18:25</td>\r\n<td style=\"text-align: center;\">18:50</td>\r\n<td style=\"text-align: center;\">19:15</td>\r\n<td style=\"text-align: center;\">19:40</td>\r\n</tr>\r\n<tr>\r\n<td style=\"text-align: center;\">*20:05</td>\r\n<td style=\"text-align: center;\">*20:30</td>\r\n<td style=\"background-color: #ff0000; text-align: center;\">**21:00</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p style=\"text-align: center;\">*) Berakhir di Pasar Atom</p>\r\n<p style=\"text-align: center;\">**) Berakhir di Halte RSUD dr. Mohamad Soewandhi</p>\r\n<div>&nbsp;</div>\r\n<div style=\"color: red; text-align: center;\"><strong>? <span style=\"color: black;\">Unit Dalam Masa Maintenance</span></strong></div>",
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a2",
@@ -11563,7 +11563,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a3",
@@ -11578,7 +11578,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a4",
@@ -11593,7 +11593,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a5",
@@ -11608,7 +11608,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b5",
@@ -11623,7 +11623,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a6",
@@ -11638,7 +11638,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b6",
@@ -11653,7 +11653,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a7",
@@ -11668,7 +11668,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b7",
@@ -11683,7 +11683,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a8",
@@ -11698,7 +11698,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b8",
@@ -11713,7 +11713,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a9",
@@ -11728,7 +11728,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b9",
@@ -11743,7 +11743,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a10",
@@ -11758,7 +11758,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b10",
@@ -11773,7 +11773,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a11",
@@ -11788,7 +11788,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b11",
@@ -11803,7 +11803,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b12",
@@ -11818,7 +11818,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a13",
@@ -11833,7 +11833,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b13",
@@ -11848,7 +11848,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a14",
@@ -11863,7 +11863,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b14",
@@ -11878,7 +11878,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a15",
@@ -11893,7 +11893,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b15",
@@ -11908,7 +11908,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a16",
@@ -11923,7 +11923,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a17",
@@ -11938,7 +11938,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b17",
@@ -11953,7 +11953,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a18",
@@ -11968,7 +11968,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b18",
@@ -11983,7 +11983,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "5bac9bf5880a9",
@@ -11998,7 +11998,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": null,
-      "transit": ["tmk2"]
+      "transit": ["tmk2", "fd10"]
     },
     {
       "uniqid": "10b20",
@@ -12013,7 +12013,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a21",
@@ -12028,7 +12028,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b21",
@@ -12043,7 +12043,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a22",
@@ -12058,7 +12058,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b22",
@@ -12073,7 +12073,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a23",
@@ -12088,7 +12088,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b23",
@@ -12103,7 +12103,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a24",
@@ -12118,7 +12118,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b24",
@@ -12133,7 +12133,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a25",
@@ -12148,7 +12148,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b25",
@@ -12163,7 +12163,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a26",
@@ -12178,7 +12178,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b26",
@@ -12193,7 +12193,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a27",
@@ -12208,7 +12208,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b27",
@@ -12223,7 +12223,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a28",
@@ -12238,7 +12238,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b28",
@@ -12253,7 +12253,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a29",
@@ -12268,7 +12268,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b29",
@@ -12283,7 +12283,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a30",
@@ -12298,7 +12298,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b30",
@@ -12313,7 +12313,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b31",
@@ -12328,7 +12328,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a32",
@@ -12343,7 +12343,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b32",
@@ -12358,7 +12358,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b33",
@@ -12373,7 +12373,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b34",
@@ -12388,7 +12388,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10b35",
@@ -12403,7 +12403,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     },
     {
       "uniqid": "10a36",
@@ -12418,7 +12418,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": []
+      "transit": ["fd10"]
     }
   ]
 }
