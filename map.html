@@ -1,83 +1,141 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Map</title>
-    <link rel="icon" type="image/x-icon" href="images/kuangkut.png">
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='map.css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/images/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Bus Tracker" />
+    <link rel="manifest" href="/images/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="map.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <!-- Make sure you put this AFTER Leaflet's CSS -->
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"
-        charset="utf-8"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol/dist/L.Control.Locate.min.js"
+      charset="utf-8"
+    ></script>
     <script src="https://raw.githack.com/bbecquet/Leaflet.RotatedMarker/master/leaflet.rotatedMarker.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-</head>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <body>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <div id="map"></div>
     <div id="ui">
-        <div id="navcontainer">
-            <div class="navbutton" onclick="history.back()">
-                <i class="fa fa-arrow-left" style="font-size: 2rem; color: var(--accent-color);"></i>
-            </div>
-            <div class="navbutton" onclick="getLocation()">
-                <i class="fa  fa-location-arrow" style="font-size: 2rem; color: var(--accent-color);"></i>
-            </div>
+      <div id="navcontainer">
+        <div class="navbutton" onclick="history.back()">
+          <i
+            class="fa fa-arrow-left"
+            style="font-size: 2rem; color: var(--accent-color)"
+          ></i>
         </div>
-        <div id="infocontainer">
-            <div id="routeinfo" onclick="shrinkUI()">
-                <div class="infodata routeinfo">
-                    <div style="display: flex; align-items: center;">
-                        <i class="fa fa-clock-o" style="margin-right: 5px;"></i>
-                        <p id="routestatus" style="margin-right: 5px; font-weight: 700;">Operasional</p>
-                        <p id="routehours">05:30-21:00</p>
-                    </div>
-                    <div style="display: flex; align-items: center;">
-                        <i class="fa fa-bus" style="margin-right: 5px;"></i>
-                        <div class="routenamecontainer">
-                            <p id="routename" style="margin-right: 5px; font-weight: 700;"></p>
-                        </div>
-                        <p>(<span id="buscount">0</span> Bus • <span id="haltecount">0</span> Halte)</p>
-                    </div>
-                </div>
-            </div>
-            <div id="businfo">
-                <div class="infodata bus-pill-container">
-                    <div id="busdata">
-                    </div>
-                </div>
-            </div>
-            <div id="stoplist">
-            </div>
+        <div class="navbutton" onclick="getLocation()">
+          <i
+            class="fa fa-location-arrow"
+            style="font-size: 2rem; color: var(--accent-color)"
+          ></i>
         </div>
+      </div>
+      <div id="infocontainer">
+        <div id="routeinfo" onclick="shrinkUI()">
+          <div class="infodata routeinfo">
+            <div style="display: flex; align-items: center">
+              <i class="fa fa-clock-o" style="margin-right: 5px"></i>
+              <p id="routestatus" style="margin-right: 5px; font-weight: 700">
+                Operasional
+              </p>
+              <p id="routehours">05:30-21:00</p>
+            </div>
+            <div style="display: flex; align-items: center">
+              <i class="fa fa-bus" style="margin-right: 5px"></i>
+              <div class="routenamecontainer">
+                <p
+                  id="routename"
+                  style="margin-right: 5px; font-weight: 700"
+                ></p>
+              </div>
+              <p>
+                (<span id="buscount">0</span> Bus •
+                <span id="haltecount">0</span> Halte)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="businfo">
+          <div class="infodata bus-pill-container">
+            <div id="busdata"></div>
+          </div>
+        </div>
+        <div id="stoplist"></div>
+      </div>
     </div>
     <div id="desktop-location" class="navbutton" onclick="getLocation()">
-        <i class="fa  fa-location-arrow" style="font-size: 2rem; color: var(--accent-color);"></i>
+      <i
+        class="fa fa-location-arrow"
+        style="font-size: 2rem; color: var(--accent-color)"
+      ></i>
     </div>
     <script>
-        var map = L.map("map", { zoomControl: false, attributionControl: false }).setView([-7.3026644, 112.7243344], 13);
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-        L.control.attribution({
-            position: 'topright'
-        }).addTo(map);
-        // L.control.locate().addTo(map);
+      var map = L.map("map", {
+        zoomControl: false,
+        attributionControl: false,
+      }).setView([-7.3026644, 112.7243344], 13);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      }).addTo(map);
+      L.control
+        .attribution({
+          position: "topright",
+        })
+        .addTo(map);
+      // L.control.locate().addTo(map);
     </script>
-    <script src='map.js'></script>
-</body>
-
+    <script src="map.js"></script>
+  </body>
 </html>
