@@ -3956,7 +3956,7 @@
     "name": "FD3",
     "title": "TIJ - Gunung Anyar",
     "color": "#36addc",
-    "text": "black",
+    "text": "white",
     "hours": "05:30 - 21:00",
     "datarute": [
       { "lat": "-7.2989900", "lon": "112.7364230" },
