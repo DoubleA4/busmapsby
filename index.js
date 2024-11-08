@@ -7,7 +7,7 @@ async function getJson(URL) {
 async function main() {
   const res = await fetch("./routedata.json");
   const data = await res.json();
-  const trackData = await getJson("https://busmapapi.fly.dev/all");
+  const trackData = await getJson("https://busmapapi-imu90a.fly.dev/all");
 
   async function counterFill(routeCode) {
     const halte = data[routeCode].datahalte.filter(
