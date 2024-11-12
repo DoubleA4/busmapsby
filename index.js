@@ -1,3 +1,17 @@
+// Check if the user is accessing the page on a mobile device
+var isMobile =
+  /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+    navigator.userAgent
+  );
+
+if (isMobile) {
+  // User is accessing the page on a mobile device
+  console.log("Mobile device detected");
+} else {
+  // User is accessing the page on a desktop device
+  console.log("Desktop device detected");
+}
+
 async function getJson(URL) {
   var res = await fetch(URL);
   data = await res.json();
@@ -7,7 +21,7 @@ async function getJson(URL) {
 async function main() {
   const res = await fetch("./routedata.json");
   const data = await res.json();
-  const trackData = await getJson("https://busmapapi-imu90a.fly.dev/all");
+  const trackData = await getJson("https://busmapapi-5qdmx.fly.dev/all");
 
   async function counterFill(routeCode) {
     const halte = data[routeCode].datahalte.filter(
