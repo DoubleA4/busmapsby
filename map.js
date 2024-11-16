@@ -380,9 +380,11 @@ async function getData() {
 }
 
 getData().then(async () => {
+  const trackData = await getJson(
+    "https://jsonblob.com/api/jsonBlob/1306477876072013824"
+  );
   // allroute();
   if (routeParams === "all") {
-    const trackData = await getJson("https://busmapapi-5qdmx.fly.dev/all");
     document.getElementById("infocontainer").style.display = "none";
     document.getElementById("ui").style.height = "auto";
     if (vw >= 800) {
@@ -399,22 +401,20 @@ getData().then(async () => {
         map.fitBounds(routeLinesGroup.getBounds());
       });
   } else if (routeParams === "sbr1") {
-    const trackSBRT = await getJson("https://busmapapi-5qdmx.fly.dev/3");
-    const trackURL = await getJson("https://busmapapi-5qdmx.fly.dev/1");
+    const trackSBRT = trackData[3];
+    const trackURL = trackData[1];
     routeInitNew("sbrt");
     routeInitNew(routeParams).then(() => {
       map.fitBounds(routeLinesGroup.getBounds());
     });
-    setVehicleMarker("sbrt", trackSBRT.url);
-    setVehicleMarker(routeParams, trackURL.url);
+    setVehicleMarker("sbrt", trackSBRT);
+    setVehicleMarker(routeParams, trackURL);
   } else {
-    const trackURL = await getJson(
-      `https://busmapapi-5qdmx.fly.dev/${routedata[routeParams].code}`
-    );
+    const trackURL = trackData[routedata[routeParams].code];
     routeInitNew(routeParams).then(() => {
       map.fitBounds(routeLinesGroup.getBounds());
     });
-    setVehicleMarker(routeParams, trackURL.url);
+    setVehicleMarker(routeParams, trackURL);
   }
 });
 
