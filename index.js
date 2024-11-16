@@ -21,7 +21,9 @@ async function getJson(URL) {
 async function main() {
   const res = await fetch("./routedata.json");
   const data = await res.json();
-  const trackData = await getJson("https://busmapapi-5qdmx.fly.dev/all");
+  const trackData = await getJson(
+    "https://jsonblob.com/api/jsonBlob/1306477876072013824"
+  );
 
   async function counterFill(routeCode) {
     const halte = data[routeCode].datahalte.filter(
