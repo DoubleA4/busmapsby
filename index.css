@@ -86,8 +86,7 @@ a:active {
   background-color: var(--card-color);
 }
 .routecode {
-  height: 100%;
-  width: 6rem;
+  width: 5.5rem;
   background-color: var(--accent-color);
   display: flex;
   align-items: center;
@@ -95,6 +94,7 @@ a:active {
   font-weight: 700;
   font-size: x-large;
   color: var(--accent-text);
+  border-radius: 15px 0px 0px 15px;
 }
 .routedetail {
   color: #000;

@@ -213,9 +213,11 @@ a {
 }
 
 .transit {
+  text-align: center;
   margin-right: 0.25rem;
-  padding: 0.3rem 0.6rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 10px;
+  min-width: 1.5rem;
 }
 
 .haltePopup {
