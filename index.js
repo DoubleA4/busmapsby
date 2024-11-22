@@ -56,7 +56,11 @@ async function main() {
     routecontainer.className = "routecontainer";
     var routecode = document.createElement("div");
     routecode.className = "routecode";
-    routecode.style = `background-color: ${data[route].color}; color: ${data[route].text}`;
+    if (data[route].feeder) {
+      routecode.style = `background-color: ${data[route].text}; color: ${data[route].color}; border: 5px solid`;
+    } else {
+      routecode.style = `background-color: ${data[route].color}; color: ${data[route].text}; border: 5px solid ${data[route].color}`;
+    }
     routecode.innerHTML = data[route].name;
     routecontainer.appendChild(routecode);
     var routedetail = document.createElement("div");

@@ -275,7 +275,12 @@ async function routeInitNew(route) {
     var transitPopup = ``;
     if (transit.length > 0) {
       transit.forEach((routename) => {
-        const pill = `<a href='./map.html?route=${routename}'><div style='color: ${routedata[routename].text}; background-color: ${routedata[routename].color}' class='transit'>${routedata[routename].name}</div></a>`;
+        let pill;
+        if (routedata[routename].feeder) {
+          pill = `<a href='./map.html?route=${routename}'><div style='color: ${routedata[routename].color}; background-color: ${routedata[routename].text}; border: 3px solid' class='transit'>${routedata[routename].name}</div></a>`;
+        } else {
+          pill = `<a href='./map.html?route=${routename}'><div style='color: ${routedata[routename].text}; background-color: ${routedata[routename].color}; border: 3px solid ${routedata[routename].color}' class='transit'>${routedata[routename].name}</div></a>`;
+        }
         transitPopup = transitPopup + pill;
       });
     }
@@ -360,7 +365,11 @@ async function routeInitNew(route) {
           var button = document.createElement("a");
           button.setAttribute("href", `./map.html?route=${routename}`);
           var transit = document.createElement("div");
-          transit.style = `color: ${routedata[routename].text}; background-color: ${routedata[routename].color}`;
+          if (routedata[routename].feeder) {
+            transit.style = `color: ${routedata[routename].color}; background-color: ${routedata[routename].text}; border: 3px solid`;
+          } else {
+            transit.style = `color: ${routedata[routename].text}; background-color: ${routedata[routename].color}; border: 3px solid ${routedata[routename].color}`;
+          }
           transit.className = "transit";
           transit.innerHTML = routedata[routename].name;
           button.appendChild(transit);
