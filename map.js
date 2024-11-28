@@ -130,7 +130,7 @@ function showError(error) {
 async function setVehicleMarker(vecRoute, URL) {
   let id_koridor = routedata[vecRoute].code;
   let reqAddr;
-  if (id_koridor < 10) {
+  if (id_koridor < 10 || id_koridor == 51) {
     reqAddr = "sbybus";
   } else if (id_koridor < 100) {
     reqAddr = "temanbus";
