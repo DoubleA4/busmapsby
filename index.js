@@ -15,7 +15,7 @@ async function main() {
     );
     let id_koridor = data[routeCode].code;
     let reqAddr;
-    if (id_koridor < 10) {
+    if (id_koridor < 10 || id_koridor == 51) {
       reqAddr = "sbybus";
     } else if (id_koridor < 100) {
       reqAddr = "temanbus";
