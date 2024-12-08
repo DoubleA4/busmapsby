@@ -1,46 +1,286 @@
-var datenow = new Date();
-var dd = String(datenow.getDate()).padStart(2, "0");
-var mm = String(datenow.getMonth() + 1).padStart(2, "0");
-var yyyy = datenow.getFullYear();
-var datenows = yyyy + "-" + mm + "-" + dd;
+// setting up the map
+var map = L.map("map", {
+  attributionControl: false,
+  zoomControl: false,
+}).setView([-7.3026644, 112.7243344], 13);
 
-async function getJson(URL) {
-  var res = await fetch(URL);
-  data = await res.json();
-  return data;
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 19,
+  attribution:
+    '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  className: "map-tiles",
+}).addTo(map);
+
+L.control
+  .attribution({
+    position: "bottomleft",
+  })
+  .addTo(map);
+
+// add zoom control if desktop
+if (!L.Browser.mobile) {
+  L.control
+    .zoom({
+      position: "topright",
+    })
+    .addTo(map);
 }
 
-var vw = Math.max(
-  document.documentElement.clientWidth || 0,
-  window.innerWidth || 0
-);
+// useful functions
+function getData(url) {
+  var result = null;
+  $.ajax({
+    async: false,
+    url: url,
+    success: function (data) {
+      result = data;
+    },
+  });
+  return result;
+}
 
+function hexToRgb(hex) {
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result
+    ? {
+        r: parseInt(result[1], 16),
+        g: parseInt(result[2], 16),
+        b: parseInt(result[3], 16),
+      }
+    : null;
+}
+
+// getting URL params
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const routeParams = urlParams.get("route");
 
+// markers settings and variables
 const markerZoom = 15;
-var routedata;
-var haltedata;
-var markers = {};
-markers.halte = {};
-
 var halteMarkersGroup = new L.FeatureGroup();
 var routeLinesGroup = new L.FeatureGroup();
-map.createPane("routeLine");
-map.getPane("routeLine").style.zIndex = 250;
+const markers = {};
+markers.halte = {};
 
-var uishrink = false;
-function shrinkUI() {
-  if (!uishrink) {
-    document.getElementById("ui").style.transform = "translateY(175px)";
-    uishrink = true;
-  } else {
-    document.getElementById("ui").style.transform = "";
-    uishrink = false;
+const dataHalte = getData("./halte.json").halte;
+const dataRute = getData("./routedata.json");
+const dataTracking = getData("https://busmapapi-5qdmx.fly.dev/all");
+
+// setting route information and themes
+if (routeParams != "all") {
+  let route = dataRute[routeParams];
+  $("#route-name").text(`${route.name} | ${route.title}`);
+  $("#op-hour").text(route.hours);
+
+  $(":root")
+    .get(0)
+    .style.setProperty(
+      "--accent-color",
+      `${hexToRgb(route.color).r}, ${hexToRgb(route.color).g}, ${
+        hexToRgb(route.color).b
+      }`
+    );
+  if (routeParams == "sbr1") {
+    setRoute(dataRute.sbrt);
+    setVehicleMarker(dataRute.sbrt, dataTracking[dataRute.sbrt.code]);
   }
+  setRoute(route);
+  setVehicleMarker(route, dataTracking[route.code]);
+} else {
+  $("#nav-title").text("Semua Rute");
+  $("#route-panel, #map, #location-button").addClass("full-map");
+  setTimeout(map.invalidateSize(), 100);
+  Object.keys(dataRute)
+    .slice()
+    .reverse()
+    .forEach((key) => {
+      let route = dataRute[key];
+      setRoute(route);
+      setVehicleMarker(route, dataTracking[route.code]);
+    });
 }
 
+function setRoute(route) {
+  // adding route polyline to map
+  let routePoly = new L.Polyline(route.datarute, {
+    color: route.color,
+    weight: 5,
+    smoothFactor: 1,
+  });
+  routePoly.addTo(map);
+  routeLinesGroup.addLayer(routePoly);
+  map.fitBounds(routeLinesGroup.getBounds());
+
+  // putting every halte on the route to the map
+  route.datahalte.forEach((halteID) => {
+    let currentHalte = dataHalte.filter((halte) => {
+      return halte.uniqid == halteID;
+    })[0];
+
+    var currentTransit;
+    if (routeParams != "all") {
+      currentTransit = currentHalte.transit.filter((route) => {
+        return route != routeParams;
+      });
+    } else {
+      currentTransit = currentHalte.transit;
+    }
+
+    let transitDivs = "";
+    if (currentTransit.length > 0) {
+      currentTransit.forEach((routename) => {
+        let pill;
+        if (dataRute[routename].feeder) {
+          pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].color}; background-color: ${dataRute[routename].text}; border: 3px solid' class='transit-pill'>${dataRute[routename].name}</div></a>`;
+        } else {
+          pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 3px solid ${dataRute[routename].color}' class='transit-pill'>${dataRute[routename].name}</div></a>`;
+        }
+        transitDivs += pill;
+      });
+    }
+
+    // adding halte markers to map
+    if (!markers.halte[halteID]) {
+      markers.halte[halteID] = new L.circleMarker(
+        { lat: currentHalte.lat, lng: currentHalte.lon },
+        {
+          radius: 8,
+          fillColor: "white",
+          fillOpacity: 1,
+          color: "black",
+        }
+      ).bindPopup(
+        `
+          <p class='stop-name'>${currentHalte.nama}</p>
+          <div class='transit-list'>
+            ${transitDivs}
+          </div>
+          <a href='https://maps.google.com?saddr=Current+Location&daddr=${currentHalte.lat},${currentHalte.lon}'>
+            <div class='navigate'>
+              <span class="material-icons">
+              place
+              </span>
+              <p>Navigasi</p>
+            </div>
+          </a>
+          `,
+        {
+          minWidth: 250,
+          maxWidth: 280,
+          className: "halte-popup",
+        }
+      );
+      halteMarkersGroup.addLayer(markers.halte[halteID]);
+    }
+
+    // adding halte divs to UI
+    if (routeParams != "all") {
+      let halteElement = `<div id="halte-${currentHalte.uniqid}" class="route-stop">
+      <div class="halte-circle"></div>
+      <p class="stop-name button" onclick="popupHandler('${halteID}')">${currentHalte.nama}</p>
+      ${transitDivs}
+    </div>`;
+      $("#stops-container").append(halteElement);
+      $(".halte-line").height($(".halte-line").height() + 50);
+    }
+  });
+  if (routeParams != "all" && route.code != 3)
+    $(".halte-line").height($(".halte-line").height() - 35);
+}
+
+async function setVehicleMarker(route, URL) {
+  let id_koridor = route.code;
+  let reqAddr;
+  if (id_koridor < 10 || id_koridor == 51) {
+    reqAddr = "sbybus";
+  } else if (id_koridor < 100) {
+    reqAddr = "temanbus";
+  } else {
+    reqAddr = "feeder";
+  }
+
+  const options = {
+    method: "GET",
+    headers: { Authorization: `Bearer ${URL.split("/")[1]}` },
+  };
+
+  const response = await fetch(
+    `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${id_koridor}`,
+    options
+  );
+  const data = await response.json();
+
+  let pill;
+  if (route.feeder) {
+    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.color}; background-color: ${route.text}; border: 3px solid' class='transit-pill'>${route.name}</div></a>`;
+  } else {
+    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.text}; background-color: ${route.color}; border: 3px solid ${route.color}' class='transit-pill'>${route.name}</div></a>`;
+  }
+
+  const busIcon = L.divIcon({
+    iconAnchor: [12, 12],
+    html: `<span class="material-icons" style="color: ${route.color}">navigation</span>`,
+    className: "divMarker",
+  });
+
+  if (routeParams != "all" && route.code != 3) {
+    $("#op-detail").text(
+      `${data.length} Bus | ${route.datahalte.length} Halte`
+    );
+  }
+
+  if (!markers[route.code]) {
+    var vecMarkers = {};
+    data.forEach((vehicle) => {
+      vecMarkers[vehicle.info] = L.marker([vehicle.lat, vehicle.lng], {
+        icon: busIcon,
+        rotationAngle: vehicle.direction,
+      })
+        .addTo(map)
+        .bindPopup(
+          `${pill}<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`
+        );
+    });
+    markers[route.code] = vecMarkers;
+  } else {
+    data.forEach((vehicle) => {
+      markers[route.code][vehicle.info]
+        .setRotationAngle(vehicle.direction)
+        .setLatLng([vehicle.lat, vehicle.lng])
+        .bindPopup(
+          `${pill}<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`
+        );
+    });
+  }
+  setTimeout(() => {
+    setVehicleMarker(route, URL);
+  }, 5000);
+}
+
+// hide and show markers on zoom changes
+if (map.getZoom() > markerZoom) {
+  map.addLayer(halteMarkersGroup);
+}
+
+map.on("zoomend", function () {
+  if (map.getZoom() < markerZoom) {
+    map.removeLayer(halteMarkersGroup);
+  } else {
+    map.addLayer(halteMarkersGroup);
+  }
+});
+
+// handle halte divs popup trigger
+function popupHandler(halteID) {
+  map.addLayer(halteMarkersGroup);
+  map.closePopup();
+  map.setView(markers.halte[halteID]._latlng, 17, { pan: { duration: 0.25 } });
+  setTimeout(() => {
+    markers.halte[halteID].openPopup();
+  }, 250);
+}
+
+// handle locations and stuff
 function getLocation() {
   if (!markers.gps) {
     if (navigator.geolocation) {
@@ -126,315 +366,3 @@ function showError(error) {
       break;
   }
 }
-
-async function setVehicleMarker(vecRoute, URL) {
-  let id_koridor = routedata[vecRoute].code;
-  let reqAddr;
-  if (id_koridor < 10 || id_koridor == 51) {
-    reqAddr = "sbybus";
-  } else if (id_koridor < 100) {
-    reqAddr = "temanbus";
-  } else {
-    reqAddr = "feeder";
-  }
-
-  const options = {
-    method: "GET",
-    headers: { Authorization: `Bearer ${URL.split("/")[1]}` },
-  };
-
-  const response = await fetch(
-    `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${id_koridor}`,
-    options
-  );
-  const data = await response.json();
-
-  const svgArrow = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 572.71 763.69" class="vehicleMarker"><path d="M277.04 2.58a19.13 19.13 0 0 0-8.35 9.91L1.18 737.78a19.09 19.09 0 0 0 28.09 22.76l257.13-162 257 162.18a19.09 19.09 0 0 0 28.12-22.74l-267-725.5a19.08 19.08 0 0 0-24.51-11.3 17.76 17.76 0 0 0-3 1.39Z" fill-rule="evenodd" fill="${routedata[vecRoute].color}"/></svg>`;
-
-  // const busIcon = L.icon({
-  //   iconUrl: "images/location_arrow.svg",
-  //   iconAnchor: [10, 10],
-  // });
-
-  const busIcon = L.divIcon({
-    html: svgArrow,
-    className: "divMarker",
-    iconAnchor: [10, 10],
-  });
-
-  if (routeParams !== "all")
-    document.getElementById("buscount").innerHTML = data.length;
-  const busdata = document.getElementById("busdata");
-
-  if (!markers[vecRoute]) {
-    var vecMarkers = {};
-    data.forEach((vehicle) => {
-      vecMarkers[vehicle.info] = L.marker([vehicle.lat, vehicle.lng], {
-        icon: busIcon,
-        rotationAngle: vehicle.direction,
-      })
-        .addTo(map)
-        .bindPopup(
-          `<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`
-        );
-      // L.DomUtil.addClass(markers[counter]._icon, "vehicleMarker");
-
-      if (routeParams !== "all") {
-        var busPill = document.createElement("div");
-        busPill.className = "busPill";
-        busPill.onclick = function () {
-          map.closePopup();
-          map.setView(vecMarkers[vehicle.info]._latlng, 17);
-          vecMarkers[vehicle.info].openPopup();
-        };
-        var faBus = document.createElement("i");
-        faBus.className = "fa fa-bus pillBus";
-        faBus.style.color = routedata[vecRoute].color;
-        busPill.appendChild(faBus);
-        var busName = document.createElement("p");
-        busName.innerHTML = vehicle.info;
-        busPill.appendChild(busName);
-        busdata.appendChild(busPill);
-      }
-    });
-    markers[vecRoute] = vecMarkers;
-  } else {
-    data.forEach((vehicle) => {
-      markers[vecRoute][vehicle.info]
-        .setRotationAngle(vehicle.direction)
-        .setLatLng([vehicle.lat, vehicle.lng])
-        .bindPopup(
-          `<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`
-        );
-    });
-  }
-  setTimeout(() => {
-    setVehicleMarker(vecRoute, URL);
-  }, 5000);
-}
-
-//place polyline and halte marker on the map
-async function routeInitNew(route) {
-  var stoplist = document.getElementById("stoplist");
-
-  if (routeParams !== "all") {
-    //set page accent color and text color
-    document.documentElement.style.setProperty(
-      "--accent-color",
-      routedata[route].color
-    );
-    document.documentElement.style.setProperty(
-      "--accent-text",
-      routedata[route].text
-    );
-    //set route information
-    document.title = `${routedata[route].name} | ${routedata[route].title}`;
-    document.getElementById(
-      "routename"
-    ).innerHTML = `${routedata[route].name} | ${routedata[route].title}`;
-    document.getElementById("routehours").innerHTML = routedata[route].hours;
-  }
-
-  //draw route polyline on the map
-  var routePoly = L.polyline(routedata[route].datarute, {
-    color: routedata[route].color,
-    opacity: 1,
-    weight: 5,
-    pane: "routeLine",
-  }).addTo(map);
-  //add polyline to featureGroup
-  routeLinesGroup.addLayer(routePoly);
-
-  //get halte data and set halte counter
-  const listhalte = routedata[route].datahalte;
-  const haltecount = listhalte.filter(
-    (item, index) => listhalte.indexOf(item) === index
-  );
-  if (routeParams !== "all")
-    document.getElementById("haltecount").innerHTML = haltecount.length;
-
-  //add halte to map
-  listhalte.forEach((halte, i) => {
-    const markerOption = {
-      radius: 5,
-      color: "#000000",
-      weight: 2,
-      fillColor: "#FFFFFF",
-      fillOpacity: 1,
-    };
-
-    const haltenow = haltedata.filter((e) => e.uniqid == halte)[0];
-
-    var transit = [];
-    if (routeParams !== "all") {
-      transit = haltenow.transit.filter((e) => e !== route);
-    } else {
-      transit = haltenow.transit;
-    }
-
-    var transitPopup = ``;
-    if (transit.length > 0) {
-      transit.forEach((routename) => {
-        let pill;
-        if (routedata[routename].feeder) {
-          pill = `<a href='./map.html?route=${routename}'><div style='color: ${routedata[routename].color}; background-color: ${routedata[routename].text}; border: 3px solid' class='transit'>${routedata[routename].name}</div></a>`;
-        } else {
-          pill = `<a href='./map.html?route=${routename}'><div style='color: ${routedata[routename].text}; background-color: ${routedata[routename].color}; border: 3px solid ${routedata[routename].color}' class='transit'>${routedata[routename].name}</div></a>`;
-        }
-        transitPopup = transitPopup + pill;
-      });
-    }
-
-    if (!markers.halte[haltenow.uniqid]) {
-      markers.halte[haltenow.uniqid] = L.circleMarker(
-        [haltenow.lat, haltenow.lon],
-        markerOption
-      ).bindPopup(
-        `
-          <div class='haltePopup'>
-            <p style='font-weight: 700;'>${haltenow.nama}</p>
-            <p>${haltenow.description}</p>
-            <p style='font-weight: 700;'>Koneksi:</p>
-            <div class='stop'>
-              ${transitPopup}
-            </div>
-            <a href='https://maps.google.com?saddr=Current+Location&daddr=${haltenow.lat},${haltenow.lon}'>
-              <div class='navigate'>
-                <i class="fa fa-map-marker"></i>
-                <p>Navigasi</p>
-              </div>
-            </a>
-          </div>
-        `,
-        {
-          minWidth: 250,
-          maxWidth: 280,
-        }
-      );
-
-      halteMarkersGroup.addLayer(markers.halte[haltenow.uniqid]);
-    }
-
-    if (routeParams !== "all") {
-      var rectpos = "0";
-      if (i === 0) {
-        rectpos = "15";
-      } else if (i === listhalte.length - 1) {
-        rectpos = "-15";
-      }
-
-      var stop = document.createElement("div");
-      stop.className = "stop";
-
-      var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-      svg.setAttribute("width", "30");
-      svg.setAttribute("height", "30");
-      var rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-      rect.setAttribute("x", "12");
-      rect.setAttribute("y", rectpos);
-      rect.setAttribute("width", "6");
-      rect.setAttribute("height", "30");
-      rect.setAttribute("style", "fill: var(--accent-color);");
-      svg.appendChild(rect);
-      var circle = document.createElementNS(
-        "http://www.w3.org/2000/svg",
-        "circle"
-      );
-      circle.setAttribute("cx", "15");
-      circle.setAttribute("cy", "15");
-      circle.setAttribute("r", "6");
-      circle.setAttribute("stroke", "black");
-      circle.setAttribute("stroke-width", "2");
-      circle.setAttribute("fill", "white");
-      svg.appendChild(circle);
-      stop.appendChild(svg);
-
-      var text = document.createElement("p");
-      text.style = "margin-right: 0.25rem;";
-      text.innerHTML = haltenow.nama;
-      text.onclick = function () {
-        map.addLayer(halteMarkersGroup);
-        map.closePopup();
-        map.setView(markers.halte[haltenow.uniqid]._latlng, 17);
-        markers.halte[haltenow.uniqid].openPopup();
-      };
-      stop.appendChild(text);
-
-      if (transit.length > 0) {
-        transit.forEach((routename) => {
-          var button = document.createElement("a");
-          button.setAttribute("href", `./map.html?route=${routename}`);
-          var transit = document.createElement("div");
-          if (routedata[routename].feeder) {
-            transit.style = `color: ${routedata[routename].color}; background-color: ${routedata[routename].text}; border: 3px solid`;
-          } else {
-            transit.style = `color: ${routedata[routename].text}; background-color: ${routedata[routename].color}; border: 3px solid ${routedata[routename].color}`;
-          }
-          transit.className = "transit";
-          transit.innerHTML = routedata[routename].name;
-          button.appendChild(transit);
-          stop.appendChild(button);
-        });
-      }
-
-      stoplist.appendChild(stop);
-    }
-  });
-}
-
-async function getData() {
-  routedata = await getJson("./routedata.json");
-  const gethalte = await getJson("./halte.json");
-  haltedata = gethalte.halte;
-}
-
-getData().then(async () => {
-  // allroute();
-  if (routeParams === "all") {
-    const trackData = await getJson("https://busmapapi-5qdmx.fly.dev/all");
-    document.getElementById("infocontainer").style.display = "none";
-    document.getElementById("ui").style.height = "auto";
-    if (vw >= 800) {
-      document.getElementById("ui").style.width = "auto";
-    }
-    Object.keys(routedata)
-      .slice()
-      .reverse()
-      .forEach((key) => {
-        routeInitNew(key);
-        setVehicleMarker(key, trackData[routedata[key].code]);
-      })
-      .then(() => {
-        map.fitBounds(routeLinesGroup.getBounds());
-      });
-  } else if (routeParams === "sbr1") {
-    const trackSBRT = await getJson("https://busmapapi-5qdmx.fly.dev/3");
-    const trackURL = await getJson("https://busmapapi-5qdmx.fly.dev/1");
-    routeInitNew("sbrt");
-    routeInitNew(routeParams).then(() => {
-      map.fitBounds(routeLinesGroup.getBounds());
-    });
-    setVehicleMarker("sbrt", trackSBRT.url);
-    setVehicleMarker(routeParams, trackURL.url);
-  } else {
-    const trackURL = await getJson(
-      `https://busmapapi-5qdmx.fly.dev/${routedata[routeParams].code}`
-    );
-    routeInitNew(routeParams).then(() => {
-      map.fitBounds(routeLinesGroup.getBounds());
-    });
-    setVehicleMarker(routeParams, trackURL.url);
-  }
-});
-
-if (map.getZoom() > markerZoom) {
-  map.addLayer(halteMarkersGroup);
-}
-
-map.on("zoomend", function () {
-  if (map.getZoom() < markerZoom) {
-    map.removeLayer(halteMarkersGroup);
-  } else {
-    map.addLayer(halteMarkersGroup);
-  }
-});

@@ -2848,7 +2848,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2", "fd05"]
+      "transit": ["tmk2"]
     },
     {
       "uniqid": 84,
@@ -4681,7 +4681,7 @@
       "transit": ["fd05"]
     },
     {
-      "uniqid": "82",
+      "uniqid": "82b",
       "nama": "Ciputra Hospital A",
       "description": "",
       "lat": "-7.28165",
@@ -4693,7 +4693,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": []
+      "transit": ["fd05"]
     },
     {
       "uniqid": "83a",
@@ -4708,7 +4708,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": []
+      "transit": ["fd05"]
     },
     {
       "uniqid": "84a",
@@ -5792,7 +5792,7 @@
     },
     {
       "uniqid": "5e1533fca11aa",
-      "nama": "Terminal Intermoda Joyoboyo",
+      "nama": "Terminal Joyoboyo",
       "description": "Terminal Intermoda Joyoboyo",
       "lat": "-7.298961",
       "lon": "112.736182",
