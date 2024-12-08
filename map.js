@@ -69,7 +69,9 @@ const dataTracking = getData("https://busmapapi-5qdmx.fly.dev/all");
 // setting route information and themes
 if (routeParams != "all") {
   let route = dataRute[routeParams];
-  $("#route-name").text(`${route.name} | ${route.title}`);
+  let routeTitle = `${route.name} | ${route.title}`;
+  document.title = routeTitle;
+  $("#route-name").text(routeTitle);
   $("#op-hour").text(route.hours);
 
   $(":root")
@@ -87,6 +89,7 @@ if (routeParams != "all") {
   setRoute(route);
   setVehicleMarker(route, dataTracking[route.code]);
 } else {
+  document.title = "Peta jaringan bus Surabaya";
   $("#nav-title").text("Semua Rute");
   $("#route-panel, #map, #location-button").addClass("full-map");
   setTimeout(map.invalidateSize(), 100);
