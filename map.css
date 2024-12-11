@@ -46,6 +46,10 @@ a {
   .map-tiles {
     filter: var(--map-tiles-filter, none);
   }
+
+  .leaflet-container {
+    background: var(--background-color) !important;
+  }
 }
 
 /* desktop */
