@@ -113,7 +113,7 @@ a {
 
 .navbar {
   overflow: hidden;
-  z-index: 99999;
+  z-index: 100000;
   position: absolute;
   top: 0;
   left: 0;
