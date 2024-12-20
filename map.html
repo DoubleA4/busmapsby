@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sarabun:wght@800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -82,6 +82,24 @@
             <div class="operation-box">
               <p>Detail rute</p>
               <p id="op-detail">Loading...</p>
+            </div>
+          </div>
+          <div id="route-select">
+            <div
+              id="route-a"
+              class="route-button button route-active"
+              onclick="routeSelect('a')"
+            >
+              <p>Rute A</p>
+              <div class="bottom-line"></div>
+            </div>
+            <div
+              id="route-b"
+              class="route-button button"
+              onclick="routeSelect('b')"
+            >
+              <p>Rute B</p>
+              <div class="bottom-line"></div>
             </div>
           </div>
         </div>
