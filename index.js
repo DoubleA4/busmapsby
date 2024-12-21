@@ -10,8 +10,11 @@ async function main() {
   const trackData = await getJson("https://busmapapi-5qdmx.fly.dev/all");
 
   async function counterFill(routeCode) {
-    const halte = data[routeCode].datahalte.filter(
-      (item, index) => data[routeCode].datahalte.indexOf(item) === index
+    const haltea = data[routeCode].datahalte.a.filter(
+      (item, index) => data[routeCode].datahalte.a.indexOf(item) === index
+    );
+    const halteb = data[routeCode].datahalte.b.filter(
+      (item, index) => data[routeCode].datahalte.b.indexOf(item) === index
     );
     let id_koridor = data[routeCode].code;
     let reqAddr;
@@ -40,7 +43,9 @@ async function main() {
     } else {
       bus = await res.json();
     }
-    var counter = `${bus.length || 0} Bus • ${halte.length || 0} Halte`;
+    var counter = `${bus.length || 0} Bus • ${
+      haltea.length + halteb.length || 0
+    } Halte`;
     var container = document.getElementById(`counter-${routeCode}`);
     container.innerHTML = counter;
   }

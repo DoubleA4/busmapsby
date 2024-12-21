@@ -113,7 +113,7 @@ a {
 
 .navbar {
   overflow: hidden;
-  z-index: 99999;
+  z-index: 100000;
   position: absolute;
   top: 0;
   left: 0;
@@ -257,10 +257,20 @@ a {
   flex-shrink: 0;
 }
 
-.transit-pill {
+.route-pill {
   width: 2em;
   padding: 0px 3px;
   text-align: center;
+  font-family: "Sarabun", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.trunk-pill {
+  border-radius: 5px;
+}
+
+.feeder-pill {
   border-radius: 15px;
 }
 
@@ -268,7 +278,7 @@ a {
   position: absolute;
   z-index: -2;
   width: 10px;
-  margin-top: calc(5em + 16px);
+  margin-top: calc(7.5em + 16px);
   margin-left: 20px;
   background-color: rgba(var(--accent-color), 0.5);
 }
@@ -316,4 +326,36 @@ a {
 .divMarker {
   text-shadow: -2px 0 var(--text-color), 0 2px var(--text-color),
     2px 0 var(--text-color), 0 -2px var(--text-color);
+}
+
+.bottom-line {
+  height: 3px;
+  width: auto;
+}
+
+#route-select {
+  padding: 0 0.5em;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  background-color: rgb(var(--accent-color));
+  top: 0;
+  position: sticky;
+}
+
+.route-button {
+  align-content: center;
+  text-align: center;
+  color: var(--accent-text);
+  padding: 0.5em 0.5em 0 0.5em;
+  flex-grow: 1;
+}
+
+.route-button > p {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+.route-active > div {
+  background-color: var(--accent-text);
 }

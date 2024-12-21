@@ -66,9 +66,11 @@ const dataHalte = getData("./halte.json").halte;
 const dataRute = getData("./routedata.json");
 const dataTracking = getData("https://busmapapi-5qdmx.fly.dev/all");
 
+var route;
+
 // setting route information and themes
 if (routeParams != "all") {
-  let route = dataRute[routeParams];
+  route = dataRute[routeParams];
   let routeTitle = `${route.name} | ${route.title}`;
   document.title = routeTitle;
   $("#route-name").text(routeTitle);
@@ -87,6 +89,7 @@ if (routeParams != "all") {
     setVehicleMarker(dataRute.sbrt, dataTracking[dataRute.sbrt.code]);
   }
   setRoute(route);
+  setStopList(route, "a");
   setVehicleMarker(route, dataTracking[route.code]);
 } else {
   document.title = "Peta jaringan bus Surabaya";
@@ -115,80 +118,115 @@ function setRoute(route) {
   map.fitBounds(routeLinesGroup.getBounds());
 
   // putting every halte on the route to the map
-  route.datahalte.forEach((halteID) => {
+  Object.keys(route.datahalte).forEach((key) => {
+    route.datahalte[key].forEach((halteID) => {
+      let currentHalte = dataHalte.filter((halte) => {
+        return halte.uniqid == halteID;
+      })[0];
+
+      var currentTransit;
+      if (routeParams != "all") {
+        currentTransit = currentHalte.transit.filter((route) => {
+          return route != routeParams;
+        });
+      } else {
+        currentTransit = currentHalte.transit;
+      }
+
+      let transitDivs = "";
+      if (currentTransit.length > 0) {
+        currentTransit.forEach((routename) => {
+          let pill;
+          if (dataRute[routename].feeder) {
+            pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].color}; background-color: ${dataRute[routename].text}; border: 3px solid' class='route-pill feeder-pill'>${dataRute[routename].name}</div></a>`;
+          } else {
+            pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 3px solid ${dataRute[routename].color}' class='route-pill trunk-pill'>${dataRute[routename].name}</div></a>`;
+          }
+          transitDivs += pill;
+        });
+      }
+
+      // adding halte markers to map
+      if (!markers.halte[halteID]) {
+        markers.halte[halteID] = new L.circleMarker(
+          { lat: currentHalte.lat, lng: currentHalte.lon },
+          {
+            radius: 8,
+            fillColor: "white",
+            fillOpacity: 1,
+            color: "black",
+          }
+        ).bindPopup(
+          `
+            <p class='stop-name'>${currentHalte.nama}</p>
+            <div class='transit-list'>
+              ${transitDivs}
+            </div>
+            <a href='https://maps.google.com?saddr=Current+Location&daddr=${currentHalte.lat},${currentHalte.lon}'>
+              <div class='navigate'>
+                <span class="material-icons">
+                place
+                </span>
+                <p>Navigasi</p>
+              </div>
+            </a>
+            `,
+          {
+            minWidth: 250,
+            maxWidth: 280,
+            className: "halte-popup",
+          }
+        );
+        halteMarkersGroup.addLayer(markers.halte[halteID]);
+      }
+
+      // adding halte divs to UI
+      // if (routeParams != "all") {
+      //   let halteElement = `<div id="halte-${currentHalte.uniqid}" class="route-stop">
+      //   <div class="halte-circle"></div>
+      //   <p class="stop-name button" onclick="popupHandler('${halteID}')">${currentHalte.nama}</p>
+      //   ${transitDivs}
+      // </div>`;
+      //   $("#stops-container").append(halteElement);
+      //   $(".halte-line").height($(".halte-line").height() + 50);
+      // }
+    });
+  });
+  // if (routeParams != "all" && route.code != 3) addStopList(route);
+}
+
+function setStopList(route, direction) {
+  route.datahalte[direction].forEach((halteID) => {
     let currentHalte = dataHalte.filter((halte) => {
       return halte.uniqid == halteID;
     })[0];
 
-    var currentTransit;
-    if (routeParams != "all") {
-      currentTransit = currentHalte.transit.filter((route) => {
-        return route != routeParams;
-      });
-    } else {
-      currentTransit = currentHalte.transit;
-    }
+    var currentTransit = currentHalte.transit.filter((route) => {
+      return route != routeParams;
+    });
 
     let transitDivs = "";
     if (currentTransit.length > 0) {
       currentTransit.forEach((routename) => {
         let pill;
         if (dataRute[routename].feeder) {
-          pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].color}; background-color: ${dataRute[routename].text}; border: 3px solid' class='transit-pill'>${dataRute[routename].name}</div></a>`;
+          pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].color}; background-color: ${dataRute[routename].text}; border: 3px solid' class='route-pill feeder-pill'>${dataRute[routename].name}</div></a>`;
         } else {
-          pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 3px solid ${dataRute[routename].color}' class='transit-pill'>${dataRute[routename].name}</div></a>`;
+          pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 3px solid ${dataRute[routename].color}' class='route-pill trunk-pill'>${dataRute[routename].name}</div></a>`;
         }
         transitDivs += pill;
       });
     }
 
-    // adding halte markers to map
-    if (!markers.halte[halteID]) {
-      markers.halte[halteID] = new L.circleMarker(
-        { lat: currentHalte.lat, lng: currentHalte.lon },
-        {
-          radius: 8,
-          fillColor: "white",
-          fillOpacity: 1,
-          color: "black",
-        }
-      ).bindPopup(
-        `
-          <p class='stop-name'>${currentHalte.nama}</p>
-          <div class='transit-list'>
-            ${transitDivs}
-          </div>
-          <a href='https://maps.google.com?saddr=Current+Location&daddr=${currentHalte.lat},${currentHalte.lon}'>
-            <div class='navigate'>
-              <span class="material-icons">
-              place
-              </span>
-              <p>Navigasi</p>
-            </div>
-          </a>
-          `,
-        {
-          minWidth: 250,
-          maxWidth: 280,
-          className: "halte-popup",
-        }
-      );
-      halteMarkersGroup.addLayer(markers.halte[halteID]);
-    }
-
-    // adding halte divs to UI
-    if (routeParams != "all") {
-      let halteElement = `<div id="halte-${currentHalte.uniqid}" class="route-stop">
+    let halteElement = `<div id="halte-${currentHalte.uniqid}" class="route-stop">
       <div class="halte-circle"></div>
       <p class="stop-name button" onclick="popupHandler('${halteID}')">${currentHalte.nama}</p>
       ${transitDivs}
     </div>`;
-      $("#stops-container").append(halteElement);
-      $(".halte-line").height($(".halte-line").height() + 50);
-    }
+    $("#stops-container").append(halteElement);
+    $(".halte-line").height($(".halte-line").height() + 50);
   });
-  if (routeParams != "all" && route.code != 3)
-    $(".halte-line").height($(".halte-line").height() - 35);
+  $(".halte-line").height($(".halte-line").height() - 35);
 }
 
 async function setVehicleMarker(route, URL) {
@@ -215,9 +253,9 @@ async function setVehicleMarker(route, URL) {
 
   let pill;
   if (route.feeder) {
-    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.color}; background-color: ${route.text}; border: 3px solid' class='transit-pill'>${route.name}</div></a>`;
+    pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].color}; background-color: ${dataRute[routename].text}; border: 3px solid' class='route-pill feeder-pill'>${dataRute[routename].name}</div></a>`;
   } else {
-    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.text}; background-color: ${route.color}; border: 3px solid ${route.color}' class='transit-pill'>${route.name}</div></a>`;
+    pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 3px solid ${dataRute[routename].color}' class='route-pill trunk-pill'>${dataRute[routename].name}</div></a>`;
   }
 
   const busIcon = L.divIcon({
@@ -228,7 +266,9 @@ async function setVehicleMarker(route, URL) {
 
   if (routeParams != "all" && route.code != 3) {
     $("#op-detail").text(
-      `${data.length} Bus | ${route.datahalte.length} Halte`
+      `${data.length} Bus | ${
+        route.datahalte.a.length + route.datahalte.b.length
+      } Halte`
     );
   }
 
@@ -368,4 +408,18 @@ function showError(error) {
       }).showToast();
       break;
   }
+}
+
+function routeSelect(direction) {
+  $("div[id^='halte-']").remove();
+  $(".halte-line").height(0);
+  let opposite;
+  if (direction == "a") {
+    opposite = "b";
+  } else {
+    opposite = "a";
+  }
+  $("#route-" + opposite).removeClass("route-active");
+  $("#route-" + direction).addClass("route-active");
+  setStopList(route, direction);
 }

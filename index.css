@@ -95,6 +95,9 @@ a:active {
   font-size: x-large;
   color: var(--accent-text);
   border-radius: 15px 0px 0px 15px;
+  font-family: "Sarabun", serif;
+  font-weight: 800;
+  font-style: normal;
 }
 .routedetail {
   color: #000;
