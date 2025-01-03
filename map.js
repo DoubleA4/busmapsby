@@ -253,9 +253,9 @@ async function setVehicleMarker(route, URL) {
 
   let pill;
   if (route.feeder) {
-    pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].color}; background-color: ${dataRute[routename].text}; border: 3px solid' class='route-pill feeder-pill'>${dataRute[routename].name}</div></a>`;
+    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.color}; background-color: ${route.text}; border: 3px solid' class='route-pill feeder-pill'>${route.name}</div></a>`;
   } else {
-    pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 3px solid ${dataRute[routename].color}' class='route-pill trunk-pill'>${dataRute[routename].name}</div></a>`;
+    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.text}; background-color: ${route.color}; border: 3px solid ${route.color}' class='route-pill trunk-pill'>${route.name}</div></a>`;
   }
 
   const busIcon = L.divIcon({
