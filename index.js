@@ -34,7 +34,7 @@ async function main() {
     };
 
     const res = await fetch(
-      `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${id_koridor}`,
+      `https://busmapapi-5qdmx.fly.dev/track/${reqAddr}/${id_koridor}`,
       options
     ).catch((error) => console.log(error));
     var bus;

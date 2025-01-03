@@ -246,7 +246,7 @@ async function setVehicleMarker(route, URL) {
   };
 
   const response = await fetch(
-    `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${id_koridor}`,
+    `https://busmapapi-5qdmx.fly.dev/track/${reqAddr}/${id_koridor}`,
     options
   );
   const data = await response.json();
