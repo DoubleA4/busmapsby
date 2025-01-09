@@ -205,7 +205,7 @@ a {
   padding: 0.5em;
   display: flex;
   justify-content: space-around;
-  gap: 10px;
+  gap: 5px;
   background-color: rgb(var(--accent-color));
 }
 
@@ -216,7 +216,7 @@ a {
   color: var(--text-color);
   padding: 0.5em;
   flex-grow: 1;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .operation-box > p:last-child {
@@ -329,8 +329,9 @@ a {
 }
 
 .bottom-line {
-  height: 3px;
+  height: 5px;
   width: auto;
+  border-radius: 5px 5px 0px 0px;
 }
 
 #route-select {
@@ -358,4 +359,10 @@ a {
 
 .route-active > div {
   background-color: var(--accent-text);
+}
+
+.material-icons {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }

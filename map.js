@@ -369,7 +369,7 @@ function showPosition(position) {
 
   setTimeout(() => {
     updatePosition();
-  }, 3000);
+  }, 5000);
 }
 
 function showError(error) {
