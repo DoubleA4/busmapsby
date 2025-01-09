@@ -64,7 +64,7 @@ markers.halte = {};
 
 const dataHalte = getData("./halte.json").halte;
 const dataRute = getData("./routedata.json");
-const dataTracking = getData("https://busmapapi-5qdmx.fly.dev/all");
+const dataTracking = getData("https://busmapapi.fly.dev/all");
 
 var route;
 
@@ -246,7 +246,7 @@ async function setVehicleMarker(route, URL) {
   };
 
   const response = await fetch(
-    `https://busmapapi-5qdmx.fly.dev/track/${reqAddr}/${id_koridor}`,
+    `${dataTracking.apiUrl}/track/${reqAddr}/${id_koridor}`,
     options
   );
   const data = await response.json();

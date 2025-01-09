@@ -4,10 +4,36 @@ async function getJson(URL) {
   return data;
 }
 
+// Get the modal
+var modal = document.getElementById("notifModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+};
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
 async function main() {
   const res = await fetch("./routedata.json");
   const data = await res.json();
-  const trackData = await getJson("https://busmapapi-5qdmx.fly.dev/all");
+  const trackData = await getJson("https://busmapapi.fly.dev/all");
+  const notif = await getJson("https://busmapapi.fly.dev/notification");
+
+  if (notif.pesan.length > 0) {
+    var notifContent = document.getElementById("notif-content");
+    notifContent.innerHTML = notif.pesan;
+    modal.style.display = "block";
+    console.log(notif.pesan);
+  }
 
   async function counterFill(routeCode) {
     const haltea = data[routeCode].datahalte.a.filter(
@@ -34,7 +60,7 @@ async function main() {
     };
 
     const res = await fetch(
-      `https://busmapapi-5qdmx.fly.dev/track/${reqAddr}/${id_koridor}`,
+      `${trackData.apiUrl}/track/${reqAddr}/${id_koridor}`,
       options
     ).catch((error) => console.log(error));
     var bus;
