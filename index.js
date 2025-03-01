@@ -69,7 +69,7 @@ async function main() {
     } else {
       bus = await res.json();
     }
-    var counter = `${bus.length || 0} Bus • ${
+    var counter = `${bus.length || 0} Bus <br/> ${
       haltea.length + halteb.length || 0
     } Halte`;
     var container = document.getElementById(`counter-${routeCode}`);
@@ -80,32 +80,20 @@ async function main() {
     if (route === "sbrt") {
       continue;
     }
-    var routelist = document.getElementById("routelist");
-    var a = document.createElement("a");
-    a.setAttribute("href", `./map.html?route=${route}`);
-    var routecontainer = document.createElement("div");
-    routecontainer.className = "routecontainer";
-    var routecode = document.createElement("div");
-    routecode.className = "routecode";
+    let pill;
     if (data[route].feeder) {
-      routecode.style = `background-color: ${data[route].text}; color: ${data[route].color}; border: 5px solid`;
+      pill = `<div style='color: ${data[route].color}; background-color: ${data[route].text}; border: 3px solid' class='route-pill feeder-pill menu-pill'>${data[route].name}</div>`;
     } else {
-      routecode.style = `background-color: ${data[route].color}; color: ${data[route].text}; border: 5px solid ${data[route].color}`;
+      pill = `<div style='color: ${data[route].text}; background-color: ${data[route].color}; border: 3px solid ${data[route].color}' class='route-pill trunk-pill menu-pill'>${data[route].name}</div>`;
     }
-    routecode.innerHTML = data[route].name;
-    routecontainer.appendChild(routecode);
-    var routedetail = document.createElement("div");
-    routedetail.className = "routedetail";
-    var dest = document.createElement("p");
-    dest.innerHTML = data[route].title;
-    routedetail.appendChild(dest);
-    var counter = document.createElement("div");
-    counter.id = `counter-${route}`;
-    counter.innerHTML = "0 Bus • 0 Halte";
-    routedetail.appendChild(counter);
-    routecontainer.appendChild(routedetail);
-    a.appendChild(routecontainer);
-    routelist.appendChild(a);
+    let routeElement = `<a href="/map.html?route=${route}">
+            <div class="routecontainer">
+              ${pill}
+              <p class="route-name">${data[route].title}</p>
+              <p id='counter-${route}'>0 Bus<br/>0 Halte</p>
+            </div>
+          </a>`;
+    $("#routelist").append(routeElement);
     counterFill(route);
   }
 }
