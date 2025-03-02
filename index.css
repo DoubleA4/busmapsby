@@ -178,15 +178,19 @@ footer {
 }
 
 .trunk-pill {
-  border-radius: 5px;
+  border-radius: 0.3em;
 }
 
 .feeder-pill {
-  border-radius: 15px;
+  border-radius: 2em;
 }
 
 .route-name {
   flex-grow: 2;
   font-size: large;
   font-weight: 700;
+}
+
+.route-counter {
+  text-align: right;
 }

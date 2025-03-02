@@ -82,7 +82,7 @@ async function main() {
     }
     let pill;
     if (data[route].feeder) {
-      pill = `<div style='color: ${data[route].color}; background-color: ${data[route].text}; border: 3px solid' class='route-pill feeder-pill menu-pill'>${data[route].name}</div>`;
+      pill = `<div style='color: ${data[route].text}; background-color: ${data[route].color}; border: 3px solid ${data[route].color}' class='route-pill feeder-pill menu-pill'>${data[route].name}</div>`;
     } else {
       pill = `<div style='color: ${data[route].text}; background-color: ${data[route].color}; border: 3px solid ${data[route].color}' class='route-pill trunk-pill menu-pill'>${data[route].name}</div>`;
     }
@@ -90,7 +90,7 @@ async function main() {
             <div class="routecontainer">
               ${pill}
               <p class="route-name">${data[route].title}</p>
-              <p id='counter-${route}'>0 Bus<br/>0 Halte</p>
+              <p id="counter-${route}" class="route-counter">0 Bus<br/>0 Halte</p>
             </div>
           </a>`;
     $("#routelist").append(routeElement);
