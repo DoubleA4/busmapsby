@@ -86,7 +86,7 @@ async function main() {
     } else {
       pill = `<div style='color: ${data[route].text}; background-color: ${data[route].color}; border: 3px solid ${data[route].color}' class='route-pill trunk-pill menu-pill'>${data[route].name}</div>`;
     }
-    let routeElement = `<a href="/map.html?route=${route}">
+    let routeElement = `<a href="./map.html?route=${route}">
             <div class="routecontainer">
               ${pill}
               <p class="route-name">${data[route].title}</p>
