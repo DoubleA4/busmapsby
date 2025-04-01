@@ -2,7 +2,7 @@
 <html lang="id">
   <head>
     <!-- HTML Meta Tags -->
-    <title>Map</title>
+    <title>Halte</title>
     <link
       rel="icon"
       type="image/png"
@@ -60,10 +60,7 @@
         <a href="javascript:history.back();">
           <span class="material-icons back-button"> arrow_back_ios </span>
         </a>
-        <p id="nav-title">Detail Rute</p>
-        <span class="material-icons back-button" style="color: #00000000">
-          arrow_back_ios
-        </span>
+        <p id="nav-title">Detail Halte</p>
       </div>
     </div>
     <div id="location-button" class="button" onclick="getLocation()">
@@ -73,38 +70,68 @@
       <div id="route-items">
         <div id="expand-panel"></div>
         <div id="route-info">
-          <div id="route-name">nama rute</div>
+          <div id="route-name">nama halte</div>
+          <div class="transit-list">
+            <a href="./map.html?route=sbr1"
+              ><div
+                style="
+                  color: white;
+                  background-color: #d23c41;
+                  border: 3px solid #d23c41;
+                "
+                class="route-pill trunk-pill"
+              >
+                R1
+              </div></a
+            ><a href="./map.html?route=fd06"
+              ><div
+                style="
+                  color: #da8539;
+                  background-color: white;
+                  border: 3px solid;
+                "
+                class="route-pill feeder-pill"
+              >
+                6
+              </div></a
+            ><a href="./map.html?route=fd03"
+              ><div
+                style="
+                  color: #43b0dc;
+                  background-color: white;
+                  border: 3px solid;
+                "
+                class="route-pill feeder-pill"
+              >
+                3
+              </div></a
+            ><a href="./map.html?route=fd04"
+              ><div
+                style="
+                  color: #8f6768;
+                  background-color: white;
+                  border: 3px solid;
+                "
+                class="route-pill feeder-pill"
+              >
+                4
+              </div></a
+            ><a href="./map.html?route=fd09"
+              ><div
+                style="
+                  color: #836fff;
+                  background-color: white;
+                  border: 3px solid;
+                "
+                class="route-pill feeder-pill"
+              >
+                9
+              </div></a
+            >
+          </div>
         </div>
         <div id="stops-container">
-          <div class="halte-line"></div>
-          <div id="route-operation">
-            <div class="operation-box">
-              <p>Jam operasi</p>
-              <p id="op-hour">Loading...</p>
-            </div>
-            <div class="operation-box">
-              <p>Detail rute</p>
-              <p id="op-detail">Loading...</p>
-            </div>
-          </div>
-          <div id="route-select">
-            <div
-              id="route-a"
-              class="route-button button route-active"
-              onclick="routeSelect('a')"
-            >
-              <p>Rute A</p>
-              <div class="bottom-line"></div>
-            </div>
-            <div
-              id="route-b"
-              class="route-button button"
-              onclick="routeSelect('b')"
-            >
-              <p>Rute B</p>
-              <div class="bottom-line"></div>
-            </div>
-          </div>
+          <span class="material-icons"> school </span>
         </div>
       </div>
     </div>
@@ -115,6 +142,6 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/toastify-js"
     ></script>
-    <script src="./map.js"></script>
+    <script src="./halte.js"></script>
   </body>
 </html>

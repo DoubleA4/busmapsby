@@ -25,7 +25,9 @@ window.onclick = function (event) {
 async function main() {
   const res = await fetch("./routedata.json");
   const data = await res.json();
-  const trackData = await getJson("https://busmapapi.fly.dev/all");
+  const trackData = await getJson(
+    "https://jsonblob.com/api/jsonBlob/1347259364460912640"
+  );
   const notif = await getJson("https://busmapapi.fly.dev/notification");
 
   if (notif.pesan.length > 0) {

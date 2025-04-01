@@ -64,7 +64,9 @@ markers.halte = {};
 
 const dataHalte = getData("./halte.json").halte;
 const dataRute = getData("./routedata.json");
-const dataTracking = getData("https://busmapapi.fly.dev/all");
+const dataTracking = getData(
+  "https://jsonblob.com/api/jsonBlob/1347259364460912640"
+);
 
 var route;
 
@@ -253,7 +255,7 @@ async function setVehicleMarker(route, URL) {
 
   let pill;
   if (route.feeder) {
-    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.color}; background-color: ${route.text}; border: 3px solid' class='route-pill feeder-pill'>${route.name}</div></a>`;
+    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.text}; background-color: ${route.color}; border: 3px solid ${route.color}' class='route-pill feeder-pill'>${route.name}</div></a>`;
   } else {
     pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.text}; background-color: ${route.color}; border: 3px solid ${route.color}' class='route-pill trunk-pill'>${route.name}</div></a>`;
   }
