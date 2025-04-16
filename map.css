@@ -265,17 +265,19 @@ a {
   width: 2em;
   padding: 0px 3px;
   text-align: center;
-  font-family: "Sarabun", serif;
-  font-weight: 800;
+  font-family: "Sora", sans-serif;
+  /* font-weight: 600; */
   font-style: normal;
 }
 
 .trunk-pill {
-  border-radius: 0.3em;
+  border-radius: 0.1em;
+  font-weight: 800;
 }
 
 .feeder-pill {
-  border-radius: 2em;
+  border-radius: 1em;
+  font-weight: 700;
 }
 
 .halte-line {

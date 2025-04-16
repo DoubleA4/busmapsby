@@ -10679,7 +10679,7 @@
     "feeder": false,
     "name": "R4",
     "title": "Purabaya-UNAIR Kampus C",
-    "color": "#ff1290",
+    "color": "#D7A561",
     "text": "white",
     "hours": "05:30 - 21:30",
     "datarute": [
@@ -11885,7 +11885,7 @@
     "code": "11",
     "link": "tmk3",
     "feeder": false,
-    "name": "K3L",
+    "name": "3L",
     "title": "Purabaya-ITS-Kenjeran Park",
     "color": "#664c9c",
     "text": "white",
