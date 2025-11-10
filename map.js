@@ -64,9 +64,7 @@ markers.halte = {};
 
 const dataHalte = getData("./halte.json").halte;
 const dataRute = getData("./routedata.json");
-const dataTracking = getData(
-  "https://jsonblob.com/api/jsonBlob/1347259364460912640"
-);
+const dataTracking = getData("https://busmapapi.fly.dev/all");
 
 var route;
 
