@@ -232,7 +232,7 @@ function setStopList(route, direction) {
 async function setVehicleMarker(route, URL) {
   let id_koridor = route.code;
   let reqAddr;
-  if (id_koridor < 10 || id_koridor == 51) {
+  if (id_koridor < 10 || id_koridor == 51 || id_koridor == 12) {
     reqAddr = "sbybus";
   } else if (id_koridor < 100) {
     reqAddr = "temanbus";
