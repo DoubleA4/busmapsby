@@ -1,6 +1,6 @@
 {
-  "name": "Surabaya Bus Tracker",
-  "short_name": "Bus Tracker",
+  "name": "Klacak",
+  "short_name": "Klacak",
   "icons": [
     {
       "src": "/busmapsby/images/web-app-manifest-192x192.png",
@@ -16,6 +16,6 @@
     }
   ],
   "theme_color": "#ffffff",
-  "background_color": "#ff8811",
+  "background_color": "#1e1e2e",
   "display": "standalone"
 }
