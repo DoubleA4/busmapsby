@@ -78,14 +78,17 @@ a:active {
 }
 .routecontainer {
   height: 4rem;
-  width: 100%;
+  width: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
   overflow: hidden;
   background-color: var(--card-color);
+  align-items: center;
+  padding: 0.5rem 1rem;
+  gap: 10px;
 }
-.routecode {
+/* .routecode {
   width: 5.5rem;
   background-color: var(--accent-color);
   display: flex;
@@ -98,17 +101,17 @@ a:active {
   font-family: "Sarabun", serif;
   font-weight: 800;
   font-style: normal;
-}
-.routedetail {
+} */
+/* .routedetail {
   color: #000;
   height: 100%;
   width: 100%;
-  /* background-color: black; */
+  background-color: black;
   padding: 0rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
+} */
 
 footer {
   text-align: center;
@@ -116,4 +119,80 @@ footer {
 
 .fa-github {
   color: var(--text-color);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: var(--background-color);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-height: 80%;
+  border-radius: 15px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.route-pill {
+  width: 2em;
+  padding: 0px 3px;
+  text-align: center;
+  font-family: "Sora", sans-serif;
+  /* font-weight: 600; */
+  font-style: normal;
+}
+
+.menu-pill {
+  font-size: 2rem;
+}
+
+.trunk-pill {
+  border-radius: 0.1em;
+  font-weight: 800;
+}
+
+.feeder-pill {
+  border-radius: 1em;
+  font-weight: 700;
+}
+
+.route-name {
+  flex-grow: 2;
+  font-size: large;
+  font-weight: 700;
+}
+
+.route-counter {
+  text-align: right;
 }

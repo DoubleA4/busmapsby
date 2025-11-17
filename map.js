@@ -64,7 +64,7 @@ markers.halte = {};
 
 const dataHalte = getData("./halte.json").halte;
 const dataRute = getData("./routedata.json");
-const dataTracking = getData("https://busmapapi-5qdmx.fly.dev/all");
+const dataTracking = getData("https://busmapapi.fly.dev/all");
 
 var route;
 
@@ -138,9 +138,9 @@ function setRoute(route) {
         currentTransit.forEach((routename) => {
           let pill;
           if (dataRute[routename].feeder) {
-            pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].color}; background-color: ${dataRute[routename].text}; border: 3px solid' class='route-pill feeder-pill'>${dataRute[routename].name}</div></a>`;
+            pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 2px solid ${dataRute[routename].color}' class='route-pill feeder-pill'>${dataRute[routename].name}</div></a>`;
           } else {
-            pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 3px solid ${dataRute[routename].color}' class='route-pill trunk-pill'>${dataRute[routename].name}</div></a>`;
+            pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 2px solid ${dataRute[routename].color}' class='route-pill trunk-pill'>${dataRute[routename].name}</div></a>`;
           }
           transitDivs += pill;
         });
@@ -210,9 +210,9 @@ function setStopList(route, direction) {
       currentTransit.forEach((routename) => {
         let pill;
         if (dataRute[routename].feeder) {
-          pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].color}; background-color: ${dataRute[routename].text}; border: 3px solid' class='route-pill feeder-pill'>${dataRute[routename].name}</div></a>`;
+          pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 2px solid ${dataRute[routename].color}' class='route-pill feeder-pill'>${dataRute[routename].name}</div></a>`;
         } else {
-          pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 3px solid ${dataRute[routename].color}' class='route-pill trunk-pill'>${dataRute[routename].name}</div></a>`;
+          pill = `<a href='./map.html?route=${routename}'><div style='color: ${dataRute[routename].text}; background-color: ${dataRute[routename].color}; border: 2px solid ${dataRute[routename].color}' class='route-pill trunk-pill'>${dataRute[routename].name}</div></a>`;
         }
         transitDivs += pill;
       });
@@ -232,7 +232,7 @@ function setStopList(route, direction) {
 async function setVehicleMarker(route, URL) {
   let id_koridor = route.code;
   let reqAddr;
-  if (id_koridor < 10 || id_koridor == 51) {
+  if (id_koridor < 10 || id_koridor == 51 || id_koridor == 12) {
     reqAddr = "sbybus";
   } else if (id_koridor < 100) {
     reqAddr = "temanbus";
@@ -246,16 +246,16 @@ async function setVehicleMarker(route, URL) {
   };
 
   const response = await fetch(
-    `https://suroboyobus.surabaya.go.id/gbapi/gobisbaru/track/${reqAddr}/${id_koridor}`,
+    `${dataTracking.apiUrl}/track/${reqAddr}/${id_koridor}`,
     options
   );
   const data = await response.json();
 
   let pill;
   if (route.feeder) {
-    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.color}; background-color: ${route.text}; border: 3px solid' class='route-pill feeder-pill'>${route.name}</div></a>`;
+    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.text}; background-color: ${route.color}; border: 2px solid ${route.color}' class='route-pill feeder-pill'>${route.name}</div></a>`;
   } else {
-    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.text}; background-color: ${route.color}; border: 3px solid ${route.color}' class='route-pill trunk-pill'>${route.name}</div></a>`;
+    pill = `<a href='./map.html?route=${route.link}'><div style='color: ${route.text}; background-color: ${route.color}; border: 2px solid ${route.color}' class='route-pill trunk-pill'>${route.name}</div></a>`;
   }
 
   const busIcon = L.divIcon({
@@ -369,7 +369,7 @@ function showPosition(position) {
 
   setTimeout(() => {
     updatePosition();
-  }, 3000);
+  }, 5000);
 }
 
 function showError(error) {

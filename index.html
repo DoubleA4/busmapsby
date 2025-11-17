@@ -71,29 +71,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sarabun:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
 
   <body>
+    <!-- <div id="notifModal" class="modal">
+      Modal content
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="notif-content"></div>
+      </div>
+    </div> -->
     <div id="page-container">
       <div id="content-wrap">
         <div id="routelist">
+          <div
+            id="notif"
+            class="routecontainer"
+            style="
+              height: auto;
+              margin: 0 auto;
+              background-color: rgba(240, 128, 128, 0.3);
+              border-color: red;
+              border-width: 3px;
+              border-style: solid;
+              display: none;
+            "
+          >
+            <div id="notif-content"></div>
+          </div>
           <a href="https://forms.gle/a6MQMn3kvV7nxUCK9">
             <div class="routecontainer" style="background-color: #8839ef">
-              <div class="routedetail">
-                <p
-                  style="
-                    color: white;
-                    font-weight: 700;
-                    font-size: 2rem;
-                    text-align: center;
-                  "
-                >
-                  Survey Pengguna
-                </p>
-              </div>
+              <p
+                style="
+                  color: white;
+                  font-weight: 700;
+                  font-size: 2rem;
+                  text-align: center;
+                "
+              >
+                Survey Pengguna
+              </p>
             </div>
           </a>
           <a href="./map.html?route=all">
@@ -101,52 +126,52 @@
               class="routecontainer"
               style="background-color: var(--accent-color)"
             >
-              <div class="routedetail">
-                <p
-                  style="
-                    color: white;
-                    font-weight: 700;
-                    font-size: 2rem;
-                    text-align: center;
-                  "
-                >
-                  Semua Rute
-                </p>
-              </div>
+              <p
+                style="
+                  color: white;
+                  font-weight: 700;
+                  font-size: 2rem;
+                  text-align: center;
+                "
+              >
+                Semua Rute
+              </p>
             </div>
           </a>
           <a
             href="https://drive.google.com/drive/folders/1TeBbrXdcwJzNV7jmfRzWaXuD4LV-reuQ?usp=sharing"
           >
             <div class="routecontainer" style="background-color: #b81d1d">
-              <div
-                class="routedetail"
+              <img
+                src="https://ugc.production.linktr.ee/mbe4bqT1eiH8v5MP2Fpg_4z1C3wWB4T1PQ71H?io=true&amp;size=avatar-v3_0"
+                style="height: 80%; margin: auto 0 auto"
+              />
+              <p
                 style="
-                  flex-direction: row;
-                  align-content: center;
-                  justify-content: center;
-                  gap: 10px;
+                  color: white;
+                  font-weight: 700;
+                  font-size: 2rem;
+                  text-align: center;
+                  margin-top: auto;
+                  margin-bottom: auto;
                 "
               >
-                <img
-                  src="https://ugc.production.linktr.ee/mbe4bqT1eiH8v5MP2Fpg_4z1C3wWB4T1PQ71H?io=true&amp;size=avatar-v3_0"
-                  style="height: 80%; margin: auto 0 auto"
-                />
-                <p
-                  style="
-                    color: white;
-                    font-weight: 700;
-                    font-size: 2rem;
-                    text-align: center;
-                    margin-top: auto;
-                    margin-bottom: auto;
-                  "
-                >
-                  Peta Transum
-                </p>
-              </div>
+                Peta Transum
+              </p>
             </div>
           </a>
+          <!-- <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwgTNETu58JMoNJG7w4AeDONUBAP5IawBLhFAkCWpblI8c7W6Jb8uVN2sltC7syNvQ-4h370-jryFjG7kw0Y7AoIkIEZS-uUyN0FpXtaEIjCttDfRXhBrqRW_4AMu18Z15w2mUlQdmQ0Xe/s800/ojigi_animal_neko.png"
+            style="
+              width: 200px;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+          <p style="font-weight: 700; font-size: x-large; text-align: center">
+            Situs sedang dalam perbaikan
+          </p> -->
         </div>
       </div>
       <footer id="footer">
