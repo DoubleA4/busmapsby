@@ -13694,6 +13694,22 @@
       "status_transit": 1,
       "timetable": "",
       "transit": ["fd07"]
+    },
+    {
+      "uniqid": 1219,
+      "nama": "Jembatan Cinta",
+      "description": " ",
+      "lat": "-7.22171",
+      "lon": "112.60102",
+      "arah": 1,
+      "priority": 0,
+      "sounddekat": "dekat-halte.wav",
+      "soundhalte": "dekat-halte.wav",
+      "soundstop": "kendaraanstop.mp3",
+      "status_transit": 1,
+      "timetable": "",
+      "keterangantambahan": "",
+      "transit": []
     }
   ]
 }
