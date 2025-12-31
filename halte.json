@@ -1648,7 +1648,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "tmk2", "fd02"]
+      "transit": ["sbr1", "tmk2", "sbr5", "fd02"]
     },
     {
       "uniqid": "5ade9ba9a68e7",
@@ -1663,7 +1663,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2016%20PRBY-PRK%20NEW/KALIASIN.jpg\" width=\"100%\" height=\"100%\" /></p>",
-      "transit": ["sbr1", "tmk2"]
+      "transit": ["sbr1", "tmk2", "sbr5"]
     },
     {
       "uniqid": "5ade9c0902e77",
@@ -1963,7 +1963,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "tmk2"]
+      "transit": ["sbr1", "tmk2", "sbr5"]
     },
     {
       "uniqid": "5ade9f22bc934",
@@ -1978,7 +1978,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": ["sbr1", "tmk2", "fd02"]
+      "transit": ["sbr1", "tmk2", "sbr5", "fd02"]
     },
     {
       "uniqid": "5ade9f551022e",
@@ -1993,7 +1993,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "tmk2", "fd02"]
+      "transit": ["sbr1", "tmk2", "sbr5", "fd02"]
     },
     {
       "uniqid": "5ade9f8fc7716",
@@ -2008,7 +2008,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "tmk2", "fd02"]
+      "transit": ["sbr1", "tmk2", "sbr5", "fd02"]
     },
     {
       "uniqid": "5adea00cd499a",
