@@ -13,7 +13,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 2,
@@ -28,7 +28,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "sbr4"]
+      "transit": ["fd12", "sbr4"]
     },
     {
       "uniqid": 4,
@@ -43,7 +43,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd03"]
+      "transit": ["fd12", "fd03"]
     },
     {
       "uniqid": 5,
@@ -58,7 +58,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd11"]
+      "transit": ["fd12", "fd11"]
     },
     {
       "uniqid": 6,
@@ -73,7 +73,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd03"]
+      "transit": ["fd12", "fd03"]
     },
     {
       "uniqid": 7,
@@ -88,7 +88,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd03"]
+      "transit": ["fd12", "fd03"]
     },
     {
       "uniqid": 8,
@@ -103,7 +103,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd03"]
+      "transit": ["fd12", "fd03"]
     },
     {
       "uniqid": 9,
@@ -118,7 +118,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 10,
@@ -133,7 +133,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 11,
@@ -148,7 +148,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd11"]
+      "transit": ["fd12", "fd11"]
     },
     {
       "uniqid": 12,
@@ -163,7 +163,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 13,
@@ -178,7 +178,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 14,
@@ -193,7 +193,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2", "tmk3", "sbr4"]
+      "transit": ["tmk2", "fd12", "sbr4"]
     },
     {
       "uniqid": 15,
@@ -208,7 +208,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 16,
@@ -223,7 +223,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd03"]
+      "transit": ["fd12", "fd03"]
     },
     {
       "uniqid": 17,
@@ -238,7 +238,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd11"]
+      "transit": ["fd12", "fd11"]
     },
     {
       "uniqid": 18,
@@ -253,7 +253,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd11"]
+      "transit": ["fd12", "fd11"]
     },
     {
       "uniqid": 19,
@@ -268,7 +268,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 20,
@@ -283,7 +283,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "sbr4"]
+      "transit": ["fd12", "sbr4"]
     },
     {
       "uniqid": 21,
@@ -298,7 +298,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 22,
@@ -313,7 +313,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 23,
@@ -328,7 +328,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 24,
@@ -343,7 +343,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "sbr4"]
+      "transit": ["fd12", "sbr4"]
     },
     {
       "uniqid": 25,
@@ -358,7 +358,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2", "tmk3", "sbr4", "fd11"]
+      "transit": ["tmk2", "fd12", "sbr4", "fd11"]
     },
     {
       "uniqid": 26,
@@ -373,7 +373,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2", "tmk3", "sbr4"]
+      "transit": ["tmk2", "fd12", "sbr4"]
     },
     {
       "uniqid": 27,
@@ -388,7 +388,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 28,
@@ -403,7 +403,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 29,
@@ -418,7 +418,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 30,
@@ -433,7 +433,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd11"]
+      "transit": ["fd12", "fd11"]
     },
     {
       "uniqid": 31,
@@ -448,7 +448,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 32,
@@ -463,7 +463,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 33,
@@ -478,7 +478,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 35,
@@ -493,7 +493,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 36,
@@ -508,7 +508,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3"]
+      "transit": ["fd12"]
     },
     {
       "uniqid": 37,
@@ -523,7 +523,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "sbr4"]
+      "transit": ["fd12", "sbr4"]
     },
     {
       "uniqid": 38,
@@ -538,7 +538,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "sbr4"]
+      "transit": ["fd12", "sbr4"]
     },
     {
       "uniqid": 39,
@@ -553,7 +553,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk3", "fd03"]
+      "transit": ["fd12", "fd03"]
     },
     {
       "uniqid": "5ade9bd79869b",
@@ -568,7 +568,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr5", "fd07"]
+      "transit": ["sbr1", "tmk2", "sbr5", "fd07"]
     },
     {
       "uniqid": "5ade9e90645a6",
@@ -583,7 +583,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr5", "fd07"]
+      "transit": ["sbr1", "tmk2", "sbr5", "fd07"]
     },
     {
       "uniqid": "5ade9ebdc72ed",
@@ -598,7 +598,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr5", "fd07"]
+      "transit": ["sbr1", "tmk2", "sbr5", "fd07"]
     },
     {
       "uniqid": "6321cf3bdce1b",
@@ -928,7 +928,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr5", "fd07"]
+      "transit": ["tmk2", "sbr5", "fd07"]
     },
     {
       "uniqid": "85",
@@ -973,7 +973,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": ["sbr5"]
+      "transit": ["tmk2", "sbr5"]
     },
     {
       "uniqid": "63ec690308321",
@@ -1438,7 +1438,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2016%20PRBY-PRK%20NEW/PRBY.jpg\" width=\"100%\" height=\"100%\" /></p>",
-      "transit": ["sbr1", "tmk3", "sbr4"]
+      "transit": ["sbr1", "fd12", "sbr4"]
     },
     {
       "uniqid": "5add9f844ff9c",
@@ -1453,7 +1453,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2016%20PRBY-PRK%20NEW/DKH%20MENANGGAL.jpg\" width=\"100%\" height=\"100%\" /></p>",
-      "transit": ["sbr1", "sbr4", "fd09"]
+      "transit": ["sbr1", "sbr4", "fd09", "fd12"]
     },
     {
       "uniqid": "5ade955b0d24e",
@@ -1468,7 +1468,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr4"]
+      "transit": ["sbr1", "sbr4", "fd12"]
     },
     {
       "uniqid": "5ade985d7a056",
@@ -1483,7 +1483,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr4"]
+      "transit": ["sbr1", "sbr4", "fd12"]
     },
     {
       "uniqid": "5ade99b0429c3",
@@ -2173,7 +2173,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr4"]
+      "transit": ["sbr1", "sbr4", "fd12"]
     },
     {
       "uniqid": "5adea2ae955b9",
@@ -2188,7 +2188,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr4"]
+      "transit": ["sbr1", "sbr4", "fd12"]
     },
     {
       "uniqid": "5adea2d71f75a",
@@ -2203,7 +2203,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr4"]
+      "transit": ["sbr1", "sbr4", "fd12"]
     },
     {
       "uniqid": "sblb1",
@@ -2278,7 +2278,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["sbr4"]
+      "transit": ["sbr4", "fd12"]
     },
     {
       "uniqid": "sblb5",
@@ -3043,7 +3043,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["sbr4"]
+      "transit": ["sbr4", "fd12"]
     },
     {
       "uniqid": "5d537277cab8e",
@@ -5638,7 +5638,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2", "tmk3", "sbr4", "fd11"]
+      "transit": ["tmk2", "fd12", "sbr4", "fd11"]
     },
     {
       "uniqid": 92,
@@ -9163,7 +9163,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": ["fd04"]
+      "transit": ["fd04", "fd12"]
     },
     {
       "uniqid": "66d7c6838dee0",
@@ -10228,7 +10228,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": ["fd04"]
+      "transit": ["fd04", "fd12"]
     },
     {
       "uniqid": "66d7d0b85ce47",
@@ -13710,6 +13710,86 @@
       "timetable": "",
       "keterangantambahan": "",
       "transit": []
+    },
+    {
+      "uniqid": 1153,
+      "nama": "UINSA 2A",
+      "description": "",
+      "lat": "-7.343377",
+      "lon": "112.786356",
+      "arah": 1,
+      "priority": 80,
+      "sounddekat": "dekat-halte.wav",
+      "soundhalte": "02. Halte UINSA 2.wav",
+      "soundstop": "kendaraanstop.mp3",
+      "status_transit": 1,
+      "timetable": null,
+      "keterangantambahan": "",
+      "transit": ["fd12"]
+    },
+    {
+      "uniqid": 1174,
+      "nama": "UINSA 2B",
+      "description": "",
+      "lat": "-7.342965",
+      "lon": "112.786581",
+      "arah": 1,
+      "priority": 80,
+      "sounddekat": "dekat-halte.wav",
+      "soundhalte": "02. Halte UINSA 2.wav",
+      "soundstop": "kendaraanstop.mp3",
+      "status_transit": 1,
+      "timetable": null,
+      "keterangantambahan": "",
+      "transit": ["fd12"]
+    },
+    {
+      "uniqid": 1105,
+      "nama": "RSUD Surabaya Timur",
+      "description": "",
+      "lat": "-7.326351",
+      "lon": "112.785241",
+      "arah": 1,
+      "priority": 80,
+      "sounddekat": "dekat-halte.wav",
+      "soundhalte": "Halte RSUD Eka Candrarini.mp3",
+      "soundstop": "kendaraanstop.mp3",
+      "status_transit": 1,
+      "timetable": "",
+      "keterangantambahan": "",
+      "transit": ["fd12", "fd03"]
+    },
+    {
+      "uniqid": 1103,
+      "nama": "Medokan Asri Tengah A",
+      "description": "",
+      "lat": "-7.326157",
+      "lon": "112.787057",
+      "arah": 1,
+      "priority": 80,
+      "sounddekat": "dekat-halte.wav",
+      "soundhalte": "16_ Medokan Asri Tengah 1.wav",
+      "soundstop": "kendaraanstop.mp3",
+      "status_transit": 1,
+      "timetable": "",
+      "keterangantambahan": "",
+      "transit": ["fd03"]
+    },
+    {
+      "uniqid": 1104,
+      "nama": "Medokan Asri Tengah B",
+      "description": "",
+      "lat": "-7.325944",
+      "lon": "112.787142",
+      "arah": 1,
+      "priority": 80,
+      "sounddekat": "dekat-halte.wav",
+      "soundhalte": "16_ Medokan Asri Tengah 1.wav",
+      "soundstop": "kendaraanstop.mp3",
+      "status_transit": 1,
+      "timetable": "",
+      "keterangantambahan": "",
+      "transit": ["fd03"]
     }
   ]
 }
