@@ -1483,7 +1483,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr4", "fd12"]
+      "transit": ["sbr1", "sbr4"]
     },
     {
       "uniqid": "5ade99b0429c3",
@@ -2278,7 +2278,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["sbr4", "fd12"]
+      "transit": ["sbr4"]
     },
     {
       "uniqid": "sblb5",
@@ -3043,7 +3043,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["sbr4", "fd12"]
+      "transit": ["sbr4"]
     },
     {
       "uniqid": "5d537277cab8e",
@@ -9163,7 +9163,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": ["fd04", "fd12"]
+      "transit": ["fd04"]
     },
     {
       "uniqid": "66d7c6838dee0",
@@ -10228,7 +10228,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": ["fd04", "fd12"]
+      "transit": ["fd04"]
     },
     {
       "uniqid": "66d7d0b85ce47",
