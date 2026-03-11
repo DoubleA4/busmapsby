@@ -148,7 +148,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["fd12", "fd11"]
+      "transit": ["fd10", "fd11", "fd12"]
     },
     {
       "uniqid": 12,
@@ -238,7 +238,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["fd12", "fd11"]
+      "transit": ["fd10", "fd11", "fd12"]
     },
     {
       "uniqid": 18,
@@ -253,7 +253,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["fd12", "fd11"]
+      "transit": ["fd10", "fd11", "fd12"]
     },
     {
       "uniqid": 19,
@@ -433,7 +433,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["fd12", "fd11"]
+      "transit": ["fd10", "fd11", "fd12"]
     },
     {
       "uniqid": 31,
@@ -1453,7 +1453,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "<p><img src=\"http://36.66.208.109/gobis/public/images/img/US/US%2016%20PRBY-PRK%20NEW/DKH%20MENANGGAL.jpg\" width=\"100%\" height=\"100%\" /></p>",
-      "transit": ["sbr1", "sbr4", "fd09", "fd12"]
+      "transit": ["sbr1", "sbr4", "fd09"]
     },
     {
       "uniqid": "5ade955b0d24e",
@@ -1468,7 +1468,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr4", "fd12"]
+      "transit": ["sbr1", "sbr4"]
     },
     {
       "uniqid": "5ade985d7a056",
@@ -2173,7 +2173,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr4", "fd12"]
+      "transit": ["sbr1", "sbr4"]
     },
     {
       "uniqid": "5adea2ae955b9",
@@ -2188,7 +2188,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr4", "fd12"]
+      "transit": ["sbr1", "sbr4"]
     },
     {
       "uniqid": "5adea2d71f75a",
@@ -2203,7 +2203,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr1", "sbr4", "fd12"]
+      "transit": ["sbr1", "sbr4"]
     },
     {
       "uniqid": "sblb1",
@@ -5548,7 +5548,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": null,
-      "transit": ["tmk2", "fd09"]
+      "transit": []
     },
     {
       "uniqid": 76,
