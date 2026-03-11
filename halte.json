@@ -6028,7 +6028,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 1,
       "timetable": "",
-      "transit": []
+      "transit": ["fd06"]
     },
     {
       "uniqid": "6110b4aa93521",
