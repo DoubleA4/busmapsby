@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <!-- HTML Meta Tags -->
+    <title>Map</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./images/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="Bus Tracker" />
+    <link rel="manifest" href="./images/site.webmanifest" />
+    <meta
+      name="description"
+      content="Lacak Suroboyo Bus, Trans Semanggi, dan Feeder Wira-Wiri di Surabaya langsung dari web"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./map.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sora:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://rawcdn.githack.com/bbecquet/Leaflet.RotatedMarker/refs/heads/master/leaflet.rotatedMarker.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-items">
+        <a href="javascript:history.back();">
+          <span class="material-icons back-button"> arrow_back_ios </span>
+        </a>
+        <p id="nav-title">Detail Rute</p>
+        <span class="material-icons back-button" style="color: #00000000">
+          arrow_back_ios
+        </span>
+      </div>
+    </div>
+    <div id="location-button" class="button" onclick="getLocation()">
+      <span class="material-icons"> my_location </span>
+    </div>
+    <div id="route-panel">
+      <div id="route-items">
+        <div id="expand-panel"></div>
+        <div id="route-info">
+          <div id="route-name">nama rute</div>
+        </div>
+        <div id="stops-container">
+          <div class="halte-line"></div>
+          <div id="route-operation">
+            <div class="operation-box">
+              <p>Jam operasi</p>
+              <p id="op-hour">Loading...</p>
+            </div>
+            <div class="operation-box">
+              <p>Detail rute</p>
+              <p id="op-detail">Loading...</p>
+            </div>
+          </div>
+          <!-- <div id="route-select">
+            <div
+              id="route-a"
+              class="route-button button route-active"
+              onclick="routeSelect('a')"
+            >
+              <p>Rute A</p>
+              <div class="bottom-line"></div>
+            </div>
+            <div
+              id="route-b"
+              class="route-button button"
+              onclick="routeSelect('b')"
+            >
+              <p>Rute B</p>
+              <div class="bottom-line"></div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div id="map-container">
+      <div id="map"></div>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="./boyorailMap.js"></script>
+  </body>
+</html>

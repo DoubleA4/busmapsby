@@ -22,6 +22,14 @@ async function getJson(URL) {
 //   }
 // };
 
+const date = new Date();
+const day = date.getDate();
+const month = date.getMonth() + 1;
+if (day == 1 && month == 4) {
+  var theFun = document.getElementById("funny-route");
+  theFun.style.display = "block";
+}
+
 async function main() {
   const res = await fetch("./routedata.json");
   const data = await res.json();
@@ -37,10 +45,10 @@ async function main() {
 
   async function counterFill(routeCode) {
     const haltea = data[routeCode].datahalte.a.filter(
-      (item, index) => data[routeCode].datahalte.a.indexOf(item) === index
+      (item, index) => data[routeCode].datahalte.a.indexOf(item) === index,
     );
     const halteb = data[routeCode].datahalte.b.filter(
-      (item, index) => data[routeCode].datahalte.b.indexOf(item) === index
+      (item, index) => data[routeCode].datahalte.b.indexOf(item) === index,
     );
     let id_koridor = data[routeCode].code;
     let reqAddr;
@@ -61,7 +69,7 @@ async function main() {
 
     const res = await fetch(
       `${trackData.apiUrl}/track/${reqAddr}/${id_koridor}`,
-      options
+      options,
     ).catch((error) => console.log(error));
     var bus;
     if (!res) {
