@@ -82,7 +82,7 @@ if (routeParams != "all") {
       "--accent-color",
       `${hexToRgb(route.color).r}, ${hexToRgb(route.color).g}, ${
         hexToRgb(route.color).b
-      }`
+      }`,
     );
   if (routeParams == "sbr1") {
     setRoute(dataRute.sbrt);
@@ -155,7 +155,7 @@ function setRoute(route) {
             fillColor: "white",
             fillOpacity: 1,
             color: "black",
-          }
+          },
         ).bindPopup(
           `
             <p class='stop-name'>${currentHalte.nama}</p>
@@ -175,7 +175,7 @@ function setRoute(route) {
             minWidth: 250,
             maxWidth: 280,
             className: "halte-popup",
-          }
+          },
         );
         halteMarkersGroup.addLayer(markers.halte[halteID]);
       }
@@ -247,7 +247,7 @@ async function setVehicleMarker(route, URL) {
 
   const response = await fetch(
     `${dataTracking.apiUrl}/track/${reqAddr}/${id_koridor}`,
-    options
+    options,
   );
   const data = await response.json();
 
@@ -268,7 +268,7 @@ async function setVehicleMarker(route, URL) {
     $("#op-detail").text(
       `${data.length} Bus | ${
         route.datahalte.a.length + route.datahalte.b.length
-      } Halte`
+      } Halte`,
     );
   }
 
@@ -281,7 +281,7 @@ async function setVehicleMarker(route, URL) {
       })
         .addTo(map)
         .bindPopup(
-          `${pill}<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`
+          `${pill}<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`,
         );
     });
     markers[route.code] = vecMarkers;
@@ -291,7 +291,7 @@ async function setVehicleMarker(route, URL) {
         .setRotationAngle(vehicle.direction)
         .setLatLng([vehicle.lat, vehicle.lng])
         .bindPopup(
-          `${pill}<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`
+          `${pill}<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`,
         );
     });
   }
@@ -357,7 +357,7 @@ function showPosition(position) {
   if (!markers.gps) {
     markers.gps = L.circleMarker(
       [position.coords.latitude, position.coords.longitude],
-      markerOption
+      markerOption,
     ).addTo(map);
     map.setView(markers.gps._latlng, 17);
   } else {

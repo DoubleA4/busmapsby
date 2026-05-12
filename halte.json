@@ -988,7 +988,7 @@
       "soundstop": "kendaraanstop.mp3",
       "status_transit": 2,
       "timetable": "",
-      "transit": ["sbr5", "fd07"]
+      "transit": ["sbr5"]
     },
     {
       "uniqid": "63ec694f1bfad",
