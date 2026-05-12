@@ -240,14 +240,26 @@ async function setVehicleMarker(route, URL) {
     reqAddr = "feeder";
   }
 
-  const options = {
+  const myHeaders = new Headers();
+  myHeaders.append("Pragma", "no-cache");
+  myHeaders.append("Cache-Control", "no-cache");
+  myHeaders.append("Authorization", `Bearer ${URL.split("/")[1]}`);
+
+  const raw = "";
+
+  const requestOptions = {
     method: "GET",
-    headers: { Authorization: `Bearer ${URL.split("/")[1]}` },
+    headers: myHeaders,
   };
+
+  // const options = {
+  //   method: "GET",
+  //   headers: { Authorization: `Bearer ${URL.split("/")[1]}` },
+  // };
 
   const response = await fetch(
     `${dataTracking.apiUrl}/track/${reqAddr}/${id_koridor}`,
-    options,
+    requestOptions,
   );
   const data = await response.json();
 
