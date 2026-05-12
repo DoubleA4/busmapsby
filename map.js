@@ -179,20 +179,8 @@ function setRoute(route) {
         );
         halteMarkersGroup.addLayer(markers.halte[halteID]);
       }
-
-      // adding halte divs to UI
-      // if (routeParams != "all") {
-      //   let halteElement = `<div id="halte-${currentHalte.uniqid}" class="route-stop">
-      //   <div class="halte-circle"></div>
-      //   <p class="stop-name button" onclick="popupHandler('${halteID}')">${currentHalte.nama}</p>
-      //   ${transitDivs}
-      // </div>`;
-      //   $("#stops-container").append(halteElement);
-      //   $(".halte-line").height($(".halte-line").height() + 50);
-      // }
     });
   });
-  // if (routeParams != "all" && route.code != 3) addStopList(route);
 }
 
 function setStopList(route, direction) {
@@ -251,11 +239,6 @@ async function setVehicleMarker(route, URL) {
     method: "GET",
     headers: myHeaders,
   };
-
-  // const options = {
-  //   method: "GET",
-  //   headers: { Authorization: `Bearer ${URL.split("/")[1]}` },
-  // };
 
   const response = await fetch(
     `${dataTracking.apiUrl}/track/${reqAddr}/${id_koridor}`,
