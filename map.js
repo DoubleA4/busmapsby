@@ -82,7 +82,7 @@ if (routeParams != "all") {
       "--accent-color",
       `${hexToRgb(route.color).r}, ${hexToRgb(route.color).g}, ${
         hexToRgb(route.color).b
-      }`
+      }`,
     );
   if (routeParams == "sbr1") {
     setRoute(dataRute.sbrt);
@@ -155,7 +155,7 @@ function setRoute(route) {
             fillColor: "white",
             fillOpacity: 1,
             color: "black",
-          }
+          },
         ).bindPopup(
           `
             <p class='stop-name'>${currentHalte.nama}</p>
@@ -175,24 +175,12 @@ function setRoute(route) {
             minWidth: 250,
             maxWidth: 280,
             className: "halte-popup",
-          }
+          },
         );
         halteMarkersGroup.addLayer(markers.halte[halteID]);
       }
-
-      // adding halte divs to UI
-      // if (routeParams != "all") {
-      //   let halteElement = `<div id="halte-${currentHalte.uniqid}" class="route-stop">
-      //   <div class="halte-circle"></div>
-      //   <p class="stop-name button" onclick="popupHandler('${halteID}')">${currentHalte.nama}</p>
-      //   ${transitDivs}
-      // </div>`;
-      //   $("#stops-container").append(halteElement);
-      //   $(".halte-line").height($(".halte-line").height() + 50);
-      // }
     });
   });
-  // if (routeParams != "all" && route.code != 3) addStopList(route);
 }
 
 function setStopList(route, direction) {
@@ -240,14 +228,21 @@ async function setVehicleMarker(route, URL) {
     reqAddr = "feeder";
   }
 
-  const options = {
+  const myHeaders = new Headers();
+  myHeaders.append("Pragma", "no-cache");
+  myHeaders.append("Cache-Control", "no-cache");
+  myHeaders.append("Authorization", `Bearer ${URL.split("/")[1]}`);
+
+  const raw = "";
+
+  const requestOptions = {
     method: "GET",
-    headers: { Authorization: `Bearer ${URL.split("/")[1]}` },
+    headers: myHeaders,
   };
 
   const response = await fetch(
     `${dataTracking.apiUrl}/track/${reqAddr}/${id_koridor}`,
-    options
+    requestOptions,
   );
   const data = await response.json();
 
@@ -268,7 +263,7 @@ async function setVehicleMarker(route, URL) {
     $("#op-detail").text(
       `${data.length} Bus | ${
         route.datahalte.a.length + route.datahalte.b.length
-      } Halte`
+      } Halte`,
     );
   }
 
@@ -281,7 +276,7 @@ async function setVehicleMarker(route, URL) {
       })
         .addTo(map)
         .bindPopup(
-          `${pill}<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`
+          `${pill}<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`,
         );
     });
     markers[route.code] = vecMarkers;
@@ -291,7 +286,7 @@ async function setVehicleMarker(route, URL) {
         .setRotationAngle(vehicle.direction)
         .setLatLng([vehicle.lat, vehicle.lng])
         .bindPopup(
-          `${pill}<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`
+          `${pill}<b>${vehicle.info}</b><br><b>Kecepatan :</b> ${vehicle.speed}`,
         );
     });
   }
@@ -357,7 +352,7 @@ function showPosition(position) {
   if (!markers.gps) {
     markers.gps = L.circleMarker(
       [position.coords.latitude, position.coords.longitude],
-      markerOption
+      markerOption,
     ).addTo(map);
     map.setView(markers.gps._latlng, 17);
   } else {
